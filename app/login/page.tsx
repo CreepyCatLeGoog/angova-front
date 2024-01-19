@@ -19,7 +19,7 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import AnimatedEarth from "@/components/animatedEarth";
-import { motion, useAnimation } from "framer-motion";
+import { animate, motion, useAnimation } from "framer-motion";
 
 const formSchema = z.object({
   email: z
@@ -92,17 +92,22 @@ const LoginPage = () => {
 
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values);
-    setShouldAnimate(true); // Trigger the Earth animation
-    await formAnimationControls.start({ opacity: 0, y: 100 }); // Fade off the form
+    if (form.formState.isValid) {
+      setShouldAnimate(true);
+      animateForm();
+    }
+  }
+
+  async function animateForm() {
+    await formAnimationControls.start({ opacity: 0, y: 100 });
   }
 
   return (
     <>
       <div className="relative">
-        <div className="w-1/2 lg:w-1/3 flex-col mx-auto flex justify-center space-y-8 h-screen">
+        <div className="w-1/2 lg:w-1/3 flex-col mx-auto flex justify-center space-y-8 h-[75vh]">
           <LoginHeader shouldAnimate={shouldAnimate} />
           <Form {...form}>
             <motion.form
@@ -167,19 +172,19 @@ const LoginPage = () => {
        */}
       <motion.div
         style={{
-          position: "absolute",
-          bottom: "0",
-          margin: "-2vw",
+          position: "sticky",
+          bottom: "50px",
+          // margin: "-2vw",
           width: "100%",
           overflow: "hidden",
         }}
         initial="hidden"
         animate={shouldAnimate ? "center" : "hidden"}
         variants={{
-          center: { y: -250, height: 400, scale: 0.3 },
-          hidden: { y: 0, height: 150, scale: 1 },
+          center: { y: -250, height: 500, scale: 0.3, overflow: "" },
+          hidden: { y: 0, height: 150, scale: 1, overflow: "hidden" },
         }}
-        transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+        transition={{ duration: 0.7, ease: "easeInOut", delay: 0.3 }}
       >
         <AnimatedEarth shouldAnimate={shouldAnimate} />
       </motion.div>
