@@ -1,4 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import AnimatedEarth from "@/components/animatedEarth";
 
 export default function LoginLayout({
   children,
@@ -6,8 +7,10 @@ export default function LoginLayout({
   children: React.ReactNode;
 }) {
   return (
-    <MaxWidthWrapper>
-      <section>{children}</section>
-    </MaxWidthWrapper>
+    <>
+      <MaxWidthWrapper>
+        <section>{children}</section>
+      </MaxWidthWrapper>
+    </>
   );
 }
