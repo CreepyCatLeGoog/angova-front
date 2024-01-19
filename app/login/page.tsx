@@ -127,26 +127,27 @@ const LoginPage = () => {
       <div className="relative">
         <div className="w-1/2 lg:w-1/3 flex-col mx-auto flex justify-center items-center h-[90vh]">
           <LoginHeader shouldAnimate={shouldAnimate} />
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={shouldAnimate ? { opacity: 1 } : {}}
+            transition={{ duration: 1, ease: "easeInOut" }}
+          >
             <p
               className={cn(
                 "",
                 `${
                   shouldAnimate
-                    ? "opacity-1 text-center text-2xl font-bold block"
-                    : "opacity-0 none"
+                    ? "text-center text-2xl font-bold block"
+                    : "none"
                 }`
               )}
             >
               Welcome to angova
             </p>
             <div
-              className={
-                (cn(""),
-                `${shouldAnimate ? "opacity-1 block my-40" : "opacity-0 none"}`)
-              }
+              className={(cn(""), `${shouldAnimate ? "block my-40" : "none"}`)}
             ></div>
-          </div>
+          </motion.div>
           <Form {...form}>
             <motion.form
               onSubmit={form.handleSubmit(onSubmit)}
