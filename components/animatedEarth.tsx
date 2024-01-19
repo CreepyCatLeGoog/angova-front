@@ -1,25 +1,39 @@
 "use client";
-// animatedEarth.tsx
-
+// AnimatedEarth.tsx
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const AnimatedEarth = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
+const AnimatedEarth = ({
+  shouldAnimate,
+  shouldAnimateFailed,
+}: {
+  shouldAnimate: boolean;
+  shouldAnimateFailed: boolean;
+}) => {
   const animationVariants = {
     hidden: { opacity: 1 },
-    visible: { opacity: 1, rotate: 720 },
+    visible: { opacity: 1, rotate: 360 },
+  };
+
+  const formInvalidVariants = {
+    hidden: { opacity: 1, x: [0, -10, 10, -5, 5, 0], rotate: 0 },
+    visible: {
+      opacity: 1,
+      x: [0, -10, 10, -5, 5, 0],
+      rotate: shouldAnimateFailed ? [0, -5, 5, -2, 2, 0] : 0,
+    },
   };
 
   return (
     <motion.div
-      variants={animationVariants}
+      variants={shouldAnimateFailed ? formInvalidVariants : animationVariants}
       initial="hidden"
       animate={shouldAnimate ? "visible" : "hidden"}
       transition={{
-        duration: 6,
+        duration: shouldAnimateFailed ? 0.5 : 6,
         ease: "easeInOut",
-        repeat: Infinity,
+        repeat: shouldAnimateFailed ? 0.2 : 1,
       }}
     >
       <Image
@@ -31,4 +45,5 @@ const AnimatedEarth = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
     </motion.div>
   );
 };
+
 export default AnimatedEarth;
