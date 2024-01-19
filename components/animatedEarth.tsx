@@ -25,8 +25,8 @@ const AnimatedEarth = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
       <Image
         src="/assets/illustration/earth.svg"
         alt="Earth"
-        width={600}
-        height={600}
+        width={700}
+        height={700}
       />
     </motion.div>
   );
