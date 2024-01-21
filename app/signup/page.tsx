@@ -1,5 +1,5 @@
 "use client";
-// LoginPage.tsx
+// SignupPage.tsx
 
 import React, { useState } from "react";
 import * as z from "zod";
@@ -31,17 +31,21 @@ const formSchema = z.object({
       message: "Enter a valid email",
     })
     .email("This is not a valid email."),
-  password: z
-    .string()
-    .min(5, {
-      message: "Invalid password",
-    })
-    .max(50, {
-      message: "Invalid password",
-    }),
+  password: z.string().min(5, {
+    message: "Invalid password",
+  }),
+  passwordConfirmation: z.string().min(5, {
+    message: "Invalid password confirmation",
+  }),
+  username: z.string().min(5, {
+    message: "Invalid username",
+  }),
+  role: z.string().min(0, {
+    message: "Invalid role",
+  }),
 });
 
-const LoginHeader = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
+const SignUpHeader = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
   const headerAnimationControls = useAnimation();
 
   // Run animation when shouldAnimate changes
@@ -58,7 +62,7 @@ const LoginHeader = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className="w-full">
-        <p className="font-bold text-2xl text-center my-5">Login</p>
+        <p className="font-bold text-2xl text-center my-5">Sign Up</p>
         <p className="text-center">
           To continue on <span className="text-orange-400">An’gova</span>
         </p>
@@ -78,7 +82,7 @@ const LoginHeader = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
   );
 };
 
-const LoginPage = () => {
+const signUpPage = () => {
   const [shouldAnimate, setShouldAnimate] = useState(false);
   const [shouldAnimateFailed, setShouldAnimateFailed] = useState(false);
   const formAnimationControls = useAnimation();
@@ -89,10 +93,13 @@ const LoginPage = () => {
     defaultValues: {
       email: "",
       password: "",
+      passwordConfirmation: "",
+      username: "",
+      role: "",
     },
   });
-  async function authenticate(values: z.infer<typeof formSchema>) {
-    const res = await fetch("http://localhost:3000/api/auth/login", {
+  async function register(values: z.infer<typeof formSchema>) {
+    const res = await fetch("http://localhost:3000/api/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
@@ -116,7 +123,7 @@ const LoginPage = () => {
       // If the data is valid, submit the form
       console.log("Form is valid");
       console.log(values);
-      await authenticate(values);
+      await register(values);
     } catch (error) {
       // If the data is invalid, display an error message
       console.log("Form is invalid");
@@ -142,7 +149,7 @@ const LoginPage = () => {
     <>
       <div className="relative">
         <div className="w-1/2 lg:w-1/3 flex-col mx-auto flex justify-center items-center h-[90vh]">
-          <LoginHeader shouldAnimate={shouldAnimate} />
+          <SignUpHeader shouldAnimate={shouldAnimate} />
           <motion.div
             initial={{ opacity: 0 }}
             animate={shouldAnimate ? { opacity: 1 } : {}}
@@ -194,6 +201,29 @@ const LoginPage = () => {
               </div>
 
               <FormField
+                name="username"
+                render={({ field }) => (
+                  <motion.div
+                    initial={{ opacity: 1, scale: 1 }}
+                    animate={shouldAnimate ? { opacity: 0, scale: 0 } : {}}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                  >
+                    <FormItem>
+                      <FormControl>
+                        <Input placeholder="Username" {...field} />
+                      </FormControl>
+                      <FormDescription></FormDescription>
+                      <FormMessage />
+                    </FormItem>
+                  </motion.div>
+                )}
+              />
+
+              <div className="flex justify-center">
+                <div className="my-2"></div>
+              </div>
+
+              <FormField
                 name="password"
                 render={({ field }) => (
                   <motion.div
@@ -209,19 +239,35 @@ const LoginPage = () => {
                           {...field}
                         />
                       </FormControl>
-                      <FormDescription>
-                        <a
-                          href="#"
-                          className="underline underline-offset-4 font-style-italic text-xs"
-                        >
-                          Forgot your password ?
-                        </a>
-                      </FormDescription>
+                      <FormDescription></FormDescription>
                       <FormMessage />
                     </FormItem>
                   </motion.div>
                 )}
               />
+              <div className="flex justify-center">
+                <div className="my-2"></div>
+              </div>
+
+              <FormField
+                name="passwordConfirmation"
+                render={({ field }) => (
+                  <motion.div
+                    initial={{ opacity: 1, scale: 1 }}
+                    animate={shouldAnimate ? { opacity: 0, scale: 0 } : {}}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                  >
+                    <FormItem>
+                      <FormControl>
+                        <Input placeholder="Password Confirmation" {...field} />
+                      </FormControl>
+                      <FormDescription></FormDescription>
+                      <FormMessage />
+                    </FormItem>
+                  </motion.div>
+                )}
+              />
+
               <div className="flex justify-center">
                 <div className="my-5"></div>
               </div>
@@ -234,7 +280,7 @@ const LoginPage = () => {
                   opacity: shouldAnimate ? 0 : 1,
                 }}
               >
-                Connexion
+                Sign Up
               </Button>
             </motion.form>
           </Form>
@@ -266,4 +312,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default signUpPage;
