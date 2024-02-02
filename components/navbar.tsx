@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Dropdown from './dropdown';
 
 const Navbar = () => {
-
   return (
     <nav className="relative z-20 flex-col flex-grow md:pb-0 md:flex md:justify-between md:flex-row">
       <div className="flex justify-between items-center w-full m-3">

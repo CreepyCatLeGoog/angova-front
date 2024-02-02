@@ -2,15 +2,16 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper"
 import TopNavigation from "@/components/topNavigation"
 import BottomNavigation from "@/components/bottomNavigation"
 
-const ProfilePage = () => {
+
+const SessionPage = () => {
   return (
     <>
       <MaxWidthWrapper>
-        <TopNavigation title="Mon profil" isTitle={true} isLanguage={false} isGear={true} />
+        <TopNavigation isTitle={false} isLanguage={true} isGear={true} />
         <BottomNavigation />
       </MaxWidthWrapper>
     </>
   )
 }
 
-export default ProfilePage
+export default SessionPage
