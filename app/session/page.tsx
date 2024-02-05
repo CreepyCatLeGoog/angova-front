@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper"
 import TopNavigation from "@/components/topNavigation"
-import BottomNavigation from "@/components/bottomNavigation"
+import BottomNavigation from "@/components/BottomNavigation"
 
 
 const SessionPage = () => {
