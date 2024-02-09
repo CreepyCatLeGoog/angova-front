@@ -1,5 +1,5 @@
 "use client";
-// LoginPage.tsx
+// SignIn.tsx
 
 import React, { useState } from "react";
 import * as z from "zod";
@@ -20,68 +20,34 @@ import { Separator } from "@/components/ui/separator";
 import AnimatedEarth from "@/components/animatedEarth";
 import { motion, useAnimation } from "framer-motion";
 import { cn } from "@/lib/utils";
-
-const formSchema = z.object({
-  email: z
-    .string()
-    .min(5, {
-      message: "Enter a valid email",
-    })
-    .max(50, {
-      message: "Enter a valid email",
-    })
-    .email("This is not a valid email."),
-  password: z
-    .string()
-    .min(5, {
-      message: "Invalid password",
-    })
-    .max(50, {
-      message: "Invalid password",
-    }),
-});
-
-const LoginHeader = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
-  const headerAnimationControls = useAnimation();
-
-  // Run animation when shouldAnimate changes
-  React.useEffect(() => {
-    if (shouldAnimate) {
-      headerAnimationControls.start({ opacity: 0, y: -50 });
-    }
-  }, [shouldAnimate, headerAnimationControls]);
-
-  return (
-    <motion.div
-      initial={{ opacity: 1, y: 0 }}
-      animate={headerAnimationControls}
-      transition={{ duration: 1, ease: "easeInOut" }}
-    >
-      <div className="w-full">
-        <p className="font-bold text-2xl text-center my-5">Login</p>
-        <p className="text-center">
-          To continue on <span className="text-orange-400">An’gova</span>
-        </p>
-        <div className="flex justify-center">
-          <Separator
-            orientation="horizontal"
-            className="w-1/2 my-5 bg-orange-400"
-          />
-          <div className="mx-5"></div>
-          <Separator
-            orientation="horizontal"
-            className="w-1/2 my-5 bg-orange-400"
-          />
-        </div>
-      </div>
-    </motion.div>
-  );
-};
+import { signIn } from "@/auth";
 
 const LoginPage = () => {
   const [shouldAnimate, setShouldAnimate] = useState(false);
   const [shouldAnimateFailed, setShouldAnimateFailed] = useState(false);
   const formAnimationControls = useAnimation();
+
+  const [error, setError] = useState("");
+
+  const formSchema = z.object({
+    email: z
+      .string()
+      .min(5, {
+        message: "Enter a valid email",
+      })
+      .max(50, {
+        message: "Enter a valid email",
+      })
+      .email("This is not a valid email."),
+    password: z
+      .string()
+      .min(5, {
+        message: "Invalid password",
+      })
+      .max(50, {
+        message: "Invalid password",
+      }),
+  });
 
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
@@ -91,39 +57,42 @@ const LoginPage = () => {
       password: "",
     },
   });
-  async function authenticate(values: z.infer<typeof formSchema>) {
-    const res = await fetch("http://localhost:3000/api/auth/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
+
+  const isValidEmail = (email: string) => {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return emailRegex.test(email);
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    const email = e.target[0].value;
+    const password = e.target[1].value;
+
+    if (!isValidEmail(email)) {
+      setError("Email is invalid");
+      return;
+    }
+
+    if (!password || password.length < 8) {
+      setError("Password is invalid");
+      return;
+    }
+
+    const res = await signIn("credentials", {
+      email,
+      password,
     });
 
-    const data = await res.json();
-
-    if (!res.ok) {
-      throw new Error(data.message);
-    } else {
+    if (res?.error) {
+      setError("Invalid email or password");
+      await animateFailedForm();
+    } else if (res?.ok) {
       await animateForm();
-      return data;
-    }
-  }
-
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    try {
-      // Validate the data
-      formSchema.parse(values);
-
-      // If the data is valid, submit the form
-      console.log("Form is valid");
-      console.log(values);
-      await authenticate(values);
-    } catch (error) {
-      // If the data is invalid, display an error message
-      console.log("Form is invalid");
-      console.log(error);
+    } else {
+      setError("An error occurred");
       await animateFailedForm();
     }
-  }
+  };
 
   async function animateForm() {
     await formAnimationControls.start({ opacity: 0, y: 100 });
@@ -166,7 +135,7 @@ const LoginPage = () => {
           </motion.div>
           <Form {...form}>
             <motion.form
-              onSubmit={form.handleSubmit(onSubmit)}
+              onSubmit={handleSubmit}
               initial={{ opacity: 1, y: 0 }}
               animate={shouldAnimateFailed ? formAnimationControls : {}}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -236,8 +205,35 @@ const LoginPage = () => {
               >
                 Connexion
               </Button>
+              {/* /// button google  */}
+              {/* <Button
+                onClick={async () => {
+                  const res = await signIn("google");
+
+                  if (res?.error) {
+                    setError("Invalid email or password");
+                    await animateFailedForm();
+                  } else if (res?.ok) {
+                    await animateForm();
+                  } else {
+                    setError("An error occurred");
+                    await animateFailedForm();
+                  }
+                }}
+                className="w-full bg-white text-black border border-black rounded-md p-2 my-2"
+              >
+                Sign in with Google
+              </Button> */}
             </motion.form>
           </Form>
+          <form
+            action={async () => {
+              await signIn("google");
+            }}
+          >
+            <button>Sign in with google</button>
+            <br />
+          </form>
           <div className="h-[20vh]"></div>
         </div>
 
@@ -263,6 +259,42 @@ const LoginPage = () => {
         </motion.div>
       </div>
     </>
+  );
+};
+const LoginHeader = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
+  const headerAnimationControls = useAnimation();
+
+  // Run animation when shouldAnimate changes
+  React.useEffect(() => {
+    if (shouldAnimate) {
+      headerAnimationControls.start({ opacity: 0, y: -50 });
+    }
+  }, [shouldAnimate, headerAnimationControls]);
+
+  return (
+    <motion.div
+      initial={{ opacity: 1, y: 0 }}
+      animate={headerAnimationControls}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
+      <div className="w-full">
+        <p className="font-bold text-2xl text-center my-5">Login</p>
+        <p className="text-center">
+          To continue on <span className="text-orange-400">An’gova</span>
+        </p>
+        <div className="flex justify-center">
+          <Separator
+            orientation="horizontal"
+            className="w-1/2 my-5 bg-orange-400"
+          />
+          <div className="mx-5"></div>
+          <Separator
+            orientation="horizontal"
+            className="w-1/2 my-5 bg-orange-400"
+          />
+        </div>
+      </div>
+    </motion.div>
   );
 };
 
