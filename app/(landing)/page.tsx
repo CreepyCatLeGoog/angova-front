@@ -1,58 +1,16 @@
-"use client";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Hero from "@/components/hero";
+import Navbar from "@/components/navbar";
 
-import MaxWidthWrapper from "@/components/MaxWidthWrapper"
-import LandingMobile from "@/components/landingMobile"
-import LandingDesktop from "@/components/landingDesktop"
-import Navbar from "@/components/navbar"
-import Image from 'next/image';
-import Link from "next/link"
-import { Heart, Instagram } from 'lucide-react';
-import CarrouselFeedback from "@/components/carrouselFeedback";
-import CarrouselTrustUs from "@/components/carrouselTrustUs";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+// src/app/page.tsx
+import { auth, signOut } from "@/auth";
 
-const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Le nom d'utilisateur doit comporter au moins 2 caractères.",
-  }),
-  mail: z
-    .string()
-    .min(1, { message: "Ce champ doit être rempli." })
-    .email("Le courrier doit être un mail valide"),
- 
-  message: z.string().min(10, {
-    message: "Le message doit comporter au moins 10 caractères.",
-  }),
-})
-
-const LandingPage = () => {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: "",
-      mail: "",
-      message: ""
-    },
-  })
- 
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-  }
-  return (
-    <>
+export default async function LandingPage() {
+  console.log("Server Side Rendering");
+  const session = await auth();
+  console.log(session);
+  return session ? (
+    <div>
       <MaxWidthWrapper>
         <Navbar />
         <div className="block lg:hidden "> <LandingMobile /> </div>
@@ -209,8 +167,22 @@ const LandingPage = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-    </>
-  )
+      <form
+        action={async () => {
+          "use server";
+          await signOut();
+        }}
+      >
+        <button>Log Out</button>
+        <br />
+      </form>
+    </div>
+  ) : (
+    <div>
+      <MaxWidthWrapper>
+        <Navbar />
+        <Hero />
+      </MaxWidthWrapper>
+    </div>
+  );
 }
-
-export default LandingPage

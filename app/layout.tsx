@@ -1,20 +1,24 @@
-import './globals.css'
-import type { Metadata } from 'next'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `An'gova`,
-  description: 'Code de la Route',
-}
+  description: "Code de la Route",
+};
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <body className={inter.className}>
+        <div>{children}</div>
+      </body>
     </html>
-  )
+  );
 }

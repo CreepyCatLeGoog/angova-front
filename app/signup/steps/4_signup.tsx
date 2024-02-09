@@ -98,22 +98,6 @@ const signUpPage = () => {
       role: "",
     },
   });
-  async function register(values: z.infer<typeof formSchema>) {
-    const res = await fetch("http://localhost:3000/api/auth/register", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
-    });
-
-    const data = await res.json();
-
-    if (!res.ok) {
-      throw new Error(data.message);
-    } else {
-      await animateForm();
-      return data;
-    }
-  }
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
@@ -123,7 +107,6 @@ const signUpPage = () => {
       // If the data is valid, submit the form
       console.log("Form is valid");
       console.log(values);
-      await register(values);
     } catch (error) {
       // If the data is invalid, display an error message
       console.log("Form is invalid");
