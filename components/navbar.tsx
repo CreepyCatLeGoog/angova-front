@@ -1,11 +1,8 @@
-"use client"
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import Dropdown from './dropdown';
-import {  Ubuntu } from 'next/font/google'
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import React from "react";
+import Image from "next/image";
+import Dropdown from "./dropdown";
 
 const ubuntu = Ubuntu({
   weight: ['400', '500', '700', '300'],
@@ -13,18 +10,12 @@ const ubuntu = Ubuntu({
 })
  
 const Navbar = () => {
-
   return (
-    <nav  className="w-screen relative z-20 flex-col flex-grow md:pb-0 md:px-0  md:flex md:justify-between md:flex-row  border-[#DEDEDE] border-b-2  lg:border-b-[3px]" >
-      <div className="flex justify-between items-center w-full mt-3 mb-3 lg:hidden">
-        <div className={ubuntu.className}> <Dropdown   /></div>
-        <div className='mr-6'>
-          <Image
-            src={'/logo.png'}
-            alt="Angova"
-            width={90}
-            height={40}
-          />
+    <nav className="relative z-20 flex-col flex-grow md:pb-0 md:flex md:justify-between md:flex-row">
+      <div className="flex justify-between items-center w-full m-3">
+        <Dropdown />
+        <div className="mr-6">
+          <Image src={"/logo.png"} alt="Angova" width={124} height={124} />
         </div>
       </div>
       <div className="hidden lg:flex justify-between items-center w-full mt-3 mb-3 pl-[4%] pr-[8rem] xl:pl-[15%] xl:pr-[10rem]">
@@ -54,4 +45,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
