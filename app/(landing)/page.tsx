@@ -1,3 +1,5 @@
+"use client";
+
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
@@ -14,16 +16,18 @@ export default async function LandingPage() {
       <MaxWidthWrapper>
         <Navbar />
         <Hero />
+        <form
+          action={async () => {
+            "use server";
+            await signOut();
+          }}
+        >
+          <h1>Logged in as {session.user.email}</h1>
+          <br />
+          <button>Log Out</button>
+          <br />
+        </form>
       </MaxWidthWrapper>
-      <form
-        action={async () => {
-          "use server";
-          await signOut();
-        }}
-      >
-        <button>Log Out</button>
-        <br />
-      </form>
     </div>
   ) : (
     <div>

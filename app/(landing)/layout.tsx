@@ -1,7 +1,7 @@
 "use client";
 
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-
+import SessionWrapper from "@/components/SessionWrapper";
 export default async function LandingLayout({
   children,
 }: {
@@ -9,7 +9,9 @@ export default async function LandingLayout({
 }) {
   return (
     <>
-      <MaxWidthWrapper>{children}</MaxWidthWrapper>
+      <SessionWrapper>
+        <MaxWidthWrapper>{children}</MaxWidthWrapper>
+      </SessionWrapper>
     </>
   );
 }
