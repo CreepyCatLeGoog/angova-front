@@ -1,32 +1,24 @@
-"use client";
-
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 
 // src/app/page.tsx
-import { auth, signOut } from "@/auth";
+import { auth } from "@/auth";
+import { SignOut } from "@/components/auth-component";
 
 export default async function LandingPage() {
-  console.log("Server Side Rendering");
   const session = await auth();
-  console.log(session);
+
   return session ? (
     <div>
       <MaxWidthWrapper>
         <Navbar />
         <Hero />
-        <form
-          action={async () => {
-            "use server";
-            await signOut();
-          }}
-        >
-          <h1>Logged in as {session.user.email}</h1>
-          <br />
-          <button>Log Out</button>
-          <br />
-        </form>
+
+        <h1>Logged in as {session.user.name}</h1>
+        <p>Email: {session.user.email}</p>
+        <img src={session.user.image} alt="user image" />
+        <SignOut />
       </MaxWidthWrapper>
     </div>
   ) : (

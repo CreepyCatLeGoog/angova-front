@@ -53,7 +53,7 @@ export default {
         async session({ session, token }) { // this token return above jwt()
           session.accessToken = token.accessToken;
           //if you want to add user details info
-          session.user = { name: "name", email: "email" };//this user info get via API call or decode token. Anything you want you can add
+          session.user = { name: session.user.name, email: session.user.email };//this user info get via API call or decode token. Anything you want you can add
           return session;
         },
       },
