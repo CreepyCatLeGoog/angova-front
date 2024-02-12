@@ -1,4 +1,5 @@
 "use client";
+
 // AnimatedEarth.tsx
 import React from "react";
 import { motion } from "framer-motion";
@@ -31,7 +32,7 @@ const AnimatedEarth = ({
       initial="hidden"
       animate={shouldAnimate ? "visible" : "hidden"}
       transition={{
-        duration: shouldAnimateFailed ? 0.5 : 6,
+        duration: shouldAnimateFailed ? 0.5 : 4,
         ease: "easeInOut",
         repeat: shouldAnimateFailed ? 0.2 : 1,
       }}
@@ -41,6 +42,10 @@ const AnimatedEarth = ({
         alt="Earth"
         width={700}
         height={700}
+        style={{
+          marginBottom: "10px",
+          marginTop: "10px",
+        }}
       />
     </motion.div>
   );
