@@ -52,9 +52,7 @@ export const LoginForm = () => {
       if (!res?.error) {
         if (res?.ok) {
           animateForm();
-
           setTimeout(() => {
-            router.push(callbackUrl);
             toast({
               title: "Success",
               description: "You have successfully logged in",
@@ -63,7 +61,10 @@ export const LoginForm = () => {
                 color: "white",
               },
             });
-          }, 5000);
+          }, 2000);
+          setTimeout(() => {
+            router.push(callbackUrl);
+          }, 4000);
         }
       } else {
         reset({ password: "" });
@@ -113,13 +114,18 @@ export const LoginForm = () => {
 
   return (
     <>
-      <div className="h-[10vh]"></div>
+      <div className="h-[5vh]"></div>
       <LoginHeader shouldAnimate={shouldAnimate} />
       <LoginThirdParty
         shouldAnimate={shouldAnimate}
         callbackUrl={callbackUrl}
       />
-      <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
+      <div
+        className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5"
+        style={{
+          opacity: shouldAnimate ? 0 : 1,
+        }}
+      >
         <p className="text-center font-semibold mx-4 mb-0">OR</p>
       </div>
       <form
@@ -165,38 +171,46 @@ export const LoginForm = () => {
         >
           {submitting ? "loading..." : "Sign In"}
         </button>
-
-        {/* <a
-        className="px-7 py-2 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center"
-        style={{ backgroundColor: "#55acee" }}
-        onClick={() => signIn("github", { callbackUrl })}
-        role="button"
-      >
-        <Image
-          className="p-1"
-          src="/images/github.svg"
-          alt=""
-          width={40}
-          height={40}
-        />
-        Continue with GitHub
-      </a> */}
       </form>
 
+      <div className="h-[5vh]"></div>
+      <div
+        className="flex justify-center"
+        style={{
+          opacity: shouldAnimate ? 0 : 1,
+        }}
+      >
+        <p className="text-sm italic text-slate-500">
+          En te connectant à <span className="text-orange-400">An’gova</span>,
+          tu acceptes nos{" "}
+          <a className="text-orange-400" href="/cgu">
+            {" "}
+            Conditions d’utilisation{" "}
+          </a>{" "}
+          et notre
+          <a className="text-orange-400" href="/privacy-policy">
+            {" "}
+            Politique de confidentialité.
+          </a>
+        </p>
+      </div>
       <div className="fixed bottom-0 left-0 right-0 mb-5 pb-20">
         <motion.div
           style={{
             position: "absolute",
             width: "100%",
             overflow: "hidden",
+            marginTop: "50px",
+            display: "flex",
+            justifyContent: "center",
           }}
           initial="hidden"
           animate={shouldAnimate ? "center" : "hidden"}
           variants={{
-            center: { y: -700, height: 500, scale: 0.5 },
-            hidden: { y: -130, height: 200, scale: 1.1, overflow: "hidden" },
+            center: { y: -700, scale: 0.5 },
+            hidden: { y: -130, scale: 1.1, overflow: "hidden" },
           }}
-          transition={{ duration: 0.4, ease: "easeInOut", delay: 0.4 }}
+          transition={{ duration: 0.3, ease: "easeInOut", delay: 0.4 }}
         >
           <AnimatedEarth
             shouldAnimateFailed={shouldAnimateFailed}
