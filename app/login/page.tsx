@@ -1,12 +1,12 @@
 // export default LoginPage;
 "use client";
+
 import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { useToast } from "@/components/ui/use-toast";
 import { toast } from "@/components/ui/use-toast";
 import { signIn } from "next-auth/react";
 import { LoginUserInput, loginUserSchema } from "@/lib/user-schema";
@@ -36,50 +36,53 @@ export const LoginForm = () => {
     formState: { errors },
   } = methods;
 
-  const onSubmitHandler: SubmitHandler<LoginUserInput> = async (values) => {
+  const onSubmitHandler: SubmitHandler<LoginUserInput> = (values) => {
     try {
       setSubmitting(true);
 
-      const res = await signIn("credentials", {
+      const res = signIn("credentials", {
         redirect: false,
         email: values.email,
         password: values.password,
         redirectTo: callbackUrl,
-      });
+      }).then((res) => {
+        setSubmitting(false);
 
-      setSubmitting(false);
-
-      if (!res?.error) {
-        if (res?.ok) {
-          animateForm();
-          setTimeout(() => {
-            toast({
-              title: "Success",
-              description: "You have successfully logged in",
-              style: {
-                backgroundColor: "green",
-                color: "white",
-              },
-            });
-          }, 2000);
-          setTimeout(() => {
-            router.push(callbackUrl);
-          }, 4000);
+        if (!res?.error) {
+          if (res?.ok) {
+            /// animate form and show a toast
+            animateForm();
+            setTimeout(() => {
+              toast({
+                title: "Success",
+                description: "You have successfully logged in",
+                style: {
+                  backgroundColor: "green",
+                  color: "white",
+                },
+                duration: 1500,
+              });
+            }, 2000);
+            setTimeout(() => {
+              router.push(callbackUrl);
+            }, 4000);
+          }
+        } else {
+          reset({ password: "" });
+          const message = "invalid email or password";
+          toast({
+            title: "Error",
+            description: message,
+            style: {
+              backgroundColor: "red",
+              color: "white",
+            },
+            duration: 2000,
+          });
+          animateFailedForm();
+          setError(message);
         }
-      } else {
-        reset({ password: "" });
-        const message = "invalid email or password";
-        toast({
-          title: "Error",
-          description: message,
-          style: {
-            backgroundColor: "red",
-            color: "white",
-          },
-        });
-        animateFailedForm();
-        setError(message);
-      }
+      });
     } catch (error: any) {
       toast({
         title: "Error",
@@ -88,6 +91,7 @@ export const LoginForm = () => {
           backgroundColor: "orange",
           color: "white",
         },
+        duration: 2000,
       });
       setError(error.message);
       animateFailedForm();
@@ -96,129 +100,136 @@ export const LoginForm = () => {
     }
   };
 
-  async function animateFailedForm() {
+  function animateFailedForm() {
     setShouldAnimateFailed(true);
   }
 
-  async function animateForm() {
-    await formAnimationControls.start({ opacity: 0, y: 100 });
-    // Reset animation controls to their initial state after the animation is complete
-    formAnimationControls.start({});
-    // Reset shouldAnimateFailed after a successful form submission
-    setShouldAnimateFailed(false);
-    setShouldAnimate(true);
+  function animateForm() {
+    formAnimationControls
+      .start({ opacity: 0, y: 100 })
+      .then(() => {
+        // Reset animation controls to their initial state after the animation is complete
+        formAnimationControls.start({});
+      })
+      .then(() => {
+        // Reset shouldAnimateFailed after a successful form submission
+        setShouldAnimateFailed(false);
+        setShouldAnimate(true);
+      });
   }
 
   const input_style =
     "form-control block w-full px-4 py-5 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none";
 
   return (
-    <>
-      <div className="h-[5vh]"></div>
-      <LoginHeader shouldAnimate={shouldAnimate} />
-      <LoginThirdParty
-        shouldAnimate={shouldAnimate}
-        callbackUrl={callbackUrl}
-      />
-      <div
-        className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5"
-        style={{
-          opacity: shouldAnimate ? 0 : 1,
-        }}
-      >
-        <p className="text-center font-semibold mx-4 mb-0">OR</p>
-      </div>
-      <form
-        onSubmit={handleSubmit(onSubmitHandler)}
-        style={{
-          opacity: shouldAnimate ? 0 : 1,
-        }}
-      >
-        {error && (
-          <p className="text-center bg-red-300 py-4 mb-6 rounded">{error}</p>
-        )}
-        <div className="mb-6">
-          <input
-            type="email"
-            {...register("email")}
-            placeholder="Email address"
-            className={`${input_style}`}
-          />
-          {errors["email"] && (
-            <span className="text-red-500 text-xs pt-1 block">
-              {errors["email"]?.message as string}
-            </span>
-          )}
-        </div>
-        <div className="mb-6">
-          <input
-            type="password"
-            {...register("password")}
-            placeholder="Password"
-            className={`${input_style}`}
-          />
-          {errors["password"] && (
-            <span className="text-red-500 text-xs pt-1 block">
-              {errors["password"]?.message as string}
-            </span>
-          )}
-        </div>
-        <button
-          type="submit"
-          style={{ backgroundColor: `${submitting ? "#ccc" : "#F49E4C"}` }}
-          className="inline-block px-7 py-4 bg-orange-500 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out w-full"
-          disabled={submitting}
-        >
-          {submitting ? "loading..." : "Sign In"}
-        </button>
-      </form>
-
-      <div className="h-[5vh]"></div>
-      <div
-        className="flex justify-center"
-        style={{
-          opacity: shouldAnimate ? 0 : 1,
-        }}
-      >
-        <p className="text-sm italic text-slate-500">
-          En te connectant à <span className="text-orange-400">An’gova</span>,
-          tu acceptes nos{" "}
-          <a className="text-orange-400" href="/cgu">
-            {" "}
-            Conditions d’utilisation{" "}
-          </a>{" "}
-          et notre
-          <a className="text-orange-400" href="/privacy-policy">
-            {" "}
-            Politique de confidentialité.
-          </a>
-        </p>
-      </div>
-      <div className="fixed bottom-0 left-0 right-0 mb-5 pb-20">
-        <motion.div
+    <div className="flex flex-col items-center justify-center w-full h-full">
+      <div className="w-72 sm:w-72 md:w-72 lg:w-96 xl:w-96">
+        <div className="h-[5vh]"></div>
+        <LoginHeader shouldAnimate={shouldAnimate} />
+        <LoginThirdParty
+          shouldAnimate={shouldAnimate}
+          callbackUrl={callbackUrl}
+        />
+        <div
+          className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5"
           style={{
-            position: "absolute",
-            width: "100%",
-            overflow: "hidden",
-            marginTop: "50px",
-            display: "flex",
-            justifyContent: "center",
+            opacity: shouldAnimate ? 0 : 1,
           }}
-          initial="hidden"
-          animate={shouldAnimate ? "center" : "hidden"}
-          variants={{
-            center: { y: -700, scale: 0.5 },
-            hidden: { y: -130, scale: 1.1, overflow: "hidden" },
-          }}
-          transition={{ duration: 0.3, ease: "easeInOut", delay: 0.4 }}
         >
-          <AnimatedEarth
-            shouldAnimateFailed={shouldAnimateFailed}
-            shouldAnimate={shouldAnimate}
-          />
-        </motion.div>
+          <p className="text-center font-semibold mx-4 mb-0">OR</p>
+        </div>
+        <form
+          onSubmit={handleSubmit(onSubmitHandler)}
+          style={{
+            opacity: shouldAnimate ? 0 : 1,
+          }}
+        >
+          {error && (
+            <p className="text-center bg-red-300 py-4 mb-6 rounded">{error}</p>
+          )}
+          <div className="mb-6">
+            <input
+              type="email"
+              {...register("email")}
+              placeholder="Email address"
+              className={`${input_style}`}
+            />
+            {errors["email"] && (
+              <span className="text-red-500 text-xs pt-1 block">
+                {errors["email"]?.message as string}
+              </span>
+            )}
+          </div>
+          <div className="mb-6">
+            <input
+              type="password"
+              {...register("password")}
+              placeholder="Password"
+              className={`${input_style}`}
+            />
+            {errors["password"] && (
+              <span className="text-red-500 text-xs pt-1 block">
+                {errors["password"]?.message as string}
+              </span>
+            )}
+          </div>
+          <button
+            type="submit"
+            style={{ backgroundColor: `${submitting ? "#ccc" : "#F49E4C"}` }}
+            className="inline-block px-7 py-4 bg-orange-500 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out w-full"
+            disabled={submitting}
+          >
+            {submitting ? "loading..." : "Sign In"}
+          </button>
+        </form>
+
+        <div className="h-[5vh]"></div>
+        <div
+          className="flex justify-center"
+          style={{
+            opacity: shouldAnimate ? 0 : 1,
+          }}
+        >
+          <p className="text-sm italic text-slate-500">
+            En te connectant à <span className="text-orange-400">An’gova</span>,
+            tu acceptes nos{" "}
+            <a className="text-orange-400" href="/cgu">
+              {" "}
+              Conditions d’utilisation{" "}
+            </a>{" "}
+            et notre
+            <a className="text-orange-400" href="/privacy-policy">
+              {" "}
+              Politique de confidentialité.
+            </a>
+          </p>
+        </div>
+        <div className="fixed bottom-0 left-0 right-0 mb-5 pb-20">
+          <motion.div
+            style={{
+              position: "absolute",
+              width: "100%",
+              overflow: "hidden",
+              marginTop: "50px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+            initial="hidden"
+            animate={shouldAnimate ? "center" : "hidden"}
+            variants={{
+              center: { y: -700, scale: 0.5 },
+              hidden: { y: -130, scale: 1.1, overflow: "hidden" },
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut", delay: 0.4 }}
+          >
+            <AnimatedEarth
+              shouldAnimateFailed={shouldAnimateFailed}
+              shouldAnimate={shouldAnimate}
+            />
+          </motion.div>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
