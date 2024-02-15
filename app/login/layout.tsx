@@ -1,7 +1,4 @@
-"use client";
-
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import AnimatedEarth from "@/components/animatedEarth";
 import { Toaster } from "@/components/ui/toaster";
 
 export default async function LoginLayout({

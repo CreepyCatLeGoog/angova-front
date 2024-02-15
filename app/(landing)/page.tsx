@@ -17,7 +17,7 @@ export default async function LandingPage() {
         <Hero />
 
         {/* TEST PURPOSES ONLY */}
-        {/* <h1>Logged in as {user.name}</h1>
+        <h1>Logged in as {user.name}</h1>
         <p>Email: {user.email}</p>
         <Avatar>
           <AvatarImage
@@ -26,7 +26,7 @@ export default async function LandingPage() {
           />
           <AvatarFallback>{user.name.substring(0, 1)}</AvatarFallback>
         </Avatar>
-        <SignOut /> */}
+        <SignOut />
       </MaxWidthWrapper>
     </div>
   ) : (
