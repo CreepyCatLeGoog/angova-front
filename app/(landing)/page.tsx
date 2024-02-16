@@ -1,6 +1,6 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper"
+import LandingForm from "@/components/landingform"
+import Navbar from "@/components/navbar"
 
 // src/app/page.tsx
 import { auth } from "@/auth";
@@ -14,7 +14,7 @@ export default async function LandingPage() {
     <div>
       <MaxWidthWrapper>
         <Navbar />
-        <Hero />
+      
 
         {/* TEST PURPOSES ONLY */}
         <h1>Logged in as {user.name}</h1>
@@ -33,7 +33,7 @@ export default async function LandingPage() {
     <div>
       <MaxWidthWrapper>
         <Navbar />
-        <Hero />
+        <LandingForm /> 
       </MaxWidthWrapper>
     </div>
   );

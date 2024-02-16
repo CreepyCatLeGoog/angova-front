@@ -1,8 +1,6 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import './globals.css'
+import type { Metadata } from 'next'
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `An'gova`,
@@ -15,10 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-hidden">
-      <body className={inter.className}>
-        <div>{children}</div>
-      </body>
+    
+    <html lang="en"  className="overflow-hidden">
+      <body >{children}</body>
     </html>
   );
 }
