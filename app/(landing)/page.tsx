@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper"
-import Hero from "@/components/hero"
+import LandingForm from "@/components/landingform"
 import Navbar from "@/components/navbar"
 
 const LandingPage = () => {
@@ -7,7 +7,7 @@ const LandingPage = () => {
     <>
       <MaxWidthWrapper>
         <Navbar />
-        <Hero />
+        <LandingForm /> 
       </MaxWidthWrapper>
     </>
   )

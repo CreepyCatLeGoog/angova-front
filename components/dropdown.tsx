@@ -14,16 +14,16 @@ import flags from "../lib/flags.json"
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <DropdownMenu>
+    <DropdownMenu >
       <DropdownMenuTrigger asChild>
-        <Button variant="nav" className="bg-white">
+        <Button variant="nav" className="bg-white  w-20 border-none shadow-none" >
           <Image src={'/flags/squared/fr.png'} alt="France" width={24} height={24} />
           <span className="text-lg ml-2">
             {isOpen ? <ChevronUp color="black" /> : <ChevronDown color="black" />}
           </span>
         </Button>
       </DropdownMenuTrigger>
-        <DropdownMenuContent className="mt-2 w-40">
+        <DropdownMenuContent className="mt-2 ml-0 w-40">
           <DropdownMenuGroup>
             {flags.map((flag, index) => (
               <DropdownMenuItem key={index}>
