@@ -36,7 +36,13 @@ export const LoginForm = () => {
     formState: { errors },
   } = methods;
 
-  const onSubmitHandler: SubmitHandler<LoginUserInput> = (values) => {
+  const onSubmitHandler: SubmitHandler<LoginUserInput> = async (
+    values,
+    event
+  ) => {
+    if (!event) return;
+    event.preventDefault();
+
     try {
       setSubmitting(true);
 
