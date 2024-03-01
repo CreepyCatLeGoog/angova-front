@@ -52,42 +52,69 @@ export const LoginForm = () => {
         password: values.password,
         redirectTo: callbackUrl,
       }).then((res) => {
+        console.log("res:" + res?.status);
+        if (res?.error) {
+          setShouldAnimateFailed(true);
+        } else if (res?.ok) {
+          setShouldAnimate(true);
+          setTimeout(() => {
+            toast({
+              title: "Success",
+              description: "You have successfully logged in",
+              style: {
+                backgroundColor: "green",
+                color: "white",
+              },
+              duration: 1500,
+            });
+          }, 2000);
+          setTimeout(() => {
+            router.push(callbackUrl);
+          }, 4000);
+        }
+
         setSubmitting(false);
 
-        if (!res?.error) {
-          if (res?.ok) {
-            /// animate form and show a toast
-            animateForm();
-            setTimeout(() => {
-              toast({
-                title: "Success",
-                description: "You have successfully logged in",
-                style: {
-                  backgroundColor: "green",
-                  color: "white",
-                },
-                duration: 1500,
-              });
-            }, 2000);
-            setTimeout(() => {
-              router.push(callbackUrl);
-            }, 4000);
-          }
-        } else {
-          reset({ password: "" });
-          const message = "invalid email or password";
-          toast({
-            title: "Error",
-            description: message,
-            style: {
-              backgroundColor: "red",
-              color: "white",
-            },
-            duration: 2000,
-          });
-          animateFailedForm();
-          setError(message);
-        }
+        //   if (res?.ok) {
+        //     /// animate form and show a toast
+        //     if (values.email !== "a@a.fr") {
+        //           setShouldAnimateFailed(true);
+
+        //       setShouldAnimateFailed(true);
+        //     } else {
+        //       animateForm();
+        //       setTimeout(() => {
+        //         toast({
+        //           title: "Success",
+        //           description: "You have successfully logged in",
+        //           style: {
+        //             backgroundColor: "green",
+        //             color: "white",
+        //           },
+        //           duration: 1500,
+        //         });
+        //       }, 2000);
+        //       setTimeout(() => {
+        //         router.push(callbackUrl);
+        //       }, 4000);
+        //     }
+        //   }
+        // } else {
+        //   reset({ password: "" });
+        //   const message = "invalid email or password";
+        //   toast({
+        //     title: "Error",
+        //     description: message,
+        //     style: {
+        //       backgroundColor: "red",
+        //       color: "white",
+        //     },
+        //     duration: 2000,
+        //   });
+        //       setShouldAnimateFailed(true);
+
+        //   setError(message);
+        // }
       });
     } catch (error: any) {
       toast({
@@ -100,15 +127,9 @@ export const LoginForm = () => {
         duration: 2000,
       });
       setError(error.message);
-      animateFailedForm();
-    } finally {
-      setSubmitting(false);
+      setShouldAnimateFailed(true);
     }
   };
-
-  function animateFailedForm() {
-    setShouldAnimateFailed(true);
-  }
 
   function animateForm() {
     formAnimationControls
