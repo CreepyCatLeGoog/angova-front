@@ -8,9 +8,7 @@ export default function SignupLayout({
 }) {
   return (
     <>
-      <MaxWidthWrapper>
-        <section>{children}</section>
-      </MaxWidthWrapper>
+      <MaxWidthWrapper>{children}</MaxWidthWrapper>
     </>
   );
 }
