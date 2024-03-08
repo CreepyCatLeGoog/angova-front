@@ -1,0 +1,48 @@
+[
+    {
+        "language": "FR",
+        "name": "Français",
+        "flag": "/flags/rounded/france.png"
+    },
+    {
+        "language": "MR",
+        "name": "Maroc",
+        "flag": "/flags/rounded/morocco.png"
+    },
+    {
+        "language": "ES",
+        "name": "Espagnol",
+        "flag": "/flags/rounded/spain.png"
+    },
+    {
+        "language": "EN",
+        "name": "Anglais",
+        "flag": "/flags/rounded/uk.png"
+    },
+    {
+        "language": "ALG",
+        "name": "Algerie",
+        "flag": "/flags/rounded/algeria.png"
+    },
+    {
+        "language": "AB",
+        "name": "Albanie",
+        "flag": "/flags/rounded/albania.png"
+    },
+    {
+        "language": "TN",
+        "name": "Tunisie",
+        "flag": "/flags/rounded/tunisia.png"
+    },
+    {
+        "language": "UK",
+        "name": "Ukraine",
+        "flag": "/flags/rounded/ukraine.png"
+    },
+    {
+        "language": "RM",
+        "name": "Romanie",
+        "flag": "/flags/rounded/romania.png"
+    }
+    
+]
