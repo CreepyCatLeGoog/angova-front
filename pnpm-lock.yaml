@@ -6,6 +6,7 @@ settings:
 
 dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
   '@hookform/resolvers':
     specifier: ^3.3.4
     version: 3.3.4(react-hook-form@7.49.3)
@@ -22,9 +23,26 @@ dependencies:
     specifier: ^1.0.3
     version: 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
 =======
+=======
+  '@emotion/react':
+    specifier: ^11.11.3
+    version: 11.11.3(@types/react@18.2.21)(react@18.2.0)
+  '@emotion/styled':
+    specifier: ^11.11.0
+    version: 11.11.0(@emotion/react@11.11.3)(@types/react@18.2.21)(react@18.2.0)
+  '@hookform/resolvers':
+    specifier: ^3.3.4
+    version: 3.3.4(react-hook-form@7.50.1)
+  '@mui/icons-material':
+    specifier: ^5.15.10
+    version: 5.15.10(@mui/material@5.15.10)(@types/react@18.2.21)(react@18.2.0)
+>>>>>>> b7cd091 (landing mobile version done)
   '@radix-ui/react-dropdown-menu':
     specifier: ^2.0.6
     version: 2.0.6(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
+  '@radix-ui/react-label':
+    specifier: ^2.0.2
+    version: 2.0.2(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-menubar':
     specifier: ^1.0.4
     version: 1.0.4(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
@@ -56,16 +74,21 @@ dependencies:
   clsx:
     specifier: ^2.0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
     version: 2.1.0
 =======
     version: 2.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+    version: 2.1.0
+>>>>>>> b7cd091 (landing mobile version done)
   eslint:
     specifier: 8.49.0
     version: 8.49.0
   eslint-config-next:
     specifier: 13.4.19
     version: 13.4.19(eslint@8.49.0)(typescript@5.2.2)
+<<<<<<< HEAD
 <<<<<<< HEAD
   framer-motion:
     specifier: ^10.18.0
@@ -75,6 +98,11 @@ dependencies:
     version: 4.0.0
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+  framer-motion:
+    specifier: ^11.0.5
+    version: 11.0.5(react-dom@18.2.0)(react@18.2.0)
+>>>>>>> b7cd091 (landing mobile version done)
   lucide-react:
     specifier: ^0.277.0
     version: 0.277.0(react@18.2.0)
@@ -99,10 +127,19 @@ dependencies:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
   react-hook-form:
     specifier: ^7.49.3
     version: 7.49.3(react@18.2.0)
 =======
+=======
+  react-hook-form:
+    specifier: ^7.50.1
+    version: 7.50.1(react@18.2.0)
+  react-slick:
+    specifier: ^0.30.1
+    version: 0.30.1(@testing-library/dom@9.3.4)(react-dom@18.2.0)(react@18.2.0)
+>>>>>>> b7cd091 (landing mobile version done)
   swiper:
     specifier: ^11.0.6
     version: 11.0.6
@@ -120,11 +157,17 @@ dependencies:
     specifier: 5.2.2
     version: 5.2.2
 <<<<<<< HEAD
+<<<<<<< HEAD
   zod:
     specifier: ^3.22.4
     version: 3.22.4
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+  zod:
+    specifier: ^3.22.4
+    version: 3.22.4
+>>>>>>> b7cd091 (landing mobile version done)
 
 packages:
 
@@ -138,6 +181,7 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /@auth/core@0.26.3:
     resolution: {integrity: sha512-Ka6rMjWMdiQCvLW/CnYZxj4Rq2bhQ/ZtU32NLxmtyAaixGb0mRXQ9MxJUBZA7GHovbghdzu55p2Cb54qNlVFzw==}
@@ -169,6 +213,12 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
 <<<<<<< HEAD
+=======
+  /@babel/code-frame@7.23.5:
+    resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+>>>>>>> b7cd091 (landing mobile version done)
       '@babel/highlight': 7.23.4
       chalk: 2.4.2
     dev: false
@@ -343,6 +393,7 @@ packages:
 
   /@emotion/weak-memoize@0.3.1:
     resolution: {integrity: sha512-EsBwpc7hBUJWAsNPBmJy4hxWx12v6bshQsldrVmjxJoc3isbxhOrF2IcCpaXxfvq03NwkI7sbsOLXbYuqF/8Ww==}
+<<<<<<< HEAD
     dev: false
 
   /@emotion/is-prop-valid@0.8.8:
@@ -361,6 +412,8 @@ packages:
 
 =======
       regenerator-runtime: 0.14.0
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
 >>>>>>> 495c20d (add carrousel)
@@ -374,6 +427,7 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /@eslint-community/regexpp@4.10.0:
     resolution: {integrity: sha512-Cu96Sd2By9mCNTx2iyKOmq10v22jUVQv0lQnlGNy16oE9589yE+QADPbrMGCkA51cKZSg3Pu/aTJVTGfL/qjUA==}
@@ -391,11 +445,21 @@ packages:
   /@eslint/eslintrc@2.1.2:
     resolution: {integrity: sha512-+wvgpDsrB1YqAMdEUCcnTlpfVBH7Vqn6A/NT3D8WVXFIaKMlErPIZT3oCIAVCOtarRpMtelZLqJeU3t7WY6X6g==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /@eslint-community/regexpp@4.10.0:
+    resolution: {integrity: sha512-Cu96Sd2By9mCNTx2iyKOmq10v22jUVQv0lQnlGNy16oE9589yE+QADPbrMGCkA51cKZSg3Pu/aTJVTGfL/qjUA==}
+    engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
+    dev: false
+
+  /@eslint/eslintrc@2.1.4:
+    resolution: {integrity: sha512-269Z39MS6wVJtsoUl10L60WdkhJVdPG24Q4eZTH3nnF6lpvSShEK3wQjDX9JRWAUPvPh7COouPpU9IrqaZFvtQ==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       ajv: 6.12.6
       debug: 4.3.4
       espree: 9.6.1
+<<<<<<< HEAD
 <<<<<<< HEAD
       globals: 13.24.0
       ignore: 5.3.1
@@ -403,6 +467,10 @@ packages:
       globals: 13.21.0
       ignore: 5.2.4
 >>>>>>> 495c20d (add carrousel)
+=======
+      globals: 13.24.0
+      ignore: 5.3.1
+>>>>>>> b7cd091 (landing mobile version done)
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       minimatch: 3.1.2
@@ -416,6 +484,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /@floating-ui/core@1.6.0:
     resolution: {integrity: sha512-PcF++MykgmTj3CIyOQbKA/hDzOAiqI3mhuoN44WRCopIs1sgoDoU4oty4Jtqaj/y3oDU6fnVSm4QG0a3t5i0+g==}
@@ -435,33 +504,47 @@ packages:
 =======
   /@floating-ui/core@1.5.0:
     resolution: {integrity: sha512-kK1h4m36DQ0UHGj5Ah4db7R0rHemTqqO0QLvUqi1/mUUp3LuAWbWxdxSIf/XsnH9VS6rRVPLJCncjRzUvyCLXg==}
+=======
+  /@floating-ui/core@1.6.0:
+    resolution: {integrity: sha512-PcF++MykgmTj3CIyOQbKA/hDzOAiqI3mhuoN44WRCopIs1sgoDoU4oty4Jtqaj/y3oDU6fnVSm4QG0a3t5i0+g==}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
-      '@floating-ui/utils': 0.1.4
+      '@floating-ui/utils': 0.2.1
     dev: false
 
-  /@floating-ui/dom@1.5.3:
-    resolution: {integrity: sha512-ClAbQnEqJAKCJOEbbLo5IUlZHkNszqhuxS4fHAVxRPXPya6Ysf2G8KypnYcOTpx6I8xcgF9bbHb6g/2KpbV8qA==}
+  /@floating-ui/dom@1.6.3:
+    resolution: {integrity: sha512-RnDthu3mzPlQ31Ss/BTwQ1zjzIhr3lk1gZB1OC56h/1vEtaXkESrOqL5fQVMfXpwGtRwX+YsZBdyHtJMQnkArw==}
     dependencies:
-      '@floating-ui/core': 1.5.0
-      '@floating-ui/utils': 0.1.4
+      '@floating-ui/core': 1.6.0
+      '@floating-ui/utils': 0.2.1
     dev: false
 
+<<<<<<< HEAD
   /@floating-ui/react-dom@2.0.2(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-5qhlDvjaLmAst/rKb3VdlCinwTF4EYMiVxuuc/HVUjs46W0zgtbMmAZ1UTsDrRTxRmUEzl92mOtWbeeXL26lSQ==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /@floating-ui/react-dom@2.0.8(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-HOdqOt3R3OGeTKidaLvJKcgg75S6tibQ3Tif4eyd91QnIJWr0NLvoXFpJA/j8HqkFSL68GDca9AuyWEHlhyClw==}
+>>>>>>> b7cd091 (landing mobile version done)
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@floating-ui/dom': 1.6.3
 =======
       '@floating-ui/dom': 1.5.3
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@floating-ui/dom': 1.6.3
+>>>>>>> b7cd091 (landing mobile version done)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /@floating-ui/utils@0.2.1:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
@@ -477,17 +560,33 @@ packages:
   /@floating-ui/utils@0.1.4:
     resolution: {integrity: sha512-qprfWkn82Iw821mcKofJ5Pk9wgioHicxcQMxx+5zt5GSKoqdWvgG5AxVmpmUUjzTLPVSH5auBrhI93Deayn/DA==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /@floating-ui/utils@0.2.1:
+    resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
-  /@humanwhocodes/config-array@0.11.11:
-    resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
+  /@hookform/resolvers@3.3.4(react-hook-form@7.50.1):
+    resolution: {integrity: sha512-o5cgpGOuJYrd+iMKvkttOclgwRW86EsWJZZRC23prf0uU2i48Htq4PuT73AVb9ionFyZrwYEITuOFGF+BydEtQ==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
+    dependencies:
+      react-hook-form: 7.50.1(react@18.2.0)
+    dev: false
+
+  /@humanwhocodes/config-array@0.11.14:
+    resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       '@humanwhocodes/object-schema': 2.0.2
 =======
       '@humanwhocodes/object-schema': 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@humanwhocodes/object-schema': 2.0.2
+>>>>>>> b7cd091 (landing mobile version done)
       debug: 4.3.4
       minimatch: 3.1.2
     transitivePeerDependencies:
@@ -500,6 +599,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: false
@@ -514,10 +616,13 @@ packages:
       strip-ansi-cjs: /strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: /wrap-ansi@7.0.0
+<<<<<<< HEAD
 =======
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -526,6 +631,7 @@ packages:
     dependencies:
       '@jridgewell/set-array': 1.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+<<<<<<< HEAD
 <<<<<<< HEAD
       '@jridgewell/trace-mapping': 0.3.22
     dev: false
@@ -539,6 +645,13 @@ packages:
   /@jridgewell/resolve-uri@3.1.1:
     resolution: {integrity: sha512-dSYZh7HhCDtCKm4QakX0xFpsRDqjjtZf/kjI/v3T3Nwt5r8/qz/M19F9ySyOqU94SXBmeG9ttTul+YnR4LOxFA==}
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@jridgewell/trace-mapping': 0.3.22
+    dev: false
+
+  /@jridgewell/resolve-uri@3.1.2:
+    resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=6.0.0'}
     dev: false
 
@@ -552,6 +665,7 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /@jridgewell/trace-mapping@0.3.22:
     resolution: {integrity: sha512-Wf963MzWtA2sjrNt+g18IAln9lKnlRp+K2eH4jjIoF1wYeq3aMREpG09xhlhdzS0EjwU7qmUJYangWa+151vZw==}
     dependencies:
@@ -564,9 +678,191 @@ packages:
 =======
   /@jridgewell/trace-mapping@0.3.19:
     resolution: {integrity: sha512-kf37QtfW+Hwx/buWGMPcR60iF9ziHa6r/CZJIHbmcm4+0qrXiVdxegAH0F6yddEVQ7zdkjcGCgCzUu+BcbhQxw==}
+=======
+  /@jridgewell/trace-mapping@0.3.22:
+    resolution: {integrity: sha512-Wf963MzWtA2sjrNt+g18IAln9lKnlRp+K2eH4jjIoF1wYeq3aMREpG09xhlhdzS0EjwU7qmUJYangWa+151vZw==}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
-      '@jridgewell/resolve-uri': 3.1.1
+      '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: false
+
+  /@mui/base@5.0.0-beta.36(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-6A8fYiXgjqTO6pgj31Hc8wm1M3rFYCxDRh09dBVk0L0W4cb2lnurRJa3cAyic6hHY+we1S58OdGYRbKmOsDpGQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@types/react': ^17.0.0 || ^18.0.0
+      react: ^17.0.0 || ^18.0.0
+      react-dom: ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.9
+      '@floating-ui/react-dom': 2.0.8(react-dom@18.2.0)(react@18.2.0)
+      '@mui/types': 7.2.13(@types/react@18.2.21)
+      '@mui/utils': 5.15.11(@types/react@18.2.21)(react@18.2.0)
+      '@popperjs/core': 2.11.8
+      '@types/react': 18.2.21
+      clsx: 2.1.0
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@mui/core-downloads-tracker@5.15.11:
+    resolution: {integrity: sha512-JVrJ9Jo4gyU707ujnRzmE8ABBWpXd6FwL9GYULmwZRtfPg89ggXs/S3MStQkpJ1JRWfdLL6S5syXmgQGq5EDAw==}
+    dev: false
+
+  /@mui/icons-material@5.15.10(@mui/material@5.15.10)(@types/react@18.2.21)(react@18.2.0):
+    resolution: {integrity: sha512-9cF8oUHZKo9oQ7EQ3pxPELaZuZVmphskU4OI6NiJNDVN7zcuvrEsuWjYo1Zh4fLiC39Nrvm30h/B51rcUjvSGA==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@mui/material': ^5.0.0
+      '@types/react': ^17.0.0 || ^18.0.0
+      react: ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.9
+      '@mui/material': 5.15.10(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.21
+      react: 18.2.0
+    dev: false
+
+  /@mui/material@5.15.10(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-YJJGHjwDOucecjDEV5l9ISTCo+l9YeWrho623UajzoHRYxuKUmwrGVYOW4PKwGvCx9SU9oklZnbbi2Clc5XZHw==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@emotion/react': ^11.5.0
+      '@emotion/styled': ^11.3.0
+      '@types/react': ^17.0.0 || ^18.0.0
+      react: ^17.0.0 || ^18.0.0
+      react-dom: ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@emotion/react':
+        optional: true
+      '@emotion/styled':
+        optional: true
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.9
+      '@emotion/react': 11.11.3(@types/react@18.2.21)(react@18.2.0)
+      '@emotion/styled': 11.11.0(@emotion/react@11.11.3)(@types/react@18.2.21)(react@18.2.0)
+      '@mui/base': 5.0.0-beta.36(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
+      '@mui/core-downloads-tracker': 5.15.11
+      '@mui/system': 5.15.9(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(@types/react@18.2.21)(react@18.2.0)
+      '@mui/types': 7.2.13(@types/react@18.2.21)
+      '@mui/utils': 5.15.11(@types/react@18.2.21)(react@18.2.0)
+      '@types/react': 18.2.21
+      '@types/react-transition-group': 4.4.10
+      clsx: 2.1.0
+      csstype: 3.1.3
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-is: 18.2.0
+      react-transition-group: 4.4.5(react-dom@18.2.0)(react@18.2.0)
+    dev: false
+
+  /@mui/private-theming@5.15.11(@types/react@18.2.21)(react@18.2.0):
+    resolution: {integrity: sha512-jY/696SnSxSzO1u86Thym7ky5T9CgfidU3NFJjguldqK4f3Z5S97amZ6nffg8gTD0HBjY9scB+4ekqDEUmxZOA==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@types/react': ^17.0.0 || ^18.0.0
+      react: ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.9
+      '@mui/utils': 5.15.11(@types/react@18.2.21)(react@18.2.0)
+      '@types/react': 18.2.21
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
+  /@mui/styled-engine@5.15.11(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(react@18.2.0):
+    resolution: {integrity: sha512-So21AhAngqo07ces4S/JpX5UaMU2RHXpEA6hNzI6IQjd/1usMPxpgK8wkGgTe3JKmC2KDmH8cvoycq5H3Ii7/w==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@emotion/react': ^11.4.1
+      '@emotion/styled': ^11.3.0
+      react: ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@emotion/react':
+        optional: true
+      '@emotion/styled':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.9
+      '@emotion/cache': 11.11.0
+      '@emotion/react': 11.11.3(@types/react@18.2.21)(react@18.2.0)
+      '@emotion/styled': 11.11.0(@emotion/react@11.11.3)(@types/react@18.2.21)(react@18.2.0)
+      csstype: 3.1.3
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
+  /@mui/system@5.15.9(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(@types/react@18.2.21)(react@18.2.0):
+    resolution: {integrity: sha512-SxkaaZ8jsnIJ77bBXttfG//LUf6nTfOcaOuIgItqfHv60ZCQy/Hu7moaob35kBb+guxVJnoSZ+7vQJrA/E7pKg==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@emotion/react': ^11.5.0
+      '@emotion/styled': ^11.3.0
+      '@types/react': ^17.0.0 || ^18.0.0
+      react: ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@emotion/react':
+        optional: true
+      '@emotion/styled':
+        optional: true
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.9
+      '@emotion/react': 11.11.3(@types/react@18.2.21)(react@18.2.0)
+      '@emotion/styled': 11.11.0(@emotion/react@11.11.3)(@types/react@18.2.21)(react@18.2.0)
+      '@mui/private-theming': 5.15.11(@types/react@18.2.21)(react@18.2.0)
+      '@mui/styled-engine': 5.15.11(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(react@18.2.0)
+      '@mui/types': 7.2.13(@types/react@18.2.21)
+      '@mui/utils': 5.15.11(@types/react@18.2.21)(react@18.2.0)
+      '@types/react': 18.2.21
+      clsx: 2.1.0
+      csstype: 3.1.3
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
+  /@mui/types@7.2.13(@types/react@18.2.21):
+    resolution: {integrity: sha512-qP9OgacN62s+l8rdDhSFRe05HWtLLJ5TGclC9I1+tQngbssu0m2dmFZs+Px53AcOs9fD7TbYd4gc9AXzVqO/+g==}
+    peerDependencies:
+      '@types/react': ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@types/react': 18.2.21
+    dev: false
+
+  /@mui/utils@5.15.11(@types/react@18.2.21)(react@18.2.0):
+    resolution: {integrity: sha512-D6bwqprUa9Stf8ft0dcMqWyWDKEo7D+6pB1k8WajbqlYIRA8J8Kw9Ra7PSZKKePGBGWO+/xxrX1U8HpG/aXQCw==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@types/react': ^17.0.0 || ^18.0.0
+      react: ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.9
+      '@types/prop-types': 15.7.11
+      '@types/react': 18.2.21
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-is: 18.2.0
     dev: false
 
   /@next/env@13.4.19:
@@ -725,6 +1021,9 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
       fastq: 1.17.1
     dev: false
 
@@ -737,6 +1036,7 @@ packages:
 
   /@popperjs/core@2.11.8:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+<<<<<<< HEAD
     dev: false
 
   /@panva/hkdf@1.1.1:
@@ -744,16 +1044,22 @@ packages:
 =======
       fastq: 1.15.0
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /@radix-ui/primitive@1.0.1:
     resolution: {integrity: sha512-yQ8oGX2GVsEYMWGxcovu1uGWPCxV5BFfeeYxqPmuAzUyLT9qmaMXSAhXpb0WrspIeqYzdJpkh2vHModJPgRIaw==}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /@radix-ui/react-arrow@1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0):
@@ -770,10 +1076,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
       '@types/react': 18.2.21
       '@types/react-dom': 18.2.7
@@ -795,10 +1105,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@radix-ui/react-context': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
@@ -819,10 +1133,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@types/react': 18.2.21
       react: 18.2.0
     dev: false
@@ -837,10 +1155,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@types/react': 18.2.21
       react: 18.2.0
     dev: false
@@ -855,10 +1177,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@types/react': 18.2.21
       react: 18.2.0
     dev: false
@@ -877,10 +1203,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
@@ -906,10 +1236,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@radix-ui/react-context': 1.0.1(@types/react@18.2.21)(react@18.2.0)
@@ -933,10 +1267,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@types/react': 18.2.21
       react: 18.2.0
     dev: false
@@ -955,10 +1293,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.2.21)(react@18.2.0)
@@ -978,16 +1320,23 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@types/react': 18.2.21
       react: 18.2.0
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /@radix-ui/react-label@2.0.2(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-N5ehvlM7qoTLx7nWPodsPYPgMzA5WM8zZChQg8nyFJKnDO5WHdba1vv5/H6IO5LtJMfD2Q3wh1qHFGNtK0w3bQ==}
     peerDependencies:
@@ -1001,7 +1350,11 @@ packages:
       '@types/react-dom':
         optional: true
     dependencies:
+<<<<<<< HEAD
       '@babel/runtime': 7.22.15
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
       '@types/react': 18.2.21
       '@types/react-dom': 18.2.7
@@ -1009,8 +1362,11 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /@radix-ui/react-menu@2.0.6(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-BVkFLS+bUC8HcImkRKPSiVumA1VPOOEC5WBMiT+QAVsPzW1FJzI9KnqgGxVDPBcql5xXrHkD3JOVoXWEXD8SYA==}
     peerDependencies:
@@ -1025,10 +1381,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
@@ -1067,10 +1427,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
@@ -1101,12 +1465,17 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
       '@floating-ui/react-dom': 2.0.8(react-dom@18.2.0)(react@18.2.0)
 =======
       '@babel/runtime': 7.22.15
       '@floating-ui/react-dom': 2.0.2(react-dom@18.2.0)(react@18.2.0)
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+      '@floating-ui/react-dom': 2.0.8(react-dom@18.2.0)(react@18.2.0)
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-arrow': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@radix-ui/react-context': 1.0.1(@types/react@18.2.21)(react@18.2.0)
@@ -1136,10 +1505,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
       '@types/react': 18.2.21
       '@types/react-dom': 18.2.7
@@ -1161,10 +1534,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@types/react': 18.2.21
@@ -1187,10 +1564,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-slot': 1.0.2(@types/react@18.2.21)(react@18.2.0)
       '@types/react': 18.2.21
       '@types/react-dom': 18.2.7
@@ -1212,10 +1593,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.2.7)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
@@ -1265,10 +1650,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@types/react': 18.2.21
       react: 18.2.0
@@ -1284,10 +1673,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@types/react': 18.2.21
       react: 18.2.0
     dev: false
@@ -1302,10 +1695,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@types/react': 18.2.21
       react: 18.2.0
@@ -1321,10 +1718,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@types/react': 18.2.21
       react: 18.2.0
@@ -1340,10 +1741,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@types/react': 18.2.21
       react: 18.2.0
     dev: false
@@ -1358,10 +1763,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/rect': 1.0.1
       '@types/react': 18.2.21
       react: 18.2.0
@@ -1377,10 +1786,14 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@babel/runtime': 7.23.9
 =======
       '@babel/runtime': 7.22.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.2.21)(react@18.2.0)
       '@types/react': 18.2.21
       react: 18.2.0
@@ -1389,6 +1802,7 @@ packages:
   /@radix-ui/rect@1.0.1:
     resolution: {integrity: sha512-fyrgCaedtvMg9NK3en0pnOYJdtfwxUcNolezkNPUsoX57X8oQk+NkqcvzHXD2uKNij6GXmWU9NDru2IWjrO4BQ==}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       '@babel/runtime': 7.23.9
     dev: false
@@ -1401,10 +1815,13 @@ packages:
     resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}
 =======
       '@babel/runtime': 7.22.15
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
-  /@rushstack/eslint-patch@1.4.0:
-    resolution: {integrity: sha512-cEjvTPU32OM9lUFegJagO0mRnIn+rbqrG89vV8/xLnLFX0DoR0r1oy5IlTga71Q7uT3Qus7qm7wgeiMT/+Irlg==}
+  /@rushstack/eslint-patch@1.7.2:
+    resolution: {integrity: sha512-RbhOOTCNoCrbfkRyoXODZp75MlpiHMgbE5MEBZAnnnLyQNgrigEj4p0lzsMDyc1zVsJDLrivB58tgg3emX0eEA==}
     dev: false
 
   /@swc/helpers@0.5.1:
@@ -1415,12 +1832,42 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /@types/cookie@0.6.0:
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
     dev: false
 
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+  /@testing-library/dom@9.3.4:
+    resolution: {integrity: sha512-FlS4ZWlp97iiNWig0Muq8p+3rVDjRiYE+YKGbAqXOu9nwJFFOdL00kFpz42M+4huzYi86vAK1sOOfyOG45muIQ==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@babel/code-frame': 7.23.5
+      '@babel/runtime': 7.23.9
+      '@types/aria-query': 5.0.4
+      aria-query: 5.1.3
+      chalk: 4.1.2
+      dom-accessibility-api: 0.5.16
+      lz-string: 1.5.0
+      pretty-format: 27.5.1
+    dev: false
+
+  /@testing-library/user-event@14.5.2(@testing-library/dom@9.3.4):
+    resolution: {integrity: sha512-YAh82Wh4TIrxYLmfGcixwD18oIjyC1pFQC2Y01F2lzV2HTMiYrI0nze0FD0ocB//CKS/7jIUgae+adPqxK5yCQ==}
+    engines: {node: '>=12', npm: '>=6'}
+    peerDependencies:
+      '@testing-library/dom': '>=7.21.4'
+    dependencies:
+      '@testing-library/dom': 9.3.4
+    dev: false
+
+  /@types/aria-query@5.0.4:
+    resolution: {integrity: sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==}
+    dev: false
+
+>>>>>>> b7cd091 (landing mobile version done)
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
@@ -1430,16 +1877,22 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /@types/parse-json@4.0.2:
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
     dev: false
 
   /@types/prop-types@15.7.11:
     resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
+<<<<<<< HEAD
 =======
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /@types/react-dom@18.2.7:
@@ -1449,12 +1902,16 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /@types/react-transition-group@4.4.10:
     resolution: {integrity: sha512-hT/+s0VQs2ojCX823m60m5f0sL5idt9SO6Tj6Dg+rdphGPIeJbJ6CxvBYkgkGKrYeDjvIpKTR38UzmtHJOGW3Q==}
     dependencies:
       '@types/react': 18.2.21
     dev: false
 
+<<<<<<< HEAD
   /@types/react@18.2.21:
     resolution: {integrity: sha512-neFKG/sBAwGxHgXiIxnbm3/AAVQ/cMRS93hvBpg8xYRbeQSPVABp9U2bRnPf0iI4+Ucdv3plSxKK+3CW2ENJxA==}
     dependencies:
@@ -1470,21 +1927,28 @@ packages:
   /@typescript-eslint/parser@6.21.0(eslint@8.49.0)(typescript@5.2.2):
     resolution: {integrity: sha512-tbsV1jPne5CkFQCgPBcDOt30ItF7aJoZL997JSF7MhGQqOeT3svWRYxiqlfA5RUdlHN6Fi+EI9bxqbdyAUZjYQ==}
 =======
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /@types/react@18.2.21:
     resolution: {integrity: sha512-neFKG/sBAwGxHgXiIxnbm3/AAVQ/cMRS93hvBpg8xYRbeQSPVABp9U2bRnPf0iI4+Ucdv3plSxKK+3CW2ENJxA==}
     dependencies:
-      '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.3
-      csstype: 3.1.2
+      '@types/prop-types': 15.7.11
+      '@types/scheduler': 0.16.8
+      csstype: 3.1.3
     dev: false
 
-  /@types/scheduler@0.16.3:
-    resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
+  /@types/scheduler@0.16.8:
+    resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==}
     dev: false
 
+<<<<<<< HEAD
   /@typescript-eslint/parser@6.7.0(eslint@8.49.0)(typescript@5.2.2):
     resolution: {integrity: sha512-jZKYwqNpNm5kzPVP5z1JXAuxjtl2uG+5NpaMocFPTNC2EdYIgbXIPImObOkhbONxtFTTdoZstLZefbaK+wXZng==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /@typescript-eslint/parser@6.21.0(eslint@8.49.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-tbsV1jPne5CkFQCgPBcDOt30ItF7aJoZL997JSF7MhGQqOeT3svWRYxiqlfA5RUdlHN6Fi+EI9bxqbdyAUZjYQ==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
@@ -1494,16 +1958,22 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
       '@typescript-eslint/scope-manager': 6.21.0
       '@typescript-eslint/types': 6.21.0
       '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.2.2)
       '@typescript-eslint/visitor-keys': 6.21.0
+<<<<<<< HEAD
 =======
       '@typescript-eslint/scope-manager': 6.7.0
       '@typescript-eslint/types': 6.7.0
       '@typescript-eslint/typescript-estree': 6.7.0(typescript@5.2.2)
       '@typescript-eslint/visitor-keys': 6.7.0
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
       debug: 4.3.4
       eslint: 8.49.0
       typescript: 5.2.2
@@ -1511,6 +1981,7 @@ packages:
       - supports-color
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /@typescript-eslint/scope-manager@6.21.0:
     resolution: {integrity: sha512-OwLUIWZJry80O99zvqXVEioyniJMa+d2GrqpUTqi5/v5D5rOrppJVBPa0yKCblcigC0/aYAzxxqQ1B+DS2RYsg==}
@@ -1530,20 +2001,29 @@ packages:
 =======
   /@typescript-eslint/scope-manager@6.7.0:
     resolution: {integrity: sha512-lAT1Uau20lQyjoLUQ5FUMSX/dS07qux9rYd5FGzKz/Kf8W8ccuvMyldb8hadHdK/qOI7aikvQWqulnEq2nCEYA==}
+=======
+  /@typescript-eslint/scope-manager@6.21.0:
+    resolution: {integrity: sha512-OwLUIWZJry80O99zvqXVEioyniJMa+d2GrqpUTqi5/v5D5rOrppJVBPa0yKCblcigC0/aYAzxxqQ1B+DS2RYsg==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: ^16.0.0 || >=18.0.0}
     dependencies:
-      '@typescript-eslint/types': 6.7.0
-      '@typescript-eslint/visitor-keys': 6.7.0
+      '@typescript-eslint/types': 6.21.0
+      '@typescript-eslint/visitor-keys': 6.21.0
     dev: false
 
-  /@typescript-eslint/types@6.7.0:
-    resolution: {integrity: sha512-ihPfvOp7pOcN/ysoj0RpBPOx3HQTJTrIN8UZK+WFd3/iDeFHHqeyYxa4hQk4rMhsz9H9mXpR61IzwlBVGXtl9Q==}
+  /@typescript-eslint/types@6.21.0:
+    resolution: {integrity: sha512-1kFmZ1rOm5epu9NZEZm1kckCDGj5UJEf7P1kliH4LKu/RkwpsfqqGmY2OOcUs18lSlQBKLDYBOGxRVtrMN5lpg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     dev: false
 
+<<<<<<< HEAD
   /@typescript-eslint/typescript-estree@6.7.0(typescript@5.2.2):
     resolution: {integrity: sha512-dPvkXj3n6e9yd/0LfojNU8VMUGHWiLuBZvbM6V6QYD+2qxqInE7J+J/ieY2iGwR9ivf/R/haWGkIj04WVUeiSQ==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /@typescript-eslint/typescript-estree@6.21.0(typescript@5.2.2):
+    resolution: {integrity: sha512-6npJTkZcO+y2/kr+z0hc4HwNfrrP4kNYh57ek7yCNlrBjWQ1Y0OS7jiZTkgumrvkX5HkEKXFZkkdFNkaW2wmUQ==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       typescript: '*'
@@ -1551,6 +2031,7 @@ packages:
       typescript:
         optional: true
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       '@typescript-eslint/types': 6.21.0
       '@typescript-eslint/visitor-keys': 6.21.0
@@ -1569,11 +2050,22 @@ packages:
       semver: 7.5.4
       ts-api-utils: 1.0.3(typescript@5.2.2)
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@typescript-eslint/types': 6.21.0
+      '@typescript-eslint/visitor-keys': 6.21.0
+      debug: 4.3.4
+      globby: 11.1.0
+      is-glob: 4.0.3
+      minimatch: 9.0.3
+      semver: 7.6.0
+      ts-api-utils: 1.2.1(typescript@5.2.2)
+>>>>>>> b7cd091 (landing mobile version done)
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /@typescript-eslint/visitor-keys@6.21.0:
     resolution: {integrity: sha512-JJtkDduxLi9bivAB+cYOVMtbkqdPOhZ+ZI5LC47MIRrDV4Yn2o+ZnW10Nkmr28xRpSpdJ6Sm42Hjf2+REYXm0A==}
@@ -1587,18 +2079,27 @@ packages:
 =======
   /@typescript-eslint/visitor-keys@6.7.0:
     resolution: {integrity: sha512-/C1RVgKFDmGMcVGeD8HjKv2bd72oI1KxQDeY8uc66gw9R0OK0eMq48cA+jv9/2Ag6cdrsUGySm1yzYmfz0hxwQ==}
+=======
+  /@typescript-eslint/visitor-keys@6.21.0:
+    resolution: {integrity: sha512-JJtkDduxLi9bivAB+cYOVMtbkqdPOhZ+ZI5LC47MIRrDV4Yn2o+ZnW10Nkmr28xRpSpdJ6Sm42Hjf2+REYXm0A==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: ^16.0.0 || >=18.0.0}
     dependencies:
-      '@typescript-eslint/types': 6.7.0
+      '@typescript-eslint/types': 6.21.0
       eslint-visitor-keys: 3.4.3
     dev: false
 
+<<<<<<< HEAD
   /acorn-jsx@5.3.2(acorn@8.10.0):
 >>>>>>> 495c20d (add carrousel)
+=======
+  /acorn-jsx@5.3.2(acorn@8.11.3):
+>>>>>>> b7cd091 (landing mobile version done)
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       acorn: 8.11.3
     dev: false
@@ -1612,6 +2113,13 @@ packages:
   /acorn@8.10.0:
     resolution: {integrity: sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==}
 >>>>>>> 495c20d (add carrousel)
+=======
+      acorn: 8.11.3
+    dev: false
+
+  /acorn@8.11.3:
+    resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: false
@@ -1631,6 +2139,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /ansi-regex@6.0.1:
     resolution: {integrity: sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==}
     engines: {node: '>=12'}
@@ -1643,8 +2154,11 @@ packages:
       color-convert: 1.9.3
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /ansi-styles@4.3.0:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
     engines: {node: '>=8'}
@@ -1653,6 +2167,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /ansi-styles@5.2.0:
     resolution: {integrity: sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==}
     engines: {node: '>=10'}
@@ -1663,8 +2180,11 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /any-promise@1.3.0:
     resolution: {integrity: sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==}
     dev: false
@@ -1693,20 +2213,27 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /aria-query@5.1.3:
     resolution: {integrity: sha512-R5iJ5lkuHybztUfuOAznmboyjWq8O6sqNqtK7CLOqdydi54VNbORp49mb14KbWgG1QD3JFO9hJdZ+y4KutfdOQ==}
     dependencies:
       deep-equal: 2.2.3
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /aria-query@5.3.0:
     resolution: {integrity: sha512-b0P0sZPKtyu8HkeRAfCq0IfURZK+SuwMjY1UXGBU27wpAiTwQAIlq56IbIO+ytk/JjS1fMR14ee5WBBfKi5J6A==}
     dependencies:
       dequal: 2.0.3
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /array-buffer-byte-length@1.0.1:
     resolution: {integrity: sha512-ahC5W1xgou+KTXix4sAO8Ki12Q+jf4i0+tmk3sC+zgcynshkHxzpXdImBehiUYKKKDwvfFiJl1tZt6ewscS1Mg==}
@@ -1721,12 +2248,21 @@ packages:
       call-bind: 1.0.2
       is-array-buffer: 3.0.2
 >>>>>>> 495c20d (add carrousel)
+=======
+  /array-buffer-byte-length@1.0.1:
+    resolution: {integrity: sha512-ahC5W1xgou+KTXix4sAO8Ki12Q+jf4i0+tmk3sC+zgcynshkHxzpXdImBehiUYKKKDwvfFiJl1tZt6ewscS1Mg==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.7
+      is-array-buffer: 3.0.4
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /array-includes@3.1.7:
     resolution: {integrity: sha512-dlcsNBIiWhPkHdOEEKnehA+RNUWDc4UqFtnIXU4uuYDPtA4LDkr7qip2p0VvFAEXNDr0yWZ9PJyIRiGjRLQzwQ==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       call-bind: 1.0.7
       define-properties: 1.2.1
@@ -1738,6 +2274,12 @@ packages:
       es-abstract: 1.22.2
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+      get-intrinsic: 1.2.4
+>>>>>>> b7cd091 (landing mobile version done)
       is-string: 1.0.7
     dev: false
 
@@ -1746,6 +2288,7 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /array.prototype.filter@1.0.3:
     resolution: {integrity: sha512-VizNcj/RGJiUyQBgzwxzE5oHdeuXY5hSbbmKMlphj1cy1Vl7Pn2asCGbSrru6hSQjmCzqTBPVWAF/whmEOVHbw==}
@@ -1770,20 +2313,42 @@ packages:
 =======
   /array.prototype.findlastindex@1.2.3:
     resolution: {integrity: sha512-LzLoiOMAxvy+Gd3BAq3B7VeIgPdo+Q8hthvKtXybMvRV0jrXfJM/t8mw7nNlpEcVlVUnCnM2KSX4XU5HmpodOA==}
+=======
+  /array.prototype.filter@1.0.3:
+    resolution: {integrity: sha512-VizNcj/RGJiUyQBgzwxzE5oHdeuXY5hSbbmKMlphj1cy1Vl7Pn2asCGbSrru6hSQjmCzqTBPVWAF/whmEOVHbw==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
       define-properties: 1.2.1
+<<<<<<< HEAD
       es-abstract: 1.22.2
       es-shim-unscopables: 1.0.0
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+      es-abstract: 1.22.4
+      es-array-method-boxes-properly: 1.0.0
+      is-string: 1.0.7
+    dev: false
+
+  /array.prototype.findlastindex@1.2.4:
+    resolution: {integrity: sha512-hzvSHUshSpCflDR1QMUBLHGHP1VIEBegT4pix9H/Z92Xw3ySoy6c2qh7lJWTJnRJ8JCZ9bJNCgTyYaJGcJu6xQ==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+      es-errors: 1.3.0
+      es-shim-unscopables: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /array.prototype.flat@1.3.2:
     resolution: {integrity: sha512-djYB+Zx2vLewY8RWlNCUdHjDXs2XOgm602S9E7P/UpHgfeHL00cRiIF+IN/G/aUJ7kGPb6yO/ErDI5V2s8iycA==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       call-bind: 1.0.7
       define-properties: 1.2.1
@@ -1795,12 +2360,19 @@ packages:
       es-abstract: 1.22.2
       es-shim-unscopables: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+      es-shim-unscopables: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /array.prototype.flatmap@1.3.2:
     resolution: {integrity: sha512-Ewyx0c9PmpcsByhSW4r+9zDU7sGjFc86qf/kKtuSCRdhfbk0SNLLkaT5qvcHnRGgc5NP/ly/y+qkXkqONX54CQ==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       call-bind: 1.0.7
       define-properties: 1.2.1
@@ -1836,37 +2408,46 @@ packages:
     resolution: {integrity: sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ==}
 =======
       call-bind: 1.0.2
+=======
+      call-bind: 1.0.7
+>>>>>>> b7cd091 (landing mobile version done)
       define-properties: 1.2.1
-      es-abstract: 1.22.2
-      es-shim-unscopables: 1.0.0
+      es-abstract: 1.22.4
+      es-shim-unscopables: 1.0.2
     dev: false
 
-  /array.prototype.tosorted@1.1.2:
-    resolution: {integrity: sha512-HuQCHOlk1Weat5jzStICBCd83NxiIMwqDg/dHEsoefabn/hJRj5pVdWcPUSpRrwhwxZOsQassMpgN/xRYFBMIg==}
+  /array.prototype.tosorted@1.1.3:
+    resolution: {integrity: sha512-/DdH4TiTmOKzyQbp/eadcCVexiCb36xJg7HshYOYJnNZFDj33GEv0P7GxsynpShhq4OLYJzbGcBDkLsDt7MnNg==}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
       define-properties: 1.2.1
-      es-abstract: 1.22.2
-      es-shim-unscopables: 1.0.0
-      get-intrinsic: 1.2.1
+      es-abstract: 1.22.4
+      es-errors: 1.3.0
+      es-shim-unscopables: 1.0.2
     dev: false
 
-  /arraybuffer.prototype.slice@1.0.2:
-    resolution: {integrity: sha512-yMBKppFur/fbHu9/6USUe03bZ4knMYiwFBcyiaXB8Go0qNehwX6inYPzK9U0NeQvGxKthcmHcaR8P5MStSRBAw==}
+  /arraybuffer.prototype.slice@1.0.3:
+    resolution: {integrity: sha512-bMxMKAjg13EBSVscxTaYA4mRc5t1UAXa2kXiGTNfZ079HIWXEkKmkgFrh/nJqamaLSrXO5H4WFFkPEaLJWbs3A==}
     engines: {node: '>= 0.4'}
     dependencies:
-      array-buffer-byte-length: 1.0.0
-      call-bind: 1.0.2
+      array-buffer-byte-length: 1.0.1
+      call-bind: 1.0.7
       define-properties: 1.2.1
-      es-abstract: 1.22.2
-      get-intrinsic: 1.2.1
-      is-array-buffer: 3.0.2
+      es-abstract: 1.22.4
+      es-errors: 1.3.0
+      get-intrinsic: 1.2.4
+      is-array-buffer: 3.0.4
       is-shared-array-buffer: 1.0.2
     dev: false
 
+<<<<<<< HEAD
   /ast-types-flow@0.0.7:
     resolution: {integrity: sha512-eBvWn1lvIApYMhzQMsu9ciLfkBY499mFZlNqG+/9WR7PVlroQw0vG30cOQQbaKz3sCEc44TAOu2ykzqXSNnwag==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /ast-types-flow@0.0.8:
+    resolution: {integrity: sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ==}
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /asynciterator.prototype@1.0.0:
@@ -1890,6 +2471,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       browserslist: 4.23.0
       caniuse-lite: 1.0.30001587
       fraction.js: 4.3.7
@@ -1898,12 +2480,18 @@ packages:
       caniuse-lite: 1.0.30001534
       fraction.js: 4.3.6
 >>>>>>> 495c20d (add carrousel)
+=======
+      browserslist: 4.23.0
+      caniuse-lite: 1.0.30001587
+      fraction.js: 4.3.7
+>>>>>>> b7cd091 (landing mobile version done)
       normalize-range: 0.1.2
       picocolors: 1.0.0
       postcss: 8.4.29
       postcss-value-parser: 4.2.0
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /available-typed-arrays@1.0.6:
     resolution: {integrity: sha512-j1QzY8iPNPG4o4xmO3ptzpRxTciqD3MgEHtifP/YnJpIo58Xu+ne4BejlbkuaLfXn/nz6HFiw29bLpj2PNMdGg==}
@@ -1928,11 +2516,15 @@ packages:
 =======
   /available-typed-arrays@1.0.5:
     resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}
+=======
+  /available-typed-arrays@1.0.6:
+    resolution: {integrity: sha512-j1QzY8iPNPG4o4xmO3ptzpRxTciqD3MgEHtifP/YnJpIo58Xu+ne4BejlbkuaLfXn/nz6HFiw29bLpj2PNMdGg==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 0.4'}
     dev: false
 
-  /axe-core@4.8.1:
-    resolution: {integrity: sha512-9l850jDDPnKq48nbad8SiEelCv4OrUWrKab/cPj0GScVg6cb6NbCCt/Ulk26QEq5jP9NnGr04Bit1BHyV6r5CQ==}
+  /axe-core@4.7.0:
+    resolution: {integrity: sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==}
     engines: {node: '>=4'}
     dev: false
 
@@ -1944,6 +2536,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /babel-plugin-macros@3.1.0:
     resolution: {integrity: sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==}
     engines: {node: '>=10', npm: '>=6'}
@@ -1953,8 +2548,11 @@ packages:
       resolve: 1.22.8
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: false
@@ -1972,14 +2570,20 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
     dependencies:
       balanced-match: 1.0.2
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /braces@3.0.2:
     resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
     engines: {node: '>=8'}
@@ -1987,6 +2591,7 @@ packages:
       fill-range: 7.0.1
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /browserslist@4.23.0:
     resolution: {integrity: sha512-QW8HiM1shhT2GuzkvklfjcKDiWFXHOeFCIA/huJPwHsslwcydgk7X+z2zXpEijP98UCY7HbubZt5J2Zgvf0CaQ==}
@@ -2008,6 +2613,17 @@ packages:
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
 >>>>>>> 495c20d (add carrousel)
+=======
+  /browserslist@4.23.0:
+    resolution: {integrity: sha512-QW8HiM1shhT2GuzkvklfjcKDiWFXHOeFCIA/huJPwHsslwcydgk7X+z2zXpEijP98UCY7HbubZt5J2Zgvf0CaQ==}
+    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
+    hasBin: true
+    dependencies:
+      caniuse-lite: 1.0.30001587
+      electron-to-chromium: 1.4.672
+      node-releases: 2.0.14
+      update-browserslist-db: 1.0.13(browserslist@4.23.0)
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /busboy@1.6.0:
@@ -2017,6 +2633,7 @@ packages:
       streamsearch: 1.1.0
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /call-bind@1.0.7:
     resolution: {integrity: sha512-GHTSNSYICQ7scH7sZ+M2rFopRoLh8t2bLSW6BbgrtLsahOIB5iyAVJf9GjWK3cYTDaMj4XdBpM1cA6pIS0Kv2w==}
@@ -2034,6 +2651,17 @@ packages:
       function-bind: 1.1.1
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+  /call-bind@1.0.7:
+    resolution: {integrity: sha512-GHTSNSYICQ7scH7sZ+M2rFopRoLh8t2bLSW6BbgrtLsahOIB5iyAVJf9GjWK3cYTDaMj4XdBpM1cA6pIS0Kv2w==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      es-define-property: 1.0.0
+      es-errors: 1.3.0
+      function-bind: 1.1.2
+      get-intrinsic: 1.2.4
+      set-function-length: 1.2.1
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /callsites@3.1.0:
@@ -2047,6 +2675,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /caniuse-lite@1.0.30001587:
     resolution: {integrity: sha512-HMFNotUmLXn71BQxg8cijvqxnIAofforZOwGsxyXJ0qugTdspUF4sPSJ2vhgprHCB996tIDzEq1ubumPDV8ULA==}
     dev: false
@@ -2058,6 +2689,7 @@ packages:
       ansi-styles: 3.2.1
       escape-string-regexp: 1.0.5
       supports-color: 5.5.0
+<<<<<<< HEAD
     dev: false
 
   /caniuse-lite@1.0.30001585:
@@ -2066,6 +2698,8 @@ packages:
   /caniuse-lite@1.0.30001534:
     resolution: {integrity: sha512-vlPVrhsCS7XaSh2VvWluIQEzVhefrUQcEsQWSS5A5V+dM07uv1qHeQzAOTGIMy9i3e9bH15+muvI/UHojVgS/Q==}
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /chalk@4.1.2:
@@ -2077,12 +2711,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
 =======
   /chokidar@3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /chokidar@3.6.0:
+    resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 8.10.0'}
     dependencies:
       anymatch: 3.1.3
@@ -2103,12 +2742,18 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /classnames@2.5.1:
     resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
     dev: false
@@ -2119,6 +2764,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /clsx@2.1.0:
     resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
@@ -2130,8 +2778,11 @@ packages:
       color-name: 1.1.3
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -2140,12 +2791,18 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /color-name@1.1.3:
     resolution: {integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: false
@@ -2170,6 +2827,7 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /cookie@0.6.0:
     resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
     engines: {node: '>= 0.6'}
@@ -2177,6 +2835,23 @@ packages:
 
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+  /convert-source-map@1.9.0:
+    resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
+    dev: false
+
+  /cosmiconfig@7.1.0:
+    resolution: {integrity: sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@types/parse-json': 4.0.2
+      import-fresh: 3.3.0
+      parse-json: 5.2.0
+      path-type: 4.0.0
+      yaml: 1.10.2
+    dev: false
+
+>>>>>>> b7cd091 (landing mobile version done)
   /cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
@@ -2193,12 +2868,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 =======
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /csstype@3.1.3:
+    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /damerau-levenshtein@1.0.8:
@@ -2229,6 +2909,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /deep-equal@2.2.3:
     resolution: {integrity: sha512-ZIwpnevOurS8bpT4192sqAowWM76JDKSHYzMLty3BZGSswgq6pBaH3DhCSW5xVAZICZyKdOBPjwww5wfgT/6PA==}
     engines: {node: '>= 0.4'}
@@ -2253,12 +2936,16 @@ packages:
       which-typed-array: 1.1.14
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /define-data-property@1.1.4:
     resolution: {integrity: sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==}
@@ -2270,18 +2957,27 @@ packages:
 =======
   /define-data-property@1.1.0:
     resolution: {integrity: sha512-UzGwzcjyv3OtAvolTj1GoyNYzfFR+iqbGjcnBEENZVCpM4/Ng1yhGNvS3lR/xDS74Tb2wGG9WzNSNIOS9UVb2g==}
+=======
+  /define-data-property@1.1.4:
+    resolution: {integrity: sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 0.4'}
     dependencies:
-      get-intrinsic: 1.2.1
+      es-define-property: 1.0.0
+      es-errors: 1.3.0
       gopd: 1.0.1
+<<<<<<< HEAD
       has-property-descriptors: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /define-properties@1.2.1:
     resolution: {integrity: sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       define-data-property: 1.1.4
       has-property-descriptors: 1.0.2
@@ -2296,6 +2992,10 @@ packages:
 =======
       define-data-property: 1.1.0
       has-property-descriptors: 1.0.0
+=======
+      define-data-property: 1.1.4
+      has-property-descriptors: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
       object-keys: 1.1.1
     dev: false
 
@@ -2339,6 +3039,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /dom-accessibility-api@0.5.16:
     resolution: {integrity: sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==}
     dev: false
@@ -2360,10 +3063,13 @@ packages:
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+<<<<<<< HEAD
 =======
   /electron-to-chromium@1.4.522:
     resolution: {integrity: sha512-KGKjcafTpOxda0kqwQ72M0tDmX6RsGhUJTy0Hr7slt0+CgHh9Oex8JdjY9Og68dUkTLUlBOJC0A5W5Mw3QSGCg==}
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /emoji-regex@9.2.2:
@@ -2379,6 +3085,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /enquire.js@2.1.6:
     resolution: {integrity: sha512-/KujNpO+PT63F7Hlpu4h3pE3TokKRHN26JYmQpPyjkRD/N57R7bPDNojMXdi7uveAKjYB7yQnartCxZnFWr0Xw==}
     dev: false
@@ -2391,6 +3100,7 @@ packages:
 
   /es-abstract@1.22.4:
     resolution: {integrity: sha512-vZYJlk2u6qHYxBOTjAeg7qUxHdNfih64Uu2J8QqWgXZ2cri0ZpJAkzDUK/q593+mvKwlxyaxr6F1Q+3LKoQRgg==}
+<<<<<<< HEAD
     engines: {node: '>= 0.4'}
     dependencies:
       array-buffer-byte-length: 1.0.1
@@ -2415,31 +3125,41 @@ packages:
 =======
   /es-abstract@1.22.2:
     resolution: {integrity: sha512-YoxfFcDmhjOgWPWsV13+2RNjq1F6UQnfs+8TftwNqtzlmFzEXvlUwdrNrYeaizfjQzRMxkZ6ElWMOJIFKdVqwA==}
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 0.4'}
     dependencies:
-      array-buffer-byte-length: 1.0.0
-      arraybuffer.prototype.slice: 1.0.2
-      available-typed-arrays: 1.0.5
-      call-bind: 1.0.2
-      es-set-tostringtag: 2.0.1
+      array-buffer-byte-length: 1.0.1
+      arraybuffer.prototype.slice: 1.0.3
+      available-typed-arrays: 1.0.6
+      call-bind: 1.0.7
+      es-define-property: 1.0.0
+      es-errors: 1.3.0
+      es-set-tostringtag: 2.0.2
       es-to-primitive: 1.2.1
       function.prototype.name: 1.1.6
-      get-intrinsic: 1.2.1
-      get-symbol-description: 1.0.0
+      get-intrinsic: 1.2.4
+      get-symbol-description: 1.0.2
       globalthis: 1.0.3
       gopd: 1.0.1
-      has: 1.0.3
-      has-property-descriptors: 1.0.0
+      has-property-descriptors: 1.0.2
       has-proto: 1.0.1
       has-symbols: 1.0.3
+<<<<<<< HEAD
       internal-slot: 1.0.5
       is-array-buffer: 3.0.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      hasown: 2.0.1
+      internal-slot: 1.0.7
+      is-array-buffer: 3.0.4
+>>>>>>> b7cd091 (landing mobile version done)
       is-callable: 1.2.7
       is-negative-zero: 2.0.2
       is-regex: 1.1.4
       is-shared-array-buffer: 1.0.2
       is-string: 1.0.7
+<<<<<<< HEAD
 <<<<<<< HEAD
       is-typed-array: 1.1.13
       is-weakref: 1.0.2
@@ -2455,22 +3175,30 @@ packages:
       typed-array-buffer: 1.0.1
 =======
       is-typed-array: 1.1.12
+=======
+      is-typed-array: 1.1.13
+>>>>>>> b7cd091 (landing mobile version done)
       is-weakref: 1.0.2
-      object-inspect: 1.12.3
+      object-inspect: 1.13.1
       object-keys: 1.1.1
-      object.assign: 4.1.4
-      regexp.prototype.flags: 1.5.1
-      safe-array-concat: 1.0.1
-      safe-regex-test: 1.0.0
+      object.assign: 4.1.5
+      regexp.prototype.flags: 1.5.2
+      safe-array-concat: 1.1.0
+      safe-regex-test: 1.0.3
       string.prototype.trim: 1.2.8
       string.prototype.trimend: 1.0.7
       string.prototype.trimstart: 1.0.7
+<<<<<<< HEAD
       typed-array-buffer: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      typed-array-buffer: 1.0.1
+>>>>>>> b7cd091 (landing mobile version done)
       typed-array-byte-length: 1.0.0
       typed-array-byte-offset: 1.0.0
       typed-array-length: 1.0.4
       unbox-primitive: 1.0.2
+<<<<<<< HEAD
 <<<<<<< HEAD
       which-typed-array: 1.1.14
     dev: false
@@ -2541,41 +3269,80 @@ packages:
       hasown: 2.0.1
 =======
       which-typed-array: 1.1.11
+=======
+      which-typed-array: 1.1.14
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
-  /es-iterator-helpers@1.0.15:
-    resolution: {integrity: sha512-GhoY8uYqd6iwUl2kgjTm4CZAf6oo5mHK7BPqx3rKgx893YSsy0LGHV6gfqqQvZt/8xM8xeOnfXBCfqclMKkJ5g==}
-    dependencies:
-      asynciterator.prototype: 1.0.0
-      call-bind: 1.0.2
-      define-properties: 1.2.1
-      es-abstract: 1.22.2
-      es-set-tostringtag: 2.0.1
-      function-bind: 1.1.1
-      get-intrinsic: 1.2.1
-      globalthis: 1.0.3
-      has-property-descriptors: 1.0.0
-      has-proto: 1.0.1
-      has-symbols: 1.0.3
-      internal-slot: 1.0.5
-      iterator.prototype: 1.1.2
-      safe-array-concat: 1.0.1
+  /es-array-method-boxes-properly@1.0.0:
+    resolution: {integrity: sha512-wd6JXUmyHmt8T5a2xreUwKcGPq6f1f+WwIJkijUqiGcJz1qqnZgP6XIK+QyIWU5lT7imeNxUll48bziG+TSYcA==}
     dev: false
 
-  /es-set-tostringtag@2.0.1:
-    resolution: {integrity: sha512-g3OMbtlwY3QewlqAiMLI47KywjWZoEytKr8pf6iTC8uJq5bIAH52Z9pnQ8pVL6whrCto53JZDuUIsifGeLorTg==}
+  /es-define-property@1.0.0:
+    resolution: {integrity: sha512-jxayLKShrEqqzJ0eumQbVhTYQM27CfT1T35+gCgDFoL82JLsXqTJ76zv6A0YLOgEnLUMvLzsDsGIrl8NFpT2gQ==}
     engines: {node: '>= 0.4'}
     dependencies:
-      get-intrinsic: 1.2.1
-      has: 1.0.3
-      has-tostringtag: 1.0.0
+      get-intrinsic: 1.2.4
     dev: false
 
-  /es-shim-unscopables@1.0.0:
-    resolution: {integrity: sha512-Jm6GPcCdC30eMLbZ2x8z2WuRwAws3zTBBKuusffYVUrNj/GVSUAZ+xKMaUpfNDR5IbyNA5LJbaecoUVbmUcB1w==}
+  /es-errors@1.3.0:
+    resolution: {integrity: sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==}
+    engines: {node: '>= 0.4'}
+    dev: false
+
+  /es-get-iterator@1.1.3:
+    resolution: {integrity: sha512-sPZmqHBe6JIiTfN5q2pEi//TwxmAFHwj/XEuYjTuse78i8KxaqMTTzxPoFKuzRpDpTJ+0NAbpfenkmH2rePtuw==}
     dependencies:
+<<<<<<< HEAD
       has: 1.0.3
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      get-intrinsic: 1.2.4
+      has-symbols: 1.0.3
+      is-arguments: 1.1.1
+      is-map: 2.0.2
+      is-set: 2.0.2
+      is-string: 1.0.7
+      isarray: 2.0.5
+      stop-iteration-iterator: 1.0.0
+    dev: false
+
+  /es-iterator-helpers@1.0.17:
+    resolution: {integrity: sha512-lh7BsUqelv4KUbR5a/ZTaGGIMLCjPGPqJ6q+Oq24YP0RdyptX1uzm4vvaqzk7Zx3bpl/76YLTTDj9L7uYQ92oQ==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      asynciterator.prototype: 1.0.0
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+      es-errors: 1.3.0
+      es-set-tostringtag: 2.0.2
+      function-bind: 1.1.2
+      get-intrinsic: 1.2.4
+      globalthis: 1.0.3
+      has-property-descriptors: 1.0.2
+      has-proto: 1.0.1
+      has-symbols: 1.0.3
+      internal-slot: 1.0.7
+      iterator.prototype: 1.1.2
+      safe-array-concat: 1.1.0
+    dev: false
+
+  /es-set-tostringtag@2.0.2:
+    resolution: {integrity: sha512-BuDyupZt65P9D2D2vA/zqcI3G5xRsklm5N3xCwuiy+/vKy8i0ifdsQP1sLgO4tZDSCaQUSnmC48khknGMV3D2Q==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      get-intrinsic: 1.2.4
+      has-tostringtag: 1.0.2
+      hasown: 2.0.1
+    dev: false
+
+  /es-shim-unscopables@1.0.2:
+    resolution: {integrity: sha512-J3yBRXCzDu4ULnQwxyToo/OjdMx6akgVC7K6few0a7F/0wLtmKKN7I73AH5T2836UuXRqN7Qg+IIUw/+YJksRw==}
+    dependencies:
+      hasown: 2.0.1
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /es-to-primitive@1.2.1:
@@ -2587,6 +3354,7 @@ packages:
       is-symbol: 1.0.4
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /escalade@3.1.2:
     resolution: {integrity: sha512-ErCHMCae19vR8vQGe50xIsVomy19rg6gFu3+r3jkEO46suLMWBksvVyoGgQV+jOfl84ZSOSlmv6Gxa89PmTGmA==}
@@ -2605,6 +3373,18 @@ packages:
     dev: false
 
 >>>>>>> 495c20d (add carrousel)
+=======
+  /escalade@3.1.2:
+    resolution: {integrity: sha512-ErCHMCae19vR8vQGe50xIsVomy19rg6gFu3+r3jkEO46suLMWBksvVyoGgQV+jOfl84ZSOSlmv6Gxa89PmTGmA==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /escape-string-regexp@1.0.5:
+    resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
+    engines: {node: '>=0.8.0'}
+    dev: false
+
+>>>>>>> b7cd091 (landing mobile version done)
   /escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
@@ -2620,6 +3400,7 @@ packages:
         optional: true
     dependencies:
       '@next/eslint-plugin-next': 13.4.19
+<<<<<<< HEAD
 <<<<<<< HEAD
       '@rushstack/eslint-patch': 1.7.2
       '@typescript-eslint/parser': 6.21.0(eslint@8.49.0)(typescript@5.2.2)
@@ -2637,6 +3418,15 @@ packages:
       eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-typescript@3.6.0)(eslint@8.49.0)
       eslint-plugin-jsx-a11y: 6.7.1(eslint@8.49.0)
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@rushstack/eslint-patch': 1.7.2
+      '@typescript-eslint/parser': 6.21.0(eslint@8.49.0)(typescript@5.2.2)
+      eslint: 8.49.0
+      eslint-import-resolver-node: 0.3.9
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.49.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.49.0)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.49.0)
+>>>>>>> b7cd091 (landing mobile version done)
       eslint-plugin-react: 7.33.2(eslint@8.49.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.49.0)
       typescript: 5.2.2
@@ -2650,16 +3440,22 @@ packages:
     dependencies:
       debug: 3.2.7
 <<<<<<< HEAD
+<<<<<<< HEAD
       is-core-module: 2.13.1
       resolve: 1.22.8
 =======
       is-core-module: 2.13.0
       resolve: 1.22.5
 >>>>>>> 495c20d (add carrousel)
+=======
+      is-core-module: 2.13.1
+      resolve: 1.22.8
+>>>>>>> b7cd091 (landing mobile version done)
     transitivePeerDependencies:
       - supports-color
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.49.0):
     resolution: {integrity: sha512-xgdptdoi5W3niYeuQxKmzVDTATvLYqhpwmykwsh7f6HIOStGWEIL9iqZgQDF9u9OEzrRwR8no5q2VT+bjAujTg==}
@@ -2667,6 +3463,10 @@ packages:
   /eslint-import-resolver-typescript@3.6.0(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.28.1)(eslint@8.49.0):
     resolution: {integrity: sha512-QTHR9ddNnn35RTxlaEnx2gCxqFlF2SEN0SE2d17SqwyM7YOSI2GHWRYp5BiRkObTUNYPupC/3Fq2a0PpT+EKpg==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.49.0):
+    resolution: {integrity: sha512-xgdptdoi5W3niYeuQxKmzVDTATvLYqhpwmykwsh7f6HIOStGWEIL9iqZgQDF9u9OEzrRwR8no5q2VT+bjAujTg==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '*'
@@ -2676,11 +3476,15 @@ packages:
       enhanced-resolve: 5.15.0
       eslint: 8.49.0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
       eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.49.0)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.49.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.2
       is-core-module: 2.13.1
+<<<<<<< HEAD
 =======
       eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.0)(eslint@8.49.0)
       eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-typescript@3.6.0)(eslint@8.49.0)
@@ -2688,6 +3492,8 @@ packages:
       get-tsconfig: 4.7.0
       is-core-module: 2.13.0
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
       is-glob: 4.0.3
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
@@ -2697,10 +3503,14 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /eslint-module-utils@2.8.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.49.0):
 =======
   /eslint-module-utils@2.8.0(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.0)(eslint@8.49.0):
 >>>>>>> 495c20d (add carrousel)
+=======
+  /eslint-module-utils@2.8.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.49.0):
+>>>>>>> b7cd091 (landing mobile version done)
     resolution: {integrity: sha512-aWajIYfsqCKRDgUfjEXNN/JlrzauMuSEy5sbd7WXbtW3EH6A6MpwEh42c7qD+MqQo9QMJ6fWLAeIJynx0g6OAw==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2722,6 +3532,7 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@typescript-eslint/parser': 6.21.0(eslint@8.49.0)(typescript@5.2.2)
       debug: 3.2.7
       eslint: 8.49.0
@@ -2734,10 +3545,18 @@ packages:
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.0(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.28.1)(eslint@8.49.0)
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@typescript-eslint/parser': 6.21.0(eslint@8.49.0)(typescript@5.2.2)
+      debug: 3.2.7
+      eslint: 8.49.0
+      eslint-import-resolver-node: 0.3.9
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.49.0)
+>>>>>>> b7cd091 (landing mobile version done)
     transitivePeerDependencies:
       - supports-color
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.49.0):
     resolution: {integrity: sha512-BbPC0cuExzhiMo4Ff1BTVwHpjjv28C5R+btTOGaCRC7UEz801up0JadwkeSk5Ued6TG34uaczuVuH6qyy5YUxw==}
@@ -2745,6 +3564,10 @@ packages:
   /eslint-plugin-import@2.28.1(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-typescript@3.6.0)(eslint@8.49.0):
     resolution: {integrity: sha512-9I9hFlITvOV55alzoKBI+K9q74kv0iKMeY6av5+umsNwayt59fz692daGyjR+oStBQgx6nwR9rXldDev3Clw+A==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.49.0):
+    resolution: {integrity: sha512-BbPC0cuExzhiMo4Ff1BTVwHpjjv28C5R+btTOGaCRC7UEz801up0JadwkeSk5Ued6TG34uaczuVuH6qyy5YUxw==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=4'}
     peerDependencies:
       '@typescript-eslint/parser': '*'
@@ -2754,6 +3577,7 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@typescript-eslint/parser': 6.21.0(eslint@8.49.0)(typescript@5.2.2)
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.4
@@ -2762,12 +3586,18 @@ packages:
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.3
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@typescript-eslint/parser': 6.21.0(eslint@8.49.0)(typescript@5.2.2)
+      array-includes: 3.1.7
+      array.prototype.findlastindex: 1.2.4
+>>>>>>> b7cd091 (landing mobile version done)
       array.prototype.flat: 1.3.2
       array.prototype.flatmap: 1.3.2
       debug: 3.2.7
       doctrine: 2.1.0
       eslint: 8.49.0
       eslint-import-resolver-node: 0.3.9
+<<<<<<< HEAD
 <<<<<<< HEAD
       eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.49.0)
       hasown: 2.0.1
@@ -2783,14 +3613,23 @@ packages:
       eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.0)(eslint@8.49.0)
       has: 1.0.3
       is-core-module: 2.13.0
+=======
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.49.0)
+      hasown: 2.0.1
+      is-core-module: 2.13.1
+>>>>>>> b7cd091 (landing mobile version done)
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.fromentries: 2.0.7
-      object.groupby: 1.0.1
+      object.groupby: 1.0.2
       object.values: 1.1.7
       semver: 6.3.1
+<<<<<<< HEAD
       tsconfig-paths: 3.14.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      tsconfig-paths: 3.15.0
+>>>>>>> b7cd091 (landing mobile version done)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -2798,16 +3637,22 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /eslint-plugin-jsx-a11y@6.8.0(eslint@8.49.0):
     resolution: {integrity: sha512-Hdh937BS3KdwwbBaKd5+PLCOmYY6U4f2h9Z2ktwtNKvIdIEu137rjYbcb9ApSbVJfWxANNuiKTD/9tOKjK9qOA==}
 =======
   /eslint-plugin-jsx-a11y@6.7.1(eslint@8.49.0):
     resolution: {integrity: sha512-63Bog4iIethyo8smBklORknVjB0T2dwB8Mr/hIC+fBS0uyHdYYpzM/Ed+YC8VxTjlXHEWFOdmgwcDn1U2L9VCA==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /eslint-plugin-jsx-a11y@6.8.0(eslint@8.49.0):
+    resolution: {integrity: sha512-Hdh937BS3KdwwbBaKd5+PLCOmYY6U4f2h9Z2ktwtNKvIdIEu137rjYbcb9ApSbVJfWxANNuiKTD/9tOKjK9qOA==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=4.0'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       '@babel/runtime': 7.23.9
       aria-query: 5.3.0
@@ -2828,23 +3673,30 @@ packages:
       object.fromentries: 2.0.7
 =======
       '@babel/runtime': 7.22.15
+=======
+      '@babel/runtime': 7.23.9
+>>>>>>> b7cd091 (landing mobile version done)
       aria-query: 5.3.0
       array-includes: 3.1.7
       array.prototype.flatmap: 1.3.2
-      ast-types-flow: 0.0.7
-      axe-core: 4.8.1
+      ast-types-flow: 0.0.8
+      axe-core: 4.7.0
       axobject-query: 3.2.1
       damerau-levenshtein: 1.0.8
       emoji-regex: 9.2.2
+      es-iterator-helpers: 1.0.17
       eslint: 8.49.0
-      has: 1.0.3
+      hasown: 2.0.1
       jsx-ast-utils: 3.3.5
-      language-tags: 1.0.5
+      language-tags: 1.0.9
       minimatch: 3.1.2
       object.entries: 1.1.7
       object.fromentries: 2.0.7
+<<<<<<< HEAD
       semver: 6.3.1
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /eslint-plugin-react-hooks@4.6.0(eslint@8.49.0):
@@ -2865,6 +3717,7 @@ packages:
       array-includes: 3.1.7
       array.prototype.flatmap: 1.3.2
 <<<<<<< HEAD
+<<<<<<< HEAD
       array.prototype.tosorted: 1.1.3
       doctrine: 2.1.0
       es-iterator-helpers: 1.0.17
@@ -2873,6 +3726,11 @@ packages:
       doctrine: 2.1.0
       es-iterator-helpers: 1.0.15
 >>>>>>> 495c20d (add carrousel)
+=======
+      array.prototype.tosorted: 1.1.3
+      doctrine: 2.1.0
+      es-iterator-helpers: 1.0.17
+>>>>>>> b7cd091 (landing mobile version done)
       eslint: 8.49.0
       estraverse: 5.3.0
       jsx-ast-utils: 3.3.5
@@ -2883,10 +3741,14 @@ packages:
       object.values: 1.1.7
       prop-types: 15.8.1
 <<<<<<< HEAD
+<<<<<<< HEAD
       resolve: 2.0.0-next.5
 =======
       resolve: 2.0.0-next.4
 >>>>>>> 495c20d (add carrousel)
+=======
+      resolve: 2.0.0-next.5
+>>>>>>> b7cd091 (landing mobile version done)
       semver: 6.3.1
       string.prototype.matchall: 4.0.10
     dev: false
@@ -2911,6 +3773,7 @@ packages:
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.49.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
       '@eslint-community/regexpp': 4.10.0
       '@eslint/eslintrc': 2.1.4
       '@eslint/js': 8.49.0
@@ -2921,6 +3784,12 @@ packages:
       '@eslint/js': 8.49.0
       '@humanwhocodes/config-array': 0.11.11
 >>>>>>> 495c20d (add carrousel)
+=======
+      '@eslint-community/regexpp': 4.10.0
+      '@eslint/eslintrc': 2.1.4
+      '@eslint/js': 8.49.0
+      '@humanwhocodes/config-array': 0.11.14
+>>>>>>> b7cd091 (landing mobile version done)
       '@humanwhocodes/module-importer': 1.0.1
       '@nodelib/fs.walk': 1.2.8
       ajv: 6.12.6
@@ -2939,6 +3808,7 @@ packages:
       find-up: 5.0.0
       glob-parent: 6.0.2
 <<<<<<< HEAD
+<<<<<<< HEAD
       globals: 13.24.0
       graphemer: 1.4.0
       ignore: 5.3.1
@@ -2947,6 +3817,11 @@ packages:
       graphemer: 1.4.0
       ignore: 5.2.4
 >>>>>>> 495c20d (add carrousel)
+=======
+      globals: 13.24.0
+      graphemer: 1.4.0
+      ignore: 5.3.1
+>>>>>>> b7cd091 (landing mobile version done)
       imurmurhash: 0.1.4
       is-glob: 4.0.3
       is-path-inside: 3.0.3
@@ -2968,12 +3843,17 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       acorn: 8.11.3
       acorn-jsx: 5.3.2(acorn@8.11.3)
 =======
       acorn: 8.10.0
       acorn-jsx: 5.3.2(acorn@8.10.0)
 >>>>>>> 495c20d (add carrousel)
+=======
+      acorn: 8.11.3
+      acorn-jsx: 5.3.2(acorn@8.11.3)
+>>>>>>> b7cd091 (landing mobile version done)
       eslint-visitor-keys: 3.4.3
     dev: false
 
@@ -3006,12 +3886,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /fast-glob@3.3.2:
     resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
 =======
   /fast-glob@3.3.1:
     resolution: {integrity: sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /fast-glob@3.3.2:
+    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=8.6.0'}
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -3030,12 +3915,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
 =======
   /fastq@1.15.0:
     resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /fastq@1.17.1:
+    resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
       reusify: 1.0.4
     dev: false
@@ -3045,10 +3935,14 @@ packages:
     engines: {node: ^10.12.0 || >=12.0.0}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       flat-cache: 3.2.0
 =======
       flat-cache: 3.1.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      flat-cache: 3.2.0
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /fill-range@7.0.1:
@@ -3059,12 +3953,18 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /find-root@1.1.0:
     resolution: {integrity: sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /find-up@5.0.0:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
@@ -3073,6 +3973,7 @@ packages:
       path-exists: 4.0.0
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /flat-cache@3.2.0:
     resolution: {integrity: sha512-CYcENa+FtcUKLmhhqyctpclsq7QF38pKjZHsGNiSQF5r4FtoKDWabFDl3hzaEQMvT1LHEysw5twgLvpYYb4vbw==}
@@ -3099,15 +4000,25 @@ packages:
   /flat-cache@3.1.0:
     resolution: {integrity: sha512-OHx4Qwrrt0E4jEIcI5/Xb+f+QmJYNj2rrK8wiIdQOIrB9WrrJL8cjZvXdXuBTkkEwEqLycb5BeZDV1o2i9bTew==}
     engines: {node: '>=12.0.0'}
+=======
+  /flat-cache@3.2.0:
+    resolution: {integrity: sha512-CYcENa+FtcUKLmhhqyctpclsq7QF38pKjZHsGNiSQF5r4FtoKDWabFDl3hzaEQMvT1LHEysw5twgLvpYYb4vbw==}
+    engines: {node: ^10.12.0 || >=12.0.0}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
-      flatted: 3.2.7
-      keyv: 4.5.3
+      flatted: 3.2.9
+      keyv: 4.5.4
       rimraf: 3.0.2
     dev: false
 
+<<<<<<< HEAD
   /flatted@3.2.7:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /flatted@3.2.9:
+    resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /for-each@0.3.3:
@@ -3116,6 +4027,7 @@ packages:
       is-callable: 1.2.7
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /form-data@4.0.0:
     resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
@@ -3130,6 +4042,36 @@ packages:
 >>>>>>> 495c20d (add carrousel)
   /fraction.js@4.3.6:
     resolution: {integrity: sha512-n2aZ9tNfYDwaHhvFTkhFErqOMIb8uyzSQ+vGJBjZyanAKZVbGUQ1sngfk9FdkBw7G26O7AgNjLcecLffD1c7eg==}
+=======
+  /foreground-child@3.1.1:
+    resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
+    engines: {node: '>=14'}
+    dependencies:
+      cross-spawn: 7.0.3
+      signal-exit: 4.1.0
+    dev: false
+
+  /fraction.js@4.3.7:
+    resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
+    dev: false
+
+  /framer-motion@11.0.5(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Lb0EYbQcSK/pgyQUJm+KzsQrKrJRX9sFRyzl9hSr9gFG4Mk8yP7BjhuxvRXzblOM/+JxycrJdCDVmOQBsjpYlw==}
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      tslib: 2.6.2
+    optionalDependencies:
+      '@emotion/is-prop-valid': 0.8.8
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
 <<<<<<< HEAD
@@ -3166,18 +4108,24 @@ packages:
     optional: true
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 =======
   /function-bind@1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /function-bind@1.1.2:
+    resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /function.prototype.name@1.1.6:
     resolution: {integrity: sha512-Z5kx79swU5P27WEayXM1tBi5Ze/lbIyiNgU3qyXUOf9b2rgXYyF9Dy9Cx+IQv/Lc8WCG6L82zwUPpSS9hGehIg==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       call-bind: 1.0.7
       define-properties: 1.2.1
@@ -3187,6 +4135,11 @@ packages:
       define-properties: 1.2.1
       es-abstract: 1.22.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+>>>>>>> b7cd091 (landing mobile version done)
       functions-have-names: 1.2.3
     dev: false
 
@@ -3194,6 +4147,7 @@ packages:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /get-intrinsic@1.2.4:
     resolution: {integrity: sha512-5uYhsJH8VJBTv7oslg4BznJYhDoRI6waYCxMmCdnTrcCrHA/fCFKoTFz2JKKE0HdDFUF7/oQuhzumXJK7paBRQ==}
@@ -3207,12 +4161,21 @@ packages:
 =======
   /get-intrinsic@1.2.1:
     resolution: {integrity: sha512-2DcsyfABl+gVHEfCOaTrWgyt+tb6MSEGmKq+kI5HwLbIYgjgmMcV8KQ41uaKz1xxUcn9tJtgFbQUEVcEbd0FYw==}
+=======
+  /get-intrinsic@1.2.4:
+    resolution: {integrity: sha512-5uYhsJH8VJBTv7oslg4BznJYhDoRI6waYCxMmCdnTrcCrHA/fCFKoTFz2JKKE0HdDFUF7/oQuhzumXJK7paBRQ==}
+    engines: {node: '>= 0.4'}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
-      function-bind: 1.1.1
-      has: 1.0.3
+      es-errors: 1.3.0
+      function-bind: 1.1.2
       has-proto: 1.0.1
       has-symbols: 1.0.3
+<<<<<<< HEAD
 >>>>>>> 495c20d (add carrousel)
+=======
+      hasown: 2.0.1
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /get-nonce@1.0.1:
@@ -3220,6 +4183,7 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /get-symbol-description@1.0.2:
     resolution: {integrity: sha512-g0QYk1dZBxGwk+Ngc+ltRH2IBp2f7zBkBMBJZCDerh6EhlhSR6+9irMCuT/09zD6qkarHUSn529sK/yL4S27mg==}
@@ -3235,15 +4199,25 @@ packages:
 =======
   /get-symbol-description@1.0.0:
     resolution: {integrity: sha512-2EmdH1YvIQiZpltCNgkuiUnyukzxM/R6NDJX31Ke3BG1Nq5b0S2PhX59UKi9vZpPDQVdqn+1IcaAwnzTT5vCjw==}
+=======
+  /get-symbol-description@1.0.2:
+    resolution: {integrity: sha512-g0QYk1dZBxGwk+Ngc+ltRH2IBp2f7zBkBMBJZCDerh6EhlhSR6+9irMCuT/09zD6qkarHUSn529sK/yL4S27mg==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
-      get-intrinsic: 1.2.1
+      call-bind: 1.0.7
+      es-errors: 1.3.0
+      get-intrinsic: 1.2.4
     dev: false
 
+<<<<<<< HEAD
   /get-tsconfig@4.7.0:
     resolution: {integrity: sha512-pmjiZ7xtB8URYm74PlGJozDNyhvsVLUcpBa8DZBG3bWHwaHa9bPiRpiSfovw+fjhwONSCWKRyk+JQHEGZmMrzw==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /get-tsconfig@4.7.2:
+    resolution: {integrity: sha512-wuMsz4leaj5hbGgg4IvDU0bqJagpftG5l5cXIAvo8uZrqn0NJqwtfupTN00VnkQJPcIRrxYrm1Ue24btpCha2A==}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
       resolve-pkg-maps: 1.0.0
     dev: false
@@ -3276,9 +4250,12 @@ packages:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
     dev: false
 
-  /glob@7.1.6:
-    resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+  /glob@10.3.10:
+    resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    hasBin: true
     dependencies:
+<<<<<<< HEAD
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
@@ -3286,6 +4263,13 @@ packages:
       once: 1.4.0
       path-is-absolute: 1.0.1
 >>>>>>> 495c20d (add carrousel)
+=======
+      foreground-child: 3.1.1
+      jackspeak: 2.3.6
+      minimatch: 9.0.3
+      minipass: 7.0.4
+      path-scurry: 1.10.1
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /glob@7.1.7:
@@ -3311,12 +4295,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /globals@13.24.0:
     resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
 =======
   /globals@13.21.0:
     resolution: {integrity: sha512-ybyme3s4yy/t/3s35bewwXKOf7cvzfreG2lH0lZl0JB7I4GxRP2ghxOK/Nb9EkRXdbBXZLfq/p/0W2JUONB/Gg==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /globals@13.24.0:
+    resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
@@ -3336,12 +4325,17 @@ packages:
       array-union: 2.1.0
       dir-glob: 3.0.1
 <<<<<<< HEAD
+<<<<<<< HEAD
       fast-glob: 3.3.2
       ignore: 5.3.1
 =======
       fast-glob: 3.3.1
       ignore: 5.2.4
 >>>>>>> 495c20d (add carrousel)
+=======
+      fast-glob: 3.3.2
+      ignore: 5.3.1
+>>>>>>> b7cd091 (landing mobile version done)
       merge2: 1.4.1
       slash: 3.0.0
     dev: false
@@ -3350,10 +4344,14 @@ packages:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       get-intrinsic: 1.2.4
 =======
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+      get-intrinsic: 1.2.4
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /graceful-fs@4.2.11:
@@ -3369,18 +4367,25 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /has-flag@3.0.0:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==}
     engines: {node: '>=4'}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /has-property-descriptors@1.0.2:
     resolution: {integrity: sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==}
@@ -3392,6 +4397,12 @@ packages:
     dependencies:
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+  /has-property-descriptors@1.0.2:
+    resolution: {integrity: sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==}
+    dependencies:
+      es-define-property: 1.0.0
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /has-proto@1.0.1:
@@ -3405,17 +4416,23 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /has-tostringtag@1.0.2:
     resolution: {integrity: sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==}
 =======
   /has-tostringtag@1.0.0:
     resolution: {integrity: sha512-kFjcSNhnlGV1kyoGk7OXKSawH5JOb/LzUc5w9B02hOTO0dfFRjbHQKvg1d6cf3HbeUmtU9VbbV3qzZ2Teh97WQ==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /has-tostringtag@1.0.2:
+    resolution: {integrity: sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 0.4'}
     dependencies:
       has-symbols: 1.0.3
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /hasown@2.0.1:
     resolution: {integrity: sha512-1/th4MHjnwncwXsIW6QMzlvYL9kG5e/CpVvLRZe4XPa8TOUNbCELqmvhDmnkNsAjwaG4+I8gJJL0JBvTTLO9qA==}
@@ -3436,13 +4453,29 @@ packages:
   /has@1.0.3:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
     engines: {node: '>= 0.4.0'}
+=======
+  /hasown@2.0.1:
+    resolution: {integrity: sha512-1/th4MHjnwncwXsIW6QMzlvYL9kG5e/CpVvLRZe4XPa8TOUNbCELqmvhDmnkNsAjwaG4+I8gJJL0JBvTTLO9qA==}
+    engines: {node: '>= 0.4'}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
-      function-bind: 1.1.1
+      function-bind: 1.1.2
     dev: false
 
+<<<<<<< HEAD
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /hoist-non-react-statics@3.3.2:
+    resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
+    dependencies:
+      react-is: 16.13.1
+    dev: false
+
+  /ignore@5.3.1:
+    resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 4'}
     dev: false
 
@@ -3471,6 +4504,7 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /internal-slot@1.0.7:
     resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}
     engines: {node: '>= 0.4'}
@@ -3487,6 +4521,15 @@ packages:
       has: 1.0.3
       side-channel: 1.0.4
 >>>>>>> 495c20d (add carrousel)
+=======
+  /internal-slot@1.0.7:
+    resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      es-errors: 1.3.0
+      hasown: 2.0.1
+      side-channel: 1.0.5
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /invariant@2.2.4:
@@ -3495,6 +4538,7 @@ packages:
       loose-envify: 1.4.0
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /is-arguments@1.1.1:
     resolution: {integrity: sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==}
@@ -3522,6 +4566,26 @@ packages:
       get-intrinsic: 1.2.1
       is-typed-array: 1.1.12
 >>>>>>> 495c20d (add carrousel)
+=======
+  /is-arguments@1.1.1:
+    resolution: {integrity: sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.7
+      has-tostringtag: 1.0.2
+    dev: false
+
+  /is-array-buffer@3.0.4:
+    resolution: {integrity: sha512-wcjaerHw0ydZwfhiKbXJWLDY8A7yV7KhjQOpb83hGgGfId/aQa4TOvwyzn2PuswW2gPCYEL/nEAiSVpdOj1lXw==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.7
+      get-intrinsic: 1.2.4
+    dev: false
+
+  /is-arrayish@0.2.1:
+    resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-async-function@2.0.0:
@@ -3529,10 +4593,14 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       has-tostringtag: 1.0.2
 =======
       has-tostringtag: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      has-tostringtag: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-bigint@1.0.4:
@@ -3553,12 +4621,17 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       call-bind: 1.0.7
       has-tostringtag: 1.0.2
 =======
       call-bind: 1.0.2
       has-tostringtag: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      has-tostringtag: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-callable@1.2.7:
@@ -3566,6 +4639,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /is-core-module@2.13.1:
     resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
@@ -3577,6 +4651,12 @@ packages:
     dependencies:
       has: 1.0.3
 >>>>>>> 495c20d (add carrousel)
+=======
+  /is-core-module@2.13.1:
+    resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
+    dependencies:
+      hasown: 2.0.1
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-date-object@1.0.5:
@@ -3584,10 +4664,14 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       has-tostringtag: 1.0.2
 =======
       has-tostringtag: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      has-tostringtag: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-extglob@2.1.1:
@@ -3599,15 +4683,21 @@ packages:
     resolution: {integrity: sha512-0by5vtUJs8iFQb5TYUHHPudOR+qXYIMKtiUzvLIZITZUjknFmziyBJuLhVRc+Ds0dREFlskDNJKYIdIzu/9pfw==}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
       call-bind: 1.0.7
     dev: false
 
   /is-fullwidth-code-point@3.0.0:
     resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
     engines: {node: '>=8'}
+<<<<<<< HEAD
 =======
       call-bind: 1.0.2
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-generator-function@1.0.10:
@@ -3615,10 +4705,14 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       has-tostringtag: 1.0.2
 =======
       has-tostringtag: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      has-tostringtag: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-glob@4.0.3:
@@ -3642,10 +4736,14 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       has-tostringtag: 1.0.2
 =======
       has-tostringtag: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      has-tostringtag: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-number@7.0.0:
@@ -3663,12 +4761,17 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       call-bind: 1.0.7
       has-tostringtag: 1.0.2
 =======
       call-bind: 1.0.2
       has-tostringtag: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      has-tostringtag: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-set@2.0.2:
@@ -3679,10 +4782,14 @@ packages:
     resolution: {integrity: sha512-sqN2UDu1/0y6uvXyStCOzyhAjCSlHceFoMKJW8W9EU9cvic/QdsZ0kEU93HEy3IUEFZIiH/3w+AH/UQbPHNdhA==}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       call-bind: 1.0.7
 =======
       call-bind: 1.0.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-string@1.0.7:
@@ -3690,10 +4797,14 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       has-tostringtag: 1.0.2
 =======
       has-tostringtag: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      has-tostringtag: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-symbol@1.0.4:
@@ -3703,6 +4814,7 @@ packages:
       has-symbols: 1.0.3
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /is-typed-array@1.1.13:
     resolution: {integrity: sha512-uZ25/bUAlUY5fR4OKT4rZQEBrzQWYV9ZJYGGsUmEJ6thodVJ1HX64ePQ6Z0qPWP+m+Uq6e9UugrE38jeYsDSMw==}
@@ -3716,6 +4828,13 @@ packages:
     dependencies:
       which-typed-array: 1.1.11
 >>>>>>> 495c20d (add carrousel)
+=======
+  /is-typed-array@1.1.13:
+    resolution: {integrity: sha512-uZ25/bUAlUY5fR4OKT4rZQEBrzQWYV9ZJYGGsUmEJ6thodVJ1HX64ePQ6Z0qPWP+m+Uq6e9UugrE38jeYsDSMw==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      which-typed-array: 1.1.14
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-weakmap@2.0.1:
@@ -3726,15 +4845,20 @@ packages:
     resolution: {integrity: sha512-qctsuLZmIQ0+vSSMfoVvyFe2+GSEvnmZ2ezTup1SBse9+twCCeial6EEi3Nc2KFcf6+qz2FBPnjXsk8xhKSaPQ==}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       call-bind: 1.0.7
 =======
       call-bind: 1.0.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /is-weakset@2.0.2:
     resolution: {integrity: sha512-t2yVvttHkQktwnNNmBQ98AhENLdPUTDTE21uPqAQ0ARwQfGeQKRVS0NNurH7bTf7RrvcVn1OOge45CnBeHCSmg==}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       call-bind: 1.0.7
       get-intrinsic: 1.2.4
@@ -3742,6 +4866,10 @@ packages:
       call-bind: 1.0.2
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      get-intrinsic: 1.2.4
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /isarray@2.0.5:
@@ -3756,6 +4884,7 @@ packages:
     resolution: {integrity: sha512-DR33HMMr8EzwuRL8Y9D3u2BMj8+RqSE850jfGu59kS7tbmPLzGkZmVSfyCFSDxuZiEY6Rzt3T2NA/qU+NwVj1w==}
     dependencies:
       define-properties: 1.2.1
+<<<<<<< HEAD
 <<<<<<< HEAD
       get-intrinsic: 1.2.4
       has-symbols: 1.0.3
@@ -3783,13 +4912,25 @@ packages:
 
 =======
       get-intrinsic: 1.2.1
+=======
+      get-intrinsic: 1.2.4
+>>>>>>> b7cd091 (landing mobile version done)
       has-symbols: 1.0.3
-      reflect.getprototypeof: 1.0.4
+      reflect.getprototypeof: 1.0.5
       set-function-name: 2.0.1
     dev: false
 
-  /jiti@1.20.0:
-    resolution: {integrity: sha512-3TV69ZbrvV6U5DfQimop50jE9Dl6J8O1ja1dvBbMba/sZ3YBEQqJ2VZRoQPVnhlzjNtU1vaXRZVrVjU4qtm8yA==}
+  /jackspeak@2.3.6:
+    resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@isaacs/cliui': 8.0.2
+    optionalDependencies:
+      '@pkgjs/parseargs': 0.11.0
+    dev: false
+
+  /jiti@1.21.0:
+    resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
     hasBin: true
     dev: false
 
@@ -3810,12 +4951,18 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /json-parse-even-better-errors@2.3.1:
     resolution: {integrity: sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /json-schema-traverse@0.4.1:
     resolution: {integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==}
     dev: false
@@ -3825,14 +4972,20 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /json2mq@0.2.0:
     resolution: {integrity: sha512-SzoRg7ux5DWTII9J2qkrZrqV1gt+rTaoufMxEzXbS26Uid0NwaJd123HcoB80TgubEppxxIGdNxCx50fEoEWQA==}
     dependencies:
       string-convert: 0.2.1
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /json5@1.0.2:
     resolution: {integrity: sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==}
     hasBin: true
@@ -3846,6 +4999,7 @@ packages:
     dependencies:
       array-includes: 3.1.7
       array.prototype.flat: 1.3.2
+<<<<<<< HEAD
 <<<<<<< HEAD
       object.assign: 4.1.5
       object.values: 1.1.7
@@ -3864,6 +5018,14 @@ packages:
 >>>>>>> 495c20d (add carrousel)
   /keyv@4.5.3:
     resolution: {integrity: sha512-QCiSav9WaX1PgETJ+SpNnx2PRRapJ/oRSXM4VO5OGYGSjrxbKPVFVhB3l2OCbLCk329N8qyAtsJjSjvVBWzEug==}
+=======
+      object.assign: 4.1.5
+      object.values: 1.1.7
+    dev: false
+
+  /keyv@4.5.4:
+    resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
       json-buffer: 3.0.1
     dev: false
@@ -3873,6 +5035,7 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /language-tags@1.0.9:
     resolution: {integrity: sha512-MbjN408fEndfiQXbFQ1vnd+1NoLDsnQW41410oQBXiyXDMYH5z505juWa4KUE1LqxRC7DgOgZDbKLxHIwm27hA==}
     engines: {node: '>=0.10'}
@@ -3880,6 +5043,11 @@ packages:
   /language-tags@1.0.5:
     resolution: {integrity: sha512-qJhlO9cGXi6hBGKoxEG/sKZDAHD5Hnu9Hs4WbOY3pCWXDhw0N8x1NenNzm2EnNLkLkk7J2SdxAkDSbb6ftT+UQ==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /language-tags@1.0.9:
+    resolution: {integrity: sha512-MbjN408fEndfiQXbFQ1vnd+1NoLDsnQW41410oQBXiyXDMYH5z505juWa4KUE1LqxRC7DgOgZDbKLxHIwm27hA==}
+    engines: {node: '>=0.10'}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
       language-subtag-registry: 0.3.22
     dev: false
@@ -3898,13 +5066,19 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /lilconfig@3.1.0:
     resolution: {integrity: sha512-p3cz0JV5vw/XeouBU3Ldnp+ZkBjE+n8ydJ4mcwBrOiXXPqNlrzGBqWs9X4MWF7f+iKUBu794Y8Hh8yawiJbCjw==}
     engines: {node: '>=14'}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: false
@@ -3917,12 +5091,18 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: false
@@ -3935,13 +5115,19 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /lru-cache@10.2.0:
     resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
     engines: {node: 14 || >=16.14}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /lru-cache@6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
@@ -3958,13 +5144,19 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /lz-string@1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
     hasBin: true
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -4000,6 +5192,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /minimatch@9.0.3:
     resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
     engines: {node: '>=16 || 14 >=14.17'}
@@ -4007,20 +5202,29 @@ packages:
       brace-expansion: 2.0.1
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /minipass@7.0.4:
     resolution: {integrity: sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==}
     engines: {node: '>=16 || 14 >=14.17'}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: false
@@ -4038,12 +5242,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
 =======
   /nanoid@3.3.6:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /nanoid@3.3.7:
+    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: false
@@ -4118,7 +5327,7 @@ packages:
       '@next/env': 13.4.19
       '@swc/helpers': 0.5.1
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001534
+      caniuse-lite: 1.0.30001587
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -4142,12 +5351,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /node-releases@2.0.14:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
 =======
   /node-releases@2.0.13:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /node-releases@2.0.14:
+    resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /normalize-path@3.0.0:
@@ -4178,6 +5392,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /object-inspect@1.13.1:
     resolution: {integrity: sha512-5qoj1RUiKOMsCCNLV1CBiPYE10sziTsnmNxkAI/rZhiD63CF7IqdFGC/XzjWjpSgLf0LxXX3bDFIh0E18f6UhQ==}
     dev: false
@@ -4188,10 +5405,13 @@ packages:
     dependencies:
       call-bind: 1.0.7
       define-properties: 1.2.1
+<<<<<<< HEAD
 =======
   /object-inspect@1.12.3:
     resolution: {integrity: sha512-geUvdk7c+eizMNUDkRpW1wJwgfOiOeHbxBR/hLXK1aT6zmVSO0jsQcs7fj6MGw89jC/cjGfLcNOrtMYtGqm81g==}
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /object-keys@1.1.1:
@@ -4199,6 +5419,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /object.assign@4.1.5:
     resolution: {integrity: sha512-byy+U7gp+FVwmyzKPYhW2h5l3crpmGsxl7X2s8y43IgxvG4g3QZ6CffDtsNQy1WsmZpQbO+ybo0AlW7TY6DcBQ==}
@@ -4212,6 +5433,13 @@ packages:
     dependencies:
       call-bind: 1.0.2
 >>>>>>> 495c20d (add carrousel)
+=======
+  /object.assign@4.1.5:
+    resolution: {integrity: sha512-byy+U7gp+FVwmyzKPYhW2h5l3crpmGsxl7X2s8y43IgxvG4g3QZ6CffDtsNQy1WsmZpQbO+ybo0AlW7TY6DcBQ==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.7
+>>>>>>> b7cd091 (landing mobile version done)
       define-properties: 1.2.1
       has-symbols: 1.0.3
       object-keys: 1.1.1
@@ -4222,6 +5450,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       call-bind: 1.0.7
       define-properties: 1.2.1
       es-abstract: 1.22.4
@@ -4230,12 +5459,18 @@ packages:
       define-properties: 1.2.1
       es-abstract: 1.22.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /object.fromentries@2.0.7:
     resolution: {integrity: sha512-UPbPHML6sL8PI/mOqPwsH4G6iyXcCGzLin8KvEPenOZN5lpCNBZZQ+V62vdjB1mQHrmqGQt5/OJzemUA+KJmEA==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       call-bind: 1.0.7
       define-properties: 1.2.1
@@ -4252,18 +5487,27 @@ packages:
       es-errors: 1.3.0
 =======
       call-bind: 1.0.2
+=======
+      call-bind: 1.0.7
+>>>>>>> b7cd091 (landing mobile version done)
       define-properties: 1.2.1
-      es-abstract: 1.22.2
+      es-abstract: 1.22.4
     dev: false
 
-  /object.groupby@1.0.1:
-    resolution: {integrity: sha512-HqaQtqLnp/8Bn4GL16cj+CUYbnpe1bh0TtEaWvybszDG4tgxCJuRpV8VGuvNaI1fAnI4lUJzDG55MXcOH4JZcQ==}
+  /object.groupby@1.0.2:
+    resolution: {integrity: sha512-bzBq58S+x+uo0VjurFT0UktpKHOZmv4/xePiOA1nbB9pMqpGK7rUPNgf+1YC+7mE+0HzhTMqNUuCqvKhj6FnBw==}
     dependencies:
-      call-bind: 1.0.2
+      array.prototype.filter: 1.0.3
+      call-bind: 1.0.7
       define-properties: 1.2.1
+<<<<<<< HEAD
       es-abstract: 1.22.2
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+      es-abstract: 1.22.4
+      es-errors: 1.3.0
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /object.hasown@1.1.3:
@@ -4271,16 +5515,21 @@ packages:
     dependencies:
       define-properties: 1.2.1
 <<<<<<< HEAD
+<<<<<<< HEAD
       es-abstract: 1.22.4
 =======
       es-abstract: 1.22.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      es-abstract: 1.22.4
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /object.values@1.1.7:
     resolution: {integrity: sha512-aU6xnDFYT3x17e/f0IiiwlGPTy2jzMySGfUB4fq6z7CV8l85CWHDk5ErhyhpfDHhrOMwGFhSQkhMGHaIotA6Ng==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       call-bind: 1.0.7
       define-properties: 1.2.1
@@ -4290,6 +5539,11 @@ packages:
       define-properties: 1.2.1
       es-abstract: 1.22.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /once@1.4.0:
@@ -4332,6 +5586,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /parse-json@5.2.0:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==}
     engines: {node: '>=8'}
@@ -4342,8 +5599,11 @@ packages:
       lines-and-columns: 1.2.4
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
@@ -4364,6 +5624,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /path-scurry@1.10.1:
     resolution: {integrity: sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==}
     engines: {node: '>=16 || 14 >=14.17'}
@@ -4372,8 +5635,11 @@ packages:
       minipass: 7.0.4
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
@@ -4408,10 +5674,14 @@ packages:
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
       resolve: 1.22.8
 =======
       resolve: 1.22.5
 >>>>>>> 495c20d (add carrousel)
+=======
+      resolve: 1.22.8
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /postcss-js@4.0.1(postcss@8.4.29):
@@ -4425,12 +5695,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /postcss-load-config@4.0.2(postcss@8.4.29):
     resolution: {integrity: sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==}
 =======
   /postcss-load-config@4.0.1(postcss@8.4.29):
     resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /postcss-load-config@4.0.2(postcss@8.4.29):
+    resolution: {integrity: sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 14'}
     peerDependencies:
       postcss: '>=8.0.9'
@@ -4442,6 +5717,7 @@ packages:
         optional: true
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       lilconfig: 3.1.0
       postcss: 8.4.29
       yaml: 2.3.4
@@ -4450,6 +5726,11 @@ packages:
       postcss: 8.4.29
       yaml: 2.3.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      lilconfig: 3.1.0
+      postcss: 8.4.29
+      yaml: 2.3.4
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /postcss-nested@6.0.1(postcss@8.4.29):
@@ -4459,6 +5740,7 @@ packages:
       postcss: ^8.2.14
     dependencies:
       postcss: 8.4.29
+<<<<<<< HEAD
 <<<<<<< HEAD
       postcss-selector-parser: 6.0.15
     dev: false
@@ -4472,6 +5754,13 @@ packages:
   /postcss-selector-parser@6.0.13:
     resolution: {integrity: sha512-EaV1Gl4mUEV4ddhDnv/xtj7sxwrwxdetHdWUGnT4VJQf+4d05v6lHYZr8N573k5Z0BViss7BDhfWtKS3+sfAqQ==}
 >>>>>>> 495c20d (add carrousel)
+=======
+      postcss-selector-parser: 6.0.15
+    dev: false
+
+  /postcss-selector-parser@6.0.15:
+    resolution: {integrity: sha512-rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=4'}
     dependencies:
       cssesc: 3.0.0
@@ -4490,6 +5779,7 @@ packages:
     resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       nanoid: 3.3.7
       picocolors: 1.0.0
@@ -4514,6 +5804,9 @@ packages:
 =======
 >>>>>>> 495c20d (add carrousel)
       nanoid: 3.3.6
+=======
+      nanoid: 3.3.7
+>>>>>>> b7cd091 (landing mobile version done)
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: false
@@ -4535,7 +5828,7 @@ packages:
     resolution: {integrity: sha512-cbI+jaqIeu/VGqXEarWkRCCffhjgXc0qjBtXpqJhTBohMUjUQnbBr0xqX3vEKudc4iviTewcJo5ajcec5+wdJw==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.6
+      nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
 >>>>>>> 495c20d (add carrousel)
@@ -4547,12 +5840,24 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /pretty-format@3.8.0:
     resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==}
     dev: false
 
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+  /pretty-format@27.5.1:
+    resolution: {integrity: sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      ansi-regex: 5.0.1
+      ansi-styles: 5.2.0
+      react-is: 17.0.2
+    dev: false
+
+>>>>>>> b7cd091 (landing mobile version done)
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
     dependencies:
@@ -4562,6 +5867,7 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
     dev: false
@@ -4570,6 +5876,10 @@ packages:
 >>>>>>> 495c20d (add carrousel)
   /punycode@2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
+=======
+  /punycode@2.3.1:
+    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=6'}
     dev: false
 
@@ -4588,22 +5898,34 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /react-hook-form@7.49.3(react@18.2.0):
     resolution: {integrity: sha512-foD6r3juidAT1cOZzpmD/gOKt7fRsDhXXZ0y28+Al1CHgX+AY1qIN9VSIIItXRq1dN68QrRwl1ORFlwjBaAqeQ==}
     engines: {node: '>=18', pnpm: '8'}
+=======
+  /react-hook-form@7.50.1(react@18.2.0):
+    resolution: {integrity: sha512-3PCY82oE0WgeOgUtIr3nYNNtNvqtJ7BZjsbxh6TnYNbXButaD5WpjOmTjdxZfheuHKR68qfeFnEDVYoSSFPMTQ==}
+    engines: {node: '>=12.22.0'}
+>>>>>>> b7cd091 (landing mobile version done)
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
     dependencies:
       react: 18.2.0
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: false
@@ -4612,8 +5934,11 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /react-remove-scroll-bar@2.3.4(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-63C4YQBUt0m6ALadE9XV56hV8BgJWDmmTPY758iIJjfQKt2nYwoUrPk0LXRXcB/yIj82T1/Ixfdpdk68LwIB0A==}
     engines: {node: '>=10'}
@@ -4646,6 +5971,7 @@ packages:
       react-style-singleton: 2.2.1(@types/react@18.2.21)(react@18.2.0)
       tslib: 2.6.2
 <<<<<<< HEAD
+<<<<<<< HEAD
       use-callback-ref: 1.3.1(@types/react@18.2.21)(react@18.2.0)
       use-sidecar: 1.1.2(@types/react@18.2.21)(react@18.2.0)
     dev: false
@@ -4674,6 +6000,30 @@ packages:
     dev: false
 
 >>>>>>> 495c20d (add carrousel)
+=======
+      use-callback-ref: 1.3.1(@types/react@18.2.21)(react@18.2.0)
+      use-sidecar: 1.1.2(@types/react@18.2.21)(react@18.2.0)
+    dev: false
+
+  /react-slick@0.30.1(@testing-library/dom@9.3.4)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-xtxWBIJH9CvcleAfcZD5A78YtqfHYRMAIkn/AQZFk6Qh/HP/DUtbd3BqHvPKS/Oz0yuINM3YMtw0xLfXvQjeMA==}
+    peerDependencies:
+      react: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@testing-library/user-event': 14.5.2(@testing-library/dom@9.3.4)
+      classnames: 2.5.1
+      enquire.js: 2.1.6
+      json2mq: 0.2.0
+      lodash.debounce: 4.0.8
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      resize-observer-polyfill: 1.5.1
+    transitivePeerDependencies:
+      - '@testing-library/dom'
+    dev: false
+
+>>>>>>> b7cd091 (landing mobile version done)
   /react-style-singleton@2.2.1(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g==}
     engines: {node: '>=10'}
@@ -4692,6 +6042,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /react-transition-group@4.4.5(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
     peerDependencies:
@@ -4706,8 +6059,11 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -4729,6 +6085,7 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /reflect.getprototypeof@1.0.5:
     resolution: {integrity: sha512-62wgfC8dJWrmxv44CA36pLDnP6KKl3Vhxb7PL+8+qrrFMMoJij4vgiMP8zV4O8+CBMXY1mHxI5fITGHXFHVmQQ==}
     engines: {node: '>= 0.4'}
@@ -4741,17 +6098,28 @@ packages:
 =======
   /reflect.getprototypeof@1.0.4:
     resolution: {integrity: sha512-ECkTw8TmJwW60lOTR+ZkODISW6RQ8+2CL3COqtiJKLd6MmB45hN51HprHFziKLGkAuTGQhBb91V8cy+KHlaCjw==}
+=======
+  /reflect.getprototypeof@1.0.5:
+    resolution: {integrity: sha512-62wgfC8dJWrmxv44CA36pLDnP6KKl3Vhxb7PL+8+qrrFMMoJij4vgiMP8zV4O8+CBMXY1mHxI5fITGHXFHVmQQ==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
       define-properties: 1.2.1
+<<<<<<< HEAD
       es-abstract: 1.22.2
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+      es-abstract: 1.22.4
+      es-errors: 1.3.0
+      get-intrinsic: 1.2.4
+>>>>>>> b7cd091 (landing mobile version done)
       globalthis: 1.0.3
       which-builtin-type: 1.1.3
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
@@ -4774,18 +6142,30 @@ packages:
 =======
   /regenerator-runtime@0.14.0:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
+=======
+  /regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
-  /regexp.prototype.flags@1.5.1:
-    resolution: {integrity: sha512-sy6TXMN+hnP/wMy+ISxg3krXx7BAtWVO4UouuCN/ziM9UEne0euamVNafDfvC83bRNr95y0V5iijeDQFUNpvrg==}
+  /regexp.prototype.flags@1.5.2:
+    resolution: {integrity: sha512-NcDiDkTLuPR+++OCKB0nWafEmhg/Da8aUPLPMQbK+bxKKCm1/S5he+AqYa4PlMCVBalb4/yxIRub6qkEx5yJbw==}
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
       define-properties: 1.2.1
+      es-errors: 1.3.0
       set-function-name: 2.0.1
     dev: false
 
+<<<<<<< HEAD
 >>>>>>> 495c20d (add carrousel)
+=======
+  /resize-observer-polyfill@1.5.1:
+    resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
+    dev: false
+
+>>>>>>> b7cd091 (landing mobile version done)
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -4795,6 +6175,7 @@ packages:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /resolve@1.22.8:
     resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
@@ -4808,10 +6189,18 @@ packages:
     dependencies:
       is-core-module: 2.13.0
 >>>>>>> 495c20d (add carrousel)
+=======
+  /resolve@1.22.8:
+    resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
+    hasBin: true
+    dependencies:
+      is-core-module: 2.13.1
+>>>>>>> b7cd091 (landing mobile version done)
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /resolve@2.0.0-next.5:
     resolution: {integrity: sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA==}
@@ -4825,6 +6214,13 @@ packages:
     dependencies:
       is-core-module: 2.13.0
 >>>>>>> 495c20d (add carrousel)
+=======
+  /resolve@2.0.0-next.5:
+    resolution: {integrity: sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA==}
+    hasBin: true
+    dependencies:
+      is-core-module: 2.13.1
+>>>>>>> b7cd091 (landing mobile version done)
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
     dev: false
@@ -4848,6 +6244,7 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /safe-array-concat@1.1.0:
     resolution: {integrity: sha512-ZdQ0Jeb9Ofti4hbt5lX3T2JcAamT9hfzYU1MNB+z/jaEbB6wfFfPIR/zEORmZqobkCCJhSjodobH6WHNmJ97dg==}
     engines: {node: '>=0.4'}
@@ -4862,10 +6259,19 @@ packages:
       call-bind: 1.0.2
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+  /safe-array-concat@1.1.0:
+    resolution: {integrity: sha512-ZdQ0Jeb9Ofti4hbt5lX3T2JcAamT9hfzYU1MNB+z/jaEbB6wfFfPIR/zEORmZqobkCCJhSjodobH6WHNmJ97dg==}
+    engines: {node: '>=0.4'}
+    dependencies:
+      call-bind: 1.0.7
+      get-intrinsic: 1.2.4
+>>>>>>> b7cd091 (landing mobile version done)
       has-symbols: 1.0.3
       isarray: 2.0.5
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /safe-regex-test@1.0.3:
     resolution: {integrity: sha512-CdASjNJPvRa7roO6Ra/gLYBTzYzzPyyBXxIMdGW3USQLyjWEls2RgW5UBTXaQVp+OrpeCK3bLem8smtmheoRuw==}
@@ -4880,6 +6286,14 @@ packages:
       call-bind: 1.0.2
       get-intrinsic: 1.2.1
 >>>>>>> 495c20d (add carrousel)
+=======
+  /safe-regex-test@1.0.3:
+    resolution: {integrity: sha512-CdASjNJPvRa7roO6Ra/gLYBTzYzzPyyBXxIMdGW3USQLyjWEls2RgW5UBTXaQVp+OrpeCK3bLem8smtmheoRuw==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.7
+      es-errors: 1.3.0
+>>>>>>> b7cd091 (landing mobile version done)
       is-regex: 1.1.4
     dev: false
 
@@ -4895,12 +6309,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /semver@7.6.0:
     resolution: {integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==}
 =======
   /semver@7.5.4:
     resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /semver@7.6.0:
+    resolution: {integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -4908,6 +6327,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /set-function-length@1.2.1:
     resolution: {integrity: sha512-j4t6ccc+VsKwYHso+kElc5neZpjtq9EnRICFZtWyBsLojhmeF/ZBd/elqm22WJh/BziDe/SBiOeAt0m2mfLD0g==}
     engines: {node: '>= 0.4'}
@@ -4920,12 +6342,16 @@ packages:
       has-property-descriptors: 1.0.2
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /set-function-name@2.0.1:
     resolution: {integrity: sha512-tMNCiqYVkXIZgc2Hnoy2IvC/f8ezc5koaRFkCjrpWzGpCd3qbZXPzVy9MAZzK1ch/X0jvSkojys3oqJN0qCmdA==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       define-data-property: 1.1.4
       functions-have-names: 1.2.3
@@ -4935,6 +6361,11 @@ packages:
       functions-have-names: 1.2.3
       has-property-descriptors: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      define-data-property: 1.1.4
+      functions-have-names: 1.2.3
+      has-property-descriptors: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /shebang-command@2.0.0:
@@ -4949,6 +6380,7 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /side-channel@1.0.5:
     resolution: {integrity: sha512-QcgiIWV4WV7qWExbN5llt6frQB/lBven9pqliLXfGPB+K9ZYXxDozp0wLkHS24kWCm+6YXH/f0HhnObZnZOBnQ==}
@@ -4971,6 +6403,21 @@ packages:
       get-intrinsic: 1.2.1
       object-inspect: 1.12.3
 >>>>>>> 495c20d (add carrousel)
+=======
+  /side-channel@1.0.5:
+    resolution: {integrity: sha512-QcgiIWV4WV7qWExbN5llt6frQB/lBven9pqliLXfGPB+K9ZYXxDozp0wLkHS24kWCm+6YXH/f0HhnObZnZOBnQ==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.7
+      es-errors: 1.3.0
+      get-intrinsic: 1.2.4
+      object-inspect: 1.13.1
+    dev: false
+
+  /signal-exit@4.1.0:
+    resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
+    engines: {node: '>=14'}
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /slash@3.0.0:
@@ -4984,6 +6431,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /source-map@0.5.7:
     resolution: {integrity: sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==}
     engines: {node: '>=0.10.0'}
@@ -4996,14 +6446,20 @@ packages:
       internal-slot: 1.0.7
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /streamsearch@1.1.0:
     resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
     engines: {node: '>=10.0.0'}
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /string-convert@0.2.1:
     resolution: {integrity: sha512-u/1tdPl4yQnPBjnVrmdLo9gtuLvELKsAoRapekWggdiQNvvvum+jYF329d84NAa660KQw7pB2n36KrIKVoXa3A==}
     dev: false
@@ -5026,6 +6482,7 @@ packages:
       strip-ansi: 7.1.0
     dev: false
 
+<<<<<<< HEAD
   /string.prototype.matchall@4.0.10:
     resolution: {integrity: sha512-rGXbGmOEosIQi6Qva94HUjgPs9vKW+dkG7Y8Q5O2OYkWL6wFaTRZO8zM4mhP94uX55wgyrXzfS2aGtGzUL7EJQ==}
     dependencies:
@@ -5039,19 +6496,25 @@ packages:
       set-function-name: 2.0.1
       side-channel: 1.0.5
 =======
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /string.prototype.matchall@4.0.10:
     resolution: {integrity: sha512-rGXbGmOEosIQi6Qva94HUjgPs9vKW+dkG7Y8Q5O2OYkWL6wFaTRZO8zM4mhP94uX55wgyrXzfS2aGtGzUL7EJQ==}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
       define-properties: 1.2.1
-      es-abstract: 1.22.2
-      get-intrinsic: 1.2.1
+      es-abstract: 1.22.4
+      get-intrinsic: 1.2.4
       has-symbols: 1.0.3
-      internal-slot: 1.0.5
-      regexp.prototype.flags: 1.5.1
+      internal-slot: 1.0.7
+      regexp.prototype.flags: 1.5.2
       set-function-name: 2.0.1
+<<<<<<< HEAD
       side-channel: 1.0.4
 >>>>>>> 495c20d (add carrousel)
+=======
+      side-channel: 1.0.5
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /string.prototype.trim@1.2.8:
@@ -5059,6 +6522,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       call-bind: 1.0.7
       define-properties: 1.2.1
       es-abstract: 1.22.4
@@ -5067,25 +6531,17 @@ packages:
       define-properties: 1.2.1
       es-abstract: 1.22.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /string.prototype.trimend@1.0.7:
     resolution: {integrity: sha512-Ni79DqeB72ZFq1uH/L6zJ+DKZTkOtPIHovb3YZHQViE+HDouuU4mBrLOLDn5Dde3RF8qw5qVETEjhu9locMLvA==}
     dependencies:
 <<<<<<< HEAD
-      call-bind: 1.0.7
-      define-properties: 1.2.1
-      es-abstract: 1.22.4
-=======
-      call-bind: 1.0.2
-      define-properties: 1.2.1
-      es-abstract: 1.22.2
->>>>>>> 495c20d (add carrousel)
-    dev: false
-
-  /string.prototype.trimstart@1.0.7:
-    resolution: {integrity: sha512-NGhtDFu3jCEm7B4Fy0DpLewdJQOZcQ0rGbwQ/+stjnrp2i+rlKeCvos9hOIeCmqwratM47OBxY7uFZzjxHXmrg==}
-    dependencies:
 <<<<<<< HEAD
       call-bind: 1.0.7
       define-properties: 1.2.1
@@ -5095,6 +6551,31 @@ packages:
       define-properties: 1.2.1
       es-abstract: 1.22.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+>>>>>>> b7cd091 (landing mobile version done)
+    dev: false
+
+  /string.prototype.trimstart@1.0.7:
+    resolution: {integrity: sha512-NGhtDFu3jCEm7B4Fy0DpLewdJQOZcQ0rGbwQ/+stjnrp2i+rlKeCvos9hOIeCmqwratM47OBxY7uFZzjxHXmrg==}
+    dependencies:
+<<<<<<< HEAD
+<<<<<<< HEAD
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+=======
+      call-bind: 1.0.2
+      define-properties: 1.2.1
+      es-abstract: 1.22.2
+>>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      define-properties: 1.2.1
+      es-abstract: 1.22.4
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /strip-ansi@6.0.1:
@@ -5105,6 +6586,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /strip-ansi@7.1.0:
     resolution: {integrity: sha512-iq6eVVI64nQQTRYq2KtEg2d2uU7LElhTJwsH4YzIHZshxlgZms/wIc4VoDQTlG/IvVIrBKG06CrZnp0qv7hkcQ==}
     engines: {node: '>=12'}
@@ -5112,8 +6596,11 @@ packages:
       ansi-regex: 6.0.1
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /strip-bom@3.0.0:
     resolution: {integrity: sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==}
     engines: {node: '>=4'}
@@ -5142,6 +6629,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /stylis@4.2.0:
     resolution: {integrity: sha512-Orov6g6BB1sDfYgzWfTHDOxamtX1bE/zo104Dh9e6fqJ3PooipYyfJ0pUmrZO2wAvO8YbEyeFrkV91XTsGMSrw==}
     dev: false
@@ -5149,20 +6639,27 @@ packages:
   /sucrase@3.35.0:
     resolution: {integrity: sha512-8EbVDiu9iN/nESwxeSxDKe0dunta1GOlHufmSSXxMD2z2/tMZpDMpvXQGsc+ajGo8y2uYUmixaSRUc/QPoQ0GA==}
     engines: {node: '>=16 || 14 >=14.17'}
+<<<<<<< HEAD
 =======
   /sucrase@3.34.0:
     resolution: {integrity: sha512-70/LQEZ07TEcxiU2dz51FKaE6hCTWC6vr7FOk3Gr0U60C3shtAN+H+BFr9XlYe5xqf3RA8nrc+VIwzCfnxuXJw==}
     engines: {node: '>=8'}
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     hasBin: true
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       commander: 4.1.1
 <<<<<<< HEAD
+<<<<<<< HEAD
       glob: 10.3.10
 =======
       glob: 7.1.6
 >>>>>>> 495c20d (add carrousel)
+=======
+      glob: 10.3.10
+>>>>>>> b7cd091 (landing mobile version done)
       lines-and-columns: 1.2.4
       mz: 2.7.0
       pirates: 4.0.6
@@ -5170,6 +6667,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /supports-color@5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
     engines: {node: '>=4'}
@@ -5177,8 +6677,11 @@ packages:
       has-flag: 3.0.0
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
@@ -5216,6 +6719,7 @@ packages:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
 <<<<<<< HEAD
+<<<<<<< HEAD
       chokidar: 3.6.0
       didyoumean: 1.2.2
       dlv: 1.1.3
@@ -5225,13 +6729,20 @@ packages:
       jiti: 1.21.0
 =======
       chokidar: 3.5.3
+=======
+      chokidar: 3.6.0
+>>>>>>> b7cd091 (landing mobile version done)
       didyoumean: 1.2.2
       dlv: 1.1.3
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
       glob-parent: 6.0.2
       is-glob: 4.0.3
+<<<<<<< HEAD
       jiti: 1.20.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      jiti: 1.21.0
+>>>>>>> b7cd091 (landing mobile version done)
       lilconfig: 2.1.0
       micromatch: 4.0.5
       normalize-path: 3.0.0
@@ -5240,6 +6751,7 @@ packages:
       postcss: 8.4.29
       postcss-import: 15.1.0(postcss@8.4.29)
       postcss-js: 4.0.1(postcss@8.4.29)
+<<<<<<< HEAD
 <<<<<<< HEAD
       postcss-load-config: 4.0.2(postcss@8.4.29)
       postcss-nested: 6.0.1(postcss@8.4.29)
@@ -5253,6 +6765,13 @@ packages:
       resolve: 1.22.5
       sucrase: 3.34.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      postcss-load-config: 4.0.2(postcss@8.4.29)
+      postcss-nested: 6.0.1(postcss@8.4.29)
+      postcss-selector-parser: 6.0.15
+      resolve: 1.22.8
+      sucrase: 3.35.0
+>>>>>>> b7cd091 (landing mobile version done)
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -5280,13 +6799,19 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -5294,6 +6819,7 @@ packages:
       is-number: 7.0.0
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /ts-api-utils@1.2.1(typescript@5.2.2):
     resolution: {integrity: sha512-RIYA36cJn2WiH9Hy77hdF9r7oEwxAtB/TS9/S4Qd90Ap4z5FSiin5zEiTL44OII1Y3IIlEvxwxFUVgrHSZ/UpA==}
@@ -5303,6 +6829,11 @@ packages:
     resolution: {integrity: sha512-wNMeqtMz5NtwpT/UZGY5alT+VoKdSsOOP/kqHFcUW1P/VRhH2wJ48+DN2WwUliNbQ976ETwDL0Ifd2VVvgonvg==}
     engines: {node: '>=16.13.0'}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /ts-api-utils@1.2.1(typescript@5.2.2):
+    resolution: {integrity: sha512-RIYA36cJn2WiH9Hy77hdF9r7oEwxAtB/TS9/S4Qd90Ap4z5FSiin5zEiTL44OII1Y3IIlEvxwxFUVgrHSZ/UpA==}
+    engines: {node: '>=16'}
+>>>>>>> b7cd091 (landing mobile version done)
     peerDependencies:
       typescript: '>=4.2.0'
     dependencies:
@@ -5314,12 +6845,17 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /tsconfig-paths@3.15.0:
     resolution: {integrity: sha512-2Ac2RgzDe/cn48GvOe3M+o82pEFewD3UPbyoUHHdKasHwJKjds4fLXWf/Ux5kATBKN20oaFGu+jbElp1pos0mg==}
 =======
   /tsconfig-paths@3.14.2:
     resolution: {integrity: sha512-o/9iXgCYc5L/JxCHPe3Hvh8Q/2xm5Z+p18PESBU6Ff33695QnCHBEjcytY2q19ua7Mbl/DavtBOLq+oG0RCL+g==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /tsconfig-paths@3.15.0:
+    resolution: {integrity: sha512-2Ac2RgzDe/cn48GvOe3M+o82pEFewD3UPbyoUHHdKasHwJKjds4fLXWf/Ux5kATBKN20oaFGu+jbElp1pos0mg==}
+>>>>>>> b7cd091 (landing mobile version done)
     dependencies:
       '@types/json5': 0.0.29
       json5: 1.0.2
@@ -5344,6 +6880,7 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   /typed-array-buffer@1.0.1:
     resolution: {integrity: sha512-RSqu1UEuSlrBhHTWC8O9FnPjOduNs4M7rJ4pRKoEjtx1zUNOPN2sSXHLDX+Y2WPbHIxbvg4JFo2DNAEfPIKWoQ==}
     engines: {node: '>= 0.4'}
@@ -5360,12 +6897,22 @@ packages:
       get-intrinsic: 1.2.1
       is-typed-array: 1.1.12
 >>>>>>> 495c20d (add carrousel)
+=======
+  /typed-array-buffer@1.0.1:
+    resolution: {integrity: sha512-RSqu1UEuSlrBhHTWC8O9FnPjOduNs4M7rJ4pRKoEjtx1zUNOPN2sSXHLDX+Y2WPbHIxbvg4JFo2DNAEfPIKWoQ==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.7
+      es-errors: 1.3.0
+      is-typed-array: 1.1.13
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /typed-array-byte-length@1.0.0:
     resolution: {integrity: sha512-Or/+kvLxNpeQ9DtSydonMxCx+9ZXOswtwJn17SNLvhptaXYDJvkFFP5zbfU/uLmvnBJlI4yrnXRxpdWH/M5tNA==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       call-bind: 1.0.7
       for-each: 0.3.3
@@ -5377,12 +6924,19 @@ packages:
       has-proto: 1.0.1
       is-typed-array: 1.1.12
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      for-each: 0.3.3
+      has-proto: 1.0.1
+      is-typed-array: 1.1.13
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /typed-array-byte-offset@1.0.0:
     resolution: {integrity: sha512-RD97prjEt9EL8YgAgpOkf3O4IF9lhJFr9g0htQkm0rchFp/Vx7LW5Q8fSXXub7BXAODyUQohRMyOc3faCPd0hg==}
     engines: {node: '>= 0.4'}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       available-typed-arrays: 1.0.6
       call-bind: 1.0.7
@@ -5396,11 +6950,19 @@ packages:
       has-proto: 1.0.1
       is-typed-array: 1.1.12
 >>>>>>> 495c20d (add carrousel)
+=======
+      available-typed-arrays: 1.0.6
+      call-bind: 1.0.7
+      for-each: 0.3.3
+      has-proto: 1.0.1
+      is-typed-array: 1.1.13
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /typed-array-length@1.0.4:
     resolution: {integrity: sha512-KjZypGq+I/H7HI5HlOoGHkWUUGq+Q0TPhQurLbyrVrvnKTBgzLhIJ7j6J/XTQOi0d1RjyZ0wdas8bKs2p0x3Ng==}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       call-bind: 1.0.7
       for-each: 0.3.3
@@ -5410,6 +6972,11 @@ packages:
       for-each: 0.3.3
       is-typed-array: 1.1.12
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+      for-each: 0.3.3
+      is-typed-array: 1.1.13
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /typescript@5.2.2:
@@ -5422,15 +6989,20 @@ packages:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
     dependencies:
 <<<<<<< HEAD
+<<<<<<< HEAD
       call-bind: 1.0.7
 =======
       call-bind: 1.0.2
 >>>>>>> 495c20d (add carrousel)
+=======
+      call-bind: 1.0.7
+>>>>>>> b7cd091 (landing mobile version done)
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /update-browserslist-db@1.0.13(browserslist@4.23.0):
     resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
@@ -5438,10 +7010,15 @@ packages:
   /update-browserslist-db@1.0.11(browserslist@4.21.10):
     resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
 >>>>>>> 495c20d (add carrousel)
+=======
+  /update-browserslist-db@1.0.13(browserslist@4.23.0):
+    resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
+>>>>>>> b7cd091 (landing mobile version done)
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       browserslist: 4.23.0
       escalade: 3.1.2
@@ -5449,12 +7026,17 @@ packages:
       browserslist: 4.21.10
       escalade: 3.1.1
 >>>>>>> 495c20d (add carrousel)
+=======
+      browserslist: 4.23.0
+      escalade: 3.1.2
+>>>>>>> b7cd091 (landing mobile version done)
       picocolors: 1.0.0
     dev: false
 
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
       punycode: 2.3.1
     dev: false
@@ -5468,6 +7050,13 @@ packages:
   /use-callback-ref@1.3.0(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==}
 >>>>>>> 495c20d (add carrousel)
+=======
+      punycode: 2.3.1
+    dev: false
+
+  /use-callback-ref@1.3.1(@types/react@18.2.21)(react@18.2.0):
+    resolution: {integrity: sha512-Lg4Vx1XZQauB42Hw3kK7JM6yjVjgFmFC5/Ab797s79aARomD2nEErc4mCgM8EZrARLmmbWpi5DGCadmK50DcAQ==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>=10'}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -5528,10 +7117,14 @@ packages:
     dependencies:
       function.prototype.name: 1.1.6
 <<<<<<< HEAD
+<<<<<<< HEAD
       has-tostringtag: 1.0.2
 =======
       has-tostringtag: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      has-tostringtag: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
       is-async-function: 2.0.0
       is-date-object: 1.0.5
       is-finalizationregistry: 1.0.2
@@ -5542,10 +7135,14 @@ packages:
       which-boxed-primitive: 1.0.2
       which-collection: 1.0.1
 <<<<<<< HEAD
+<<<<<<< HEAD
       which-typed-array: 1.1.14
 =======
       which-typed-array: 1.1.11
 >>>>>>> 495c20d (add carrousel)
+=======
+      which-typed-array: 1.1.14
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /which-collection@1.0.1:
@@ -5557,6 +7154,7 @@ packages:
       is-weakset: 2.0.2
     dev: false
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   /which-typed-array@1.1.14:
     resolution: {integrity: sha512-VnXFiIW8yNn9kIHN88xvZ4yOWchftKDsRJ8fEPacX/wl1lOvBrhsJ/OeJCXq7B0AaijRuqgzSKalJoPk+D8MPg==}
@@ -5570,14 +7168,22 @@ packages:
 =======
   /which-typed-array@1.1.11:
     resolution: {integrity: sha512-qe9UWWpkeG5yzZ0tNYxDmd7vo58HDBc39mZ0xWWpolAGADdFOzkfamWLDxkOWcvHQKVmdTyQdLD4NOfjLWTKew==}
+=======
+  /which-typed-array@1.1.14:
+    resolution: {integrity: sha512-VnXFiIW8yNn9kIHN88xvZ4yOWchftKDsRJ8fEPacX/wl1lOvBrhsJ/OeJCXq7B0AaijRuqgzSKalJoPk+D8MPg==}
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 0.4'}
     dependencies:
-      available-typed-arrays: 1.0.5
-      call-bind: 1.0.2
+      available-typed-arrays: 1.0.6
+      call-bind: 1.0.7
       for-each: 0.3.3
       gopd: 1.0.1
+<<<<<<< HEAD
       has-tostringtag: 1.0.0
 >>>>>>> 495c20d (add carrousel)
+=======
+      has-tostringtag: 1.0.2
+>>>>>>> b7cd091 (landing mobile version done)
     dev: false
 
   /which@2.0.2:
@@ -5589,6 +7195,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
     engines: {node: '>=10'}
@@ -5607,8 +7216,11 @@ packages:
       strip-ansi: 7.1.0
     dev: false
 
+<<<<<<< HEAD
 =======
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: false
@@ -5618,6 +7230,9 @@ packages:
     dev: false
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7cd091 (landing mobile version done)
   /yaml@1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
@@ -5625,10 +7240,13 @@ packages:
 
   /yaml@2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
+<<<<<<< HEAD
 =======
   /yaml@2.3.2:
     resolution: {integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==}
 >>>>>>> 495c20d (add carrousel)
+=======
+>>>>>>> b7cd091 (landing mobile version done)
     engines: {node: '>= 14'}
     dev: false
 
@@ -5644,4 +7262,8 @@ packages:
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
 >>>>>>> 495c20d (add carrousel)
+    dev: false
+
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: false
