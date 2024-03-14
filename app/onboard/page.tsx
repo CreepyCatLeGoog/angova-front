@@ -1,6 +1,5 @@
 "use client";
 
-import AnimatedEarth from "@/components/animatedEarth";
 import EarthStepperAnimation from "@/components/earthStepperAnimation";
 import DotsStepper from "@/components/ui/StepperDotIndicator";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,7 @@ import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import React from "react";
 
-const ChooseCodeLanguage = () => {
+const ChooseLanguage = () => {
   const [currentStep, setCurrentStep] = React.useState(1);
   const [shouldAnimate, setShouldAnimate] = React.useState(false);
 
@@ -73,4 +72,4 @@ const ChooseCodeLanguage = () => {
   );
 };
 
-export default ChooseCodeLanguage;
+export default ChooseLanguage;

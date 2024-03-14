@@ -174,7 +174,7 @@ export const LoginForm = () => {
           {error && (
             <p className="text-center bg-red-300 py-4 mb-6 rounded">{error}</p>
           )}
-          <div className="mb-6">
+          <div className="mb-2">
             <input
               type="email"
               {...register("email")}
@@ -187,7 +187,7 @@ export const LoginForm = () => {
               </span>
             )}
           </div>
-          <div className="mb-6">
+          <div className="mb-2">
             <input
               type="password"
               {...register("password")}
@@ -205,6 +205,7 @@ export const LoginForm = () => {
             style={{ backgroundColor: `${submitting ? "#ccc" : "#F49E4C"}` }}
             className="inline-block px-7 py-4 bg-orange-500 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out w-full"
             disabled={submitting}
+            id="login-btn"
           >
             {submitting ? "loading..." : "Sign In"}
           </button>
@@ -217,9 +218,10 @@ export const LoginForm = () => {
             opacity: shouldAnimate ? 0 : 1,
           }}
         >
-          <p className="text-sm italic text-slate-500">
-            En te connectant à <span className="text-orange-400">An’gova</span>,
-            tu acceptes nos{" "}
+          <p className="text-sm italic text-slate-500 text-center">
+            En vous connectant à{" "}
+            <span className="text-orange-400">An’gova</span>, <br />
+            vous acceptez nos{" "}
             <a className="text-orange-400" href="/cgu">
               {" "}
               Conditions d’utilisation{" "}

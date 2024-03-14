@@ -13,15 +13,25 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "types": ["@testing-library/jest-dom"],
+    "paths": {
+      "@/*": ["./*"],
+    },
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/auth/[...nextauth]", "next-auth.config.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "types.d.ts",
+    ".next/types/**/*.ts"
+, "tailwind.config.ts", 
+"__tests__/snapshot.tsx.rieng", 
+"__tests__/index.test.tsx.rieng", 
+"jest.setup.js", "app/register/form.tsx.bieng"  ],
   "exclude": ["node_modules"]
 }

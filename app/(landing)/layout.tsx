@@ -1,8 +1,8 @@
 "use server";
 
-import { auth } from "@/auth";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { SessionProvider } from "next-auth/react";
+import { auth } from "../../auth";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 export default async function LandingLayout({
   children,
 }: {
