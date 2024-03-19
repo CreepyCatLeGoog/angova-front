@@ -19,7 +19,7 @@ const BottomNavigation = () => {
       <NavigationMenuList className=" h-20 fixed bottom-0 left-0 right-0 bg-orange sm:h-full sm:w-72 sm:flex sm:flex-col justify-start">
         <Link href="/" className='mr-6 hidden sm:block'>
           <Image
-            src={'/logo.png'}
+            src={'/logo-white.png'}
             alt="Angova"
             width={144}
             height={144}

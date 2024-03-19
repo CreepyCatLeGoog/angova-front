@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React from 'react';
 import Dropdown from './dropdown';
 import { ChevronLeft, Settings } from "lucide-react";
 
@@ -13,7 +13,8 @@ interface TopNavigationProps {
 
 const TopNavigation: React.FC<TopNavigationProps> = ({ title, isLanguage, isGear, isTitle }) => {
   return (
-    <nav className="h-20 sm:hidden fixed top-0 left-0 right-0 border-2 border-b-gray-100 ">
+    <div className="block">
+    <nav className="h-20 sm:hidden border-2 border-b-gray-100 ">
       <div className="flex h-full justify-between items-end w-full pb-3">
         {isLanguage ? (
           <Dropdown />
@@ -32,6 +33,7 @@ const TopNavigation: React.FC<TopNavigationProps> = ({ title, isLanguage, isGear
         </div>
       </div>
     </nav >
+    </div>
   )
 }
 
