@@ -13,8 +13,8 @@ interface TopNavigationProps {
 
 const TopNavigation: React.FC<TopNavigationProps> = ({ title, isLanguage, isGear, isTitle }) => {
   return (
-    <div className="block">
-    <nav className="h-20 sm:hidden border-2 border-b-gray-100 ">
+    <div className="block bg-white">
+    <nav className="h-20 sm:hidden border-2 border-b-gray-100 text-lg">
       <div className="flex h-full justify-between items-end w-full pb-3">
         {isLanguage ? (
           <Dropdown />

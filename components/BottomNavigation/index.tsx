@@ -22,6 +22,7 @@ const BottomNavigation = () => {
             src={'/logo-white.png'}
             alt="Angova"
             width={144}
+            style={{width:"auto",  height:"auto"}} // to fix aspect ratio, this needs to be style to remove warning
             height={144}
             className="py-10"
           />

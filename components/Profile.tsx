@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Clock, Pen } from "lucide-react";
+import Link from 'next/link';
 
 interface ProfileProps {
     firstName: string;
@@ -25,7 +26,7 @@ const Profile: React.FC<ProfileProps> = ({firstName, lastName, username, passwor
     }
 
     return (
-        <div className="bg-grey-600 h-36 mt-4 mx-6 border-2 rounded-md flex sm:w-full">
+        <div className="bg-white h-36 mt-4 mx-6 border-2 rounded-md flex sm:w-full bg-clip-content">
             <div className="h-full w-2/5 flex justify-center items-center">
                 <div className="w-20 h-20 rounded-full overflow-hidden items-center border-2 border-orange sm:h38 sm:w-38">
                     <img src={image_url} alt="Profile" className="object-cover w-full h-full" />
@@ -40,10 +41,12 @@ const Profile: React.FC<ProfileProps> = ({firstName, lastName, username, passwor
                     <p className="text-[10px] m-px text-blue-500 overflow-wrap:normal word-break:normal">Membre depuis {`${createFrenchDate(inscription_date)}`}</p>
                 </div>
             </div>
-            <div className="flex items-start justify-center w-2/6 sm:w-3/5 sm:justify-end sm:items-center sm:pr-8">
-                <div className="w-12 h-12 rounded-full overflow-hidden border-2 m-2 mr-0 border-orange flex items-center justify-center">
-                    <Pen strokeWidth={3} color="orange" size={5} className="w-1/2 h-1/2"/>
-                </div>
+            <div className="flex items-start justify-center w-2/6 sm:w-3/5 sm:justify-end sm:items-start sm:pr-8 cursor-pointer">
+                <Link href="/profile/update" legacyBehavior passHref>
+                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 mt-6 m-2 mr-0 border-orange flex items-center justify-center">
+                        <Pen strokeWidth={3} color="orange" size={5} className="w-1/2 h-1/2"/>
+                    </div>
+                </Link>
             </div>
         </div>
     )

@@ -4,6 +4,7 @@ import BottomNavigation from "@/components/BottomNavigation"
 import Profile from "@/components/Profile"
 
 const ProfilePage = () => {
+  // this needs to be in a userContext
   const user = {
     firstName: "Eddy",
     lastName: "Wall",
