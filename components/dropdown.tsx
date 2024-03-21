@@ -1,15 +1,15 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import Image from "next/image"
+import Image from "next/image";
 import { useState } from "react";
-import flags from "../lib/flags.json"
+import flags from "../lib/flags.json";
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +17,18 @@ const Dropdown = () => {
     <DropdownMenu >
       <DropdownMenuTrigger asChild className="ml-4 w-20 sm:w-40">
         <Button variant="nav" className="bg-white">
-          <Image src={'/flags/squared/fr.png'} alt="France" width={24} height={24} />
+          <Image
+            src={"/flags/squared/fr.png"}
+            alt="France"
+            width={24}
+            height={24}
+          />
           <span className="text-lg ml-2">
-            {isOpen ? <ChevronUp color="black" /> : <ChevronDown color="black" />}
+            {isOpen ? (
+              <ChevronUp color="black" />
+            ) : (
+              <ChevronDown color="black" />
+            )}
           </span>
         </Button>
       </DropdownMenuTrigger>
@@ -31,7 +40,7 @@ const Dropdown = () => {
                 <Image src={flag.flag} alt={flag.name} width={24} height={24} />
                 <div className="hidden sm:block w-full text-start">
                   <span className="hidden sm:block ml-4">{flag.name}</span>
-                </div>
+                </div>    
               </div>
             </DropdownMenuItem>
           ))}
@@ -41,4 +50,4 @@ const Dropdown = () => {
   )
 }
 
-export default Dropdown
+export default Dropdown;
