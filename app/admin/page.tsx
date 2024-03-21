@@ -46,7 +46,7 @@ const AdminDashboard = () => {
                                     </Label>
                                     <Input
                                         id="name"
-                                        defaultValue="Nom de l'utilisateur"
+                                        placeholder="Nom de l\'utilisateur"
                                         className="col-span-3"
                                     />
                                 </div>
@@ -56,7 +56,7 @@ const AdminDashboard = () => {
                                     </Label>
                                     <Input
                                         id="email"
-                                        defaultValue="Email"
+                                        placeholder="Email"
                                         className="col-span-3"
                                     />
                                 </div>
@@ -66,7 +66,7 @@ const AdminDashboard = () => {
                                     </Label>
                                     <Input
                                         id="role"
-                                        defaultValue="Role"
+                                        placeholder="Role"
                                         className="col-span-3"
                                     />
                                 </div>
@@ -76,7 +76,7 @@ const AdminDashboard = () => {
                                     </Label>
                                     <Input
                                         id="school"
-                                        defaultValue="Auto-école"
+                                        placeholder="Auto-école"
                                         className="col-span-3"
                                     />
                                 </div>
@@ -86,7 +86,7 @@ const AdminDashboard = () => {
                                     </Label>
                                     <Input
                                         id="password"
-                                        defaultValue="Mot de passe"
+                                        placeholder="Mot de passe"
                                         className="col-span-3"
                                     />
                                 </div>
@@ -96,7 +96,7 @@ const AdminDashboard = () => {
                                     </Label>
                                     <Input
                                         id="confirm-password"
-                                        defaultValue="Confirmation du mot de passe"
+                                        placeholder="Confirmation du mot de passe"
                                         className="col-span-3"
                                     />
                                 </div>
