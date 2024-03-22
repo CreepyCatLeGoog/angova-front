@@ -33,39 +33,40 @@ export default {
     CredentialsProvider({
       name: "Credentials",
       credentials: {
-        username: { label: "Username", type: "text", placeholder: "jsmith" },
+        username: { label: "Username", type: "text", placeholder: "email" },
         password: { label: "Password", type: "password" }
       },
-      async authorize(credentials: any, req) {
-        console.log('credentials: ' + credentials.username)
-        // Add logic here to look up the user from the credentials supplied
-        const payload = {
-          name: credentials.name,
-          email: credentials.email,
-          password: credentials.password,
+      async authorize(credentials, req) {
+        // Send credentials to your backend for verification
+        const res = await fetch("http://localhost:3000/auth/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username: credentials.username,
+            password: credentials.password,
+          }),
+        });
 
+        // Check if the request was successful
+        if (!res.ok) {
+          // If not, throw an error
+          throw new Error('Invalid username or password');
         }
-        if (payload.name === "mat" || payload.email === "mat@mat.com") {
-          const user = { id: "1", name: "Mat", email: "mat@mat.com" }
-          return user
-        } else {
-          // api call to backend
-          const res = await fetch("http://localhost:3001/api/auth/signup", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(credentials),
-          })
 
-          const data = await res.json()
-
-
-          if (!res.ok) {
-            throw new Error(JSON.stringify({ errors: { ...res } }))
-          }
-          return data
-        }
+        // Parse the response to get the JWT and user information
+        const data = await res.json();
+        console.log("data", data);
+        // Return the user information and JWT
+        return {
+          token: data.token, // Assuming your backend returns a JWT in a field named 'token'
+          user: {
+            name: data.user.name,
+            email: data.user.email,
+            image: data.user.image,
+          },
+        };
       }
     })
   ],
@@ -82,7 +83,6 @@ export default {
     async session({ session, token }: { session: Session; token: JWT }) {
       console.log("session", session);
       console.log("token", token);
-      // this user info get via API call or decode token. Anything you want you can add
       // session.user = { name: session.user.name, email: session.user.email };
       return session;
     },

@@ -51,11 +51,12 @@ export const LoginForm = () => {
         email: values.email,
         password: values.password,
         redirectTo: callbackUrl,
-      }).then((res) => {
+      }).then((res: { status: string; error: any; ok: any }) => {
         console.log("res:" + res?.status);
+        console.log("res: " + JSON.stringify(res));
         if (res?.error) {
           setShouldAnimateFailed(true);
-        } else if (res?.ok) {
+        } else if (res.status == "200") {
           setShouldAnimate(true);
           setTimeout(() => {
             toast({
