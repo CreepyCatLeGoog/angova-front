@@ -38,7 +38,7 @@ export default {
       },
       async authorize(credentials, req) {
         // Send credentials to your backend for verification
-        const res = await fetch("http://localhost:3000/auth/login", {
+        const res = await fetch("http://localhost:3001/auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -67,10 +67,13 @@ export default {
             image: data.user.image,
           },
         };
-      }
+      },
     })
   ],
 
+  pages: {
+    signIn: '/login',
+  },
   callbacks: {
     async jwt({ token, user }: { token: JWT; user?: { token: string } | null }) {
       if (user) {

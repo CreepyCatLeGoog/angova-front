@@ -47,7 +47,7 @@ export const LoginForm = () => {
       setSubmitting(true);
 
       const res = signIn("credentials", {
-        redirect: false,
+        redirect: true,
         email: values.email,
         password: values.password,
         redirectTo: callbackUrl,
