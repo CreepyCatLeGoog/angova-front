@@ -22,15 +22,15 @@
 }
 
 .swiperFlag {
-    height: 13vh;
-    width: 70%;
+    height: 75px;
+    width: 250px;
     margin-bottom: 3vh;
 }
 
 
 
 .swiperFeedback{
-    height: 15vh;
+    height: 156px;
     width: 100%;
     overflow-x: hidden;
 }
@@ -39,7 +39,6 @@
     font-size: 18px;
     background: #F2F2F2;
     border-radius: 6px;
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,17 +48,49 @@
 
 .swiperFeedback .swiper-slide img {
     display: block;
-    width: 70%;
-    height:70%;
+    width: 120px;
+    height:auto;
     object-fit: cover;
 }
+@media (min-width: 1020px) {
+    .swiperFeedback{
+        height: 186px;
+    }
 
+}
+@media (min-width: 1280px) {
+    .swiperFeedback{
+        height: 250px;
+        width: 60%;
+    }
+    
+    .swiperFeedback .swiper-slide img {
+       
+        width: 150px;
+        
+    }
+}
+
+
+.star-rating {
+    position: relative;
+}
+
+.stars {
+    display: flex;
+    gap: 1px;
+}
+
+.rating {
+    position: absolute;
+    top: 0;
+}
 
 .swiperTrustUs .swiper-slide{
     height: 40px !important;
     width: 40px !important;
-    background-color: #D9D9D9;
-    margin-right: 10px;
+   
+    margin-right: 14px;
 }
 .swiperTrustUs {
     height: fit-content;
@@ -99,3 +130,22 @@
     margin-bottom: -40px;
 }
 
+
+@media (min-width: 1020px) {
+    .swiperTrustUs .swiper-slide{
+        height: 136px !important;
+        width: 136px !important;
+    }
+    .swiperTrustUs {
+        width: 500px;  
+    }
+    .swiperTrustUs .swiper-button-next::after{
+        font-size: 25px ;
+        font-weight: 900;
+    }
+    .swiperTrustUs .swiper-button-prev::after{
+        font-size: 25px ;
+        font-weight: 900;
+    }
+
+}

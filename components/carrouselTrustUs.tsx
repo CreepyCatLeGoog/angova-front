@@ -32,14 +32,41 @@ export default function CarrouselTrustUs() {
         autoplay={{ delay:2000 }}
         slidesPerView={3}
         spaceBetween={50}
-        className="swiperTrustUs mt-9"
+        className="swiperTrustUs mt-9 mb-0 md:mb-9"
       >
-        <SwiperSlide>1</SwiperSlide>
-        <SwiperSlide>2</SwiperSlide>
-        <SwiperSlide>3</SwiperSlide>
-        <SwiperSlide>4</SwiperSlide>
-        <SwiperSlide>5</SwiperSlide>
-        <SwiperSlide>6</SwiperSlide>    
+        <SwiperSlide>
+          <img
+            src="/logo1.png"
+            alt="logo1"
+            width={15}   
+            height={15}  
+          />  
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="/logo2.png"
+            alt="logo2"
+            width={15}   
+            height={15}  
+          />  
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="/logo3.png"
+            alt="logo3"
+            width={15}   
+            height={15}  
+          />  
+        </SwiperSlide>
+        <SwiperSlide>         
+          <img
+            src="/logo2.png"
+            alt="logo2"
+            width={15}   
+            height={15}  
+          />  
+        </SwiperSlide>
+           
       </Swiper>
       
     </>
