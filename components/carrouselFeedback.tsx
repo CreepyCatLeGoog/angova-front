@@ -36,9 +36,12 @@ export default function CarrouselFeedback() {
               />  
             </div>
             <div className="w-[70%] h-[100%] flex flex-col  justify-start  items-start p-2">
-              <p className='text-[10px] font-semibold lg:text-[18px] xl:text-[20px]'>Auto École Aire de Conduite</p>
-              <p className='text-[10px] font-light lg:text-[17px] xl:text-[19px]'>Sept. 2023</p>
-              <p className='text-[10px] font-normal lg:text-[15px] xl:text-[18px]'>Cette ressource s'avère extrêmement bénéfique pour mes élèves, offrant un contenu clair et facilement compréhensible dans des langues pertinentes.</p>
+              <div className="h-[80%]">
+                <p className='text-[10px] font-semibold lg:text-[18px] xl:text-[20px]'>Auto École Aire de Conduite</p>
+                <p className='text-[10px] font-light lg:text-[17px] xl:text-[19px]'>Sept. 2023</p>
+                <p className='text-[10px] font-normal lg:text-[15px] xl:text-[18px]'>Cette ressource s'avère extrêmement bénéfique pour mes élèves, offrant un contenu clair et facilement compréhensible dans des langues pertinentes.</p>
+              </div>
+              
               <div className="flex justify-end w-[100%] mt-2">
                 <Star fill="#FFDD4D" strokeWidth={0} size={18} />
                 <Star fill="#FFDD4D" strokeWidth={0} size={18} />
@@ -61,9 +64,12 @@ export default function CarrouselFeedback() {
               
             </div>
             <div className="w-[70%] h-[100%] flex flex-col  justify-start  items-start p-2">
-              <p className='text-[10px] font-semibold lg:text-[18px]  xl:text-[20px]'>Thierry</p>
-              <p className='text-[10px] font-light lg:text-[17px]'>Janv. 2024</p>
-              <p className='text-[10px] font-normal lg:text-[15px] xl:text-[18px]'>La plateforme est claire et sans surprise quant aux tarifs, offrant un choix intéressant de langues. Le contenu est de grande qualité et l'application est simple à utiliser.</p>
+              <div className="h-[80%]">
+                <p className='text-[10px] font-semibold lg:text-[18px]  xl:text-[20px]'>Thierry</p>
+                <p className='text-[10px] font-light lg:text-[17px]'>Janv. 2024</p>
+                <p className='text-[10px] font-normal lg:text-[15px] xl:text-[18px]'>La plateforme est claire et sans surprise quant aux tarifs, offrant un choix intéressant de langues. Le contenu est de grande qualité et l'application est simple à utiliser.</p>
+              </div>
+              
               <div className="flex justify-end w-[100%] mt-2">
                 <Star fill="#FFDD4D" strokeWidth={0} size={18} />
                 <Star fill="#FFDD4D" strokeWidth={0} size={18} />
