@@ -46,77 +46,40 @@ export const LoginForm = () => {
     try {
       setSubmitting(true);
 
-      const res = signIn("credentials", {
-        redirect: true,
-        email: values.email,
-        password: values.password,
-        redirectTo: callbackUrl,
-      }).then((res: { status: string; error: any; ok: any }) => {
-        console.log("res:" + res?.status);
-        console.log("res: " + JSON.stringify(res));
-        if (res?.error) {
-          setShouldAnimateFailed(true);
-        } else if (res.status == "200") {
-          setShouldAnimate(true);
-          setTimeout(() => {
-            toast({
-              title: "Success",
-              description: "You have successfully logged in",
-              style: {
-                backgroundColor: "green",
-                color: "white",
-              },
-              duration: 1500,
-            });
-          }, 2000);
-          setTimeout(() => {
-            router.push(callbackUrl);
-          }, 4000);
-        }
-
-        setSubmitting(false);
-
-        //   if (res?.ok) {
-        //     /// animate form and show a toast
-        //     if (values.email !== "a@a.fr") {
-        //           setShouldAnimateFailed(true);
-
-        //       setShouldAnimateFailed(true);
-        //     } else {
-        //       animateForm();
-        //       setTimeout(() => {
-        //         toast({
-        //           title: "Success",
-        //           description: "You have successfully logged in",
-        //           style: {
-        //             backgroundColor: "green",
-        //             color: "white",
-        //           },
-        //           duration: 1500,
-        //         });
-        //       }, 2000);
-        //       setTimeout(() => {
-        //         router.push(callbackUrl);
-        //       }, 4000);
-        //     }
-        //   }
-        // } else {
-        //   reset({ password: "" });
-        //   const message = "invalid email or password";
-        //   toast({
-        //     title: "Error",
-        //     description: message,
-        //     style: {
-        //       backgroundColor: "red",
-        //       color: "white",
-        //     },
-        //     duration: 2000,
-        //   });
-        //       setShouldAnimateFailed(true);
-
-        //   setError(message);
-        // }
+      const res = await fetch("http://localhost:3001/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
       });
+      const data = await res.json();
+      console.log(data);
+      if (res.status !== 201 && res.status !== 200) {
+        toast({
+          title: "Something went wrong ..",
+          description: data.error,
+          style: {
+            backgroundColor: "red",
+            color: "white",
+          },
+        });
+      } else if (res.status === 200 || res.status === 201) {
+        toast({
+          title: "Success",
+          description: "You have successfully logged in",
+          style: {
+            backgroundColor: "green",
+            color: "white",
+          },
+        });
+
+        animateForm();
+        setShouldAnimateFailed(true);
+        setTimeout(() => {
+          router.push(callbackUrl);
+        }, 1500);
+      }
     } catch (error: any) {
       toast({
         title: "Error",
@@ -129,6 +92,8 @@ export const LoginForm = () => {
       });
       setError(error.message);
       setShouldAnimateFailed(true);
+    } finally {
+      setSubmitting(false);
     }
   };
 
