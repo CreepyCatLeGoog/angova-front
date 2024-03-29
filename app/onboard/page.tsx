@@ -57,12 +57,6 @@ const ChooseLanguage = () => {
           }}
           initial="hidden"
           animate={shouldAnimate ? "center" : "hidden"}
-          variants={
-            {
-              // center: { y: -700, scale: 0.5 },
-              // hidden: { y: -130, scale: 1.1, overflow: "hidden" },
-            }
-          }
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           <EarthStepperAnimation stepperIndex={currentStep} />

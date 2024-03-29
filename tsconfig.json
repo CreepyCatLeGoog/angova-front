@@ -32,6 +32,6 @@
 , "tailwind.config.ts", 
 "__tests__/snapshot.tsx.rieng", 
 "__tests__/index.test.tsx.rieng", 
-"jest.setup.js", "app/register/form.tsx.bieng"  ],
+"jest.setup.js", ],
   "exclude": ["node_modules"]
 }
