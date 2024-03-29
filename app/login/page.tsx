@@ -54,17 +54,7 @@ export const LoginForm = () => {
         body: JSON.stringify(values),
       });
       const data = await res.json();
-      console.log(data);
-      if (res.status !== 201 && res.status !== 200) {
-        toast({
-          title: "Something went wrong ..",
-          description: data.error,
-          style: {
-            backgroundColor: "red",
-            color: "white",
-          },
-        });
-      } else if (res.status === 200 || res.status === 201) {
+      if (res.status == 201 || res.status == 200) {
         toast({
           title: "Success",
           description: "You have successfully logged in",
@@ -73,12 +63,23 @@ export const LoginForm = () => {
             color: "white",
           },
         });
-
+        if (data.tokens.accessToken) {
+          localStorage.setItem("accessToken", data.tokens.accessToken);
+        }
         animateForm();
         setShouldAnimateFailed(true);
         setTimeout(() => {
           router.push(callbackUrl);
         }, 1500);
+      } else {
+        toast({
+          title: "Something went wrong ..",
+          description: data.error,
+          style: {
+            backgroundColor: "red",
+            color: "white",
+          },
+        });
       }
     } catch (error: any) {
       toast({

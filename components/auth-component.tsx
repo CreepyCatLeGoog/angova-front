@@ -17,6 +17,7 @@ export function SignOut(props: React.ComponentPropsWithRef<typeof Button>) {
     <form
       action={async () => {
         "use server";
+        localStorage.removeItem("accessToken");
         await signOut();
       }}
       className="w-full"
