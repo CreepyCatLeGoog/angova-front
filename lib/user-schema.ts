@@ -31,5 +31,20 @@ export const loginUserSchema = object({
   ),
 });
 
+export const contactFormSchema = object({
+  username: string().min(2, {
+        message: "Le nom d'utilisateur doit comporter au moins 2 caractères.",
+      }),
+      mail: 
+        string()
+        .min(1, { message: "Ce champ doit être rempli." })
+        .email("Le courrier doit être un mail valide"),
+     
+      message: string().min(10, {
+        message: "Le message doit comporter au moins 10 caractères.",
+      }),
+});
+
 export type LoginUserInput = TypeOf<typeof loginUserSchema>;
 export type CreateUserInput = TypeOf<typeof createUserSchema>;
+export type ContactFormInput = TypeOf<typeof contactFormSchema>;

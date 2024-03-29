@@ -1,7 +1,4 @@
-"use client";
-
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { useState, useEffect } from 'react'; 
 import LandingMobile from "@/components/landingMobile";
 import LandingDesktop from "@/components/landingDesktop";
 import Navbar from "@/components/navbar";
@@ -10,67 +7,22 @@ import Link from "next/link";
 import { Heart, Instagram } from 'lucide-react';
 import CarrouselFeedback from "@/components/carrouselFeedback";
 import CarrouselTrustUs from "@/components/carrouselTrustUs";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
 import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-
-const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Le nom d'utilisateur doit comporter au moins 2 caractères.",
-  }),
-  mail: z
-    .string()
-    .min(1, { message: "Ce champ doit être rempli." })
-    .email("Le courrier doit être un mail valide"),
- 
-  message: z.string().min(10, {
-    message: "Le message doit comporter au moins 10 caractères.",
-  }),
-})
-
-// src/app/page.tsx
 import { auth } from "@/auth";
 import { SignOut } from "@/components/auth-component";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import ContactForm from "@/components/contactForm";
 
 export default async function LandingPage() {
-  const [session, setSession] = useState(null); // Déclarer une state pour stocker la session
-  const [user, setUser] = useState(null); // Déclarer une state pour stocker l'utilisateur
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const sessionData = await auth();
-      setSession(sessionData);
-      setUser(sessionData?.user);
-    };
 
-    fetchData();
-  }, []); 
+  const session = await auth();
+  const user = session?.user;
+  
 
   
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: "",
-      mail: "",
-      message: ""
-    },
-  })
+
  
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-  }
   return user ? (
     <div>
       <MaxWidthWrapper>
@@ -175,54 +127,7 @@ export default async function LandingPage() {
                 <h2 className=" ml-0 md:ml-2">Contactez-nous ! </h2>
               </div>
              
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-[70%] md:w-[50%]  mt-[20px] flex flex-col justify-center  items-center" >
-                  <FormField
-                    control={form.control}
-                    name="username"
-                  
-                    render={({ field }) => (
-                      <FormItem  className = "w-[100%]">
-                        <FormControl>
-                          <Input className="min-h-[30px] md:min-h-[40px] text-[10px] md:text-[13px]" placeholder="Nom" {...field} style={{ borderRadius: '8px'}} />
-                        </FormControl>                      
-                        <FormMessage style={{fontSize: "10px"}} />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="mail"
-                  
-                    render={({ field }) => (
-                      <FormItem  className = "w-[100%]">
-                        
-                        <FormControl>
-                          <Input className="min-h-[30px] md:min-h-[40px] text-[10px] md:text-[13px]"  placeholder="Mail" {...field} style={{ borderRadius: '8px' }} />
-                        </FormControl>
-                        
-                        <FormMessage style={{fontSize: "10px"}} />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="message"
-                   
-                    render={({ field }) => (
-                      <FormItem  className = "w-[100%]">                       
-                        <FormControl>
-                          <Textarea  className="min-h-[90px] md:min-h-[150px] lg:min-h-[190px] text-[10px] md:text-[13px]" placeholder="Message" {...field} style={{ borderRadius: '8px'}} />
-                        </FormControl>
-                        <FormMessage style={{fontSize: "10px"}} />
-                      </FormItem>
-                    )}
-                  />
-                  <Button type="submit" className="bg-[#F49E4C] font-medium md:font-semibold text-[10px] md:text-[13px] w-[50%] md:w-[30%] h-[25px] md:h-[30px]" style={{ borderRadius: '6px' }} >Envoyer</Button>
-                </form>
-                
-
-              </Form>
+              <ContactForm/>
             </div>
             
             <div className="flex flex-col w-screen justify-between  items-start  h-[70px]"> 
