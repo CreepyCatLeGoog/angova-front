@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className='flex  justify-center items-center'>
           <div className={ubuntu.className}> <Dropdown   /></div>
           <Button asChild className="bg-transparent border border-[#4591CD] text-[#4591CD] hover:text-white  w-[260px] h-[40px] hover:bg-[#4591CD] ml-14 mr-5">
-            <Link href="#" className="font-sans text-[16px] text-[#4591CD]  text-center font-extrabold">Connexion</Link>
+            <Link href="/login" className="font-sans text-[16px] text-[#4591CD]  text-center font-extrabold">Connexion</Link>
           </Button>
           <Button asChild className="bg-[#F49E4C] w-[260px] h-[40px] hover:bg-[#F49E4C]">
             <Link href="#" className="font-sans text-[16px] text-center font-extrabold">S’inscrire gratuitement</Link>

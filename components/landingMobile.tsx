@@ -42,7 +42,7 @@ const LandingMobile = () => {
       <CarrouselFlag/>
 
       <Button asChild className="bg-[#4591CD] w-[260px] h-10 hover:bg-[#4591CD] mb-4">
-        <Link href="#" className="font-sans text-[16px] text-center font-bold" >Connexion</Link>
+        <Link href="/login" className="font-sans text-[16px] text-center font-bold" >Connexion</Link>
       </Button>
       <Button asChild className="bg-[#F49E4C] w-[260px] h-10 hover:bg-[#F49E4C]">
         <Link href="#" className="font-sans text-[16px] text-center font-bold">S’inscrire gratuitement</Link>

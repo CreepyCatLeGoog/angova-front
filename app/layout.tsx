@@ -14,7 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     
-    <html lang="en"  className="overflow-hidden">
+    <html lang="en"  
+    >
       <body >{children}</body>
     </html>
   );

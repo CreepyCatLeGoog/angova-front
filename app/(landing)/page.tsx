@@ -1,11 +1,12 @@
 "use client";
 
-import MaxWidthWrapper from "@/components/MaxWidthWrapper"
-import LandingMobile from "@/components/landingMobile"
-import LandingDesktop from "@/components/landingDesktop"
-import Navbar from "@/components/navbar"
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { useState, useEffect } from 'react'; 
+import LandingMobile from "@/components/landingMobile";
+import LandingDesktop from "@/components/landingDesktop";
+import Navbar from "@/components/navbar";
 import Image from 'next/image';
-import Link from "next/link"
+import Link from "next/link";
 import { Heart, Instagram } from 'lucide-react';
 import CarrouselFeedback from "@/components/carrouselFeedback";
 import CarrouselTrustUs from "@/components/carrouselTrustUs";
@@ -43,8 +44,20 @@ import { SignOut } from "@/components/auth-component";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default async function LandingPage() {
-  const session = await auth();
-  const user = session?.user;
+  const [session, setSession] = useState(null); // Déclarer une state pour stocker la session
+  const [user, setUser] = useState(null); // Déclarer une state pour stocker l'utilisateur
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const sessionData = await auth();
+      setSession(sessionData);
+      setUser(sessionData?.user);
+    };
+
+    fetchData();
+  }, []); 
+
+  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
