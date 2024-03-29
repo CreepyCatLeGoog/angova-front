@@ -35,46 +35,51 @@ const SignUpPage = () => {
     formState: { errors },
   } = methods;
 
-  const onSubmitHandler: SubmitHandler<CreateUserInput> = async (values: {
-    name: string;
-    email: string;
-    password: string;
-  }) => {
+  const onSubmitHandler: SubmitHandler<CreateUserInput> = async (
+    values,
+    event
+  ) => {
     if (!event) return;
     event.preventDefault();
+
     try {
       setSubmitting(true);
 
-      const res = signIn("credentials", {
-        redirect: false,
-        name: values.name,
-        email: values.email,
-        password: values.password,
-        redirectTo: callbackUrl,
-      }).then((res) => {
-        console.log("res:" + res?.status);
-        if (res?.error) {
-          setShouldAnimateFailed(true);
-        } else if (res?.ok) {
-          setShouldAnimate(true);
-          setTimeout(() => {
-            toast({
-              title: "Success",
-              description: "You have successfully logged in",
-              style: {
-                backgroundColor: "green",
-                color: "white",
-              },
-              duration: 1500,
-            });
-          }, 2000);
-          setTimeout(() => {
-            router.push(callbackUrl);
-          }, 4000);
-        }
-
-        setSubmitting(false);
+      const res = await fetch("http://localhost:3001/auth/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
       });
+      const data = await res.json();
+      if (res.status == 201 || res.status == 200) {
+        toast({
+          title: "Success",
+          description: "You have successfully logged in",
+          style: {
+            backgroundColor: "green",
+            color: "white",
+          },
+        });
+        if (data.tokens.accessToken) {
+          localStorage.setItem("accessToken", data.tokens.accessToken);
+        }
+        // animateForm();
+        setShouldAnimateFailed(true);
+        setTimeout(() => {
+          router.push(callbackUrl);
+        }, 1500);
+      } else {
+        toast({
+          title: "Something went wrong ..",
+          description: data.error,
+          style: {
+            backgroundColor: "red",
+            color: "white",
+          },
+        });
+      }
     } catch (error: any) {
       toast({
         title: "Error",
@@ -87,22 +92,79 @@ const SignUpPage = () => {
       });
       setError(error.message);
       setShouldAnimateFailed(true);
+    } finally {
+      setSubmitting(false);
     }
   };
 
-  function animateForm() {
-    formAnimationControls
-      .start({ opacity: 0, y: 100 })
-      .then(() => {
-        // Reset animation controls to their initial state after the animation is complete
-        formAnimationControls.start({});
-      })
-      .then(() => {
-        // Reset shouldAnimateFailed after a successful form submission
-        setShouldAnimateFailed(false);
-        setShouldAnimate(true);
-      });
-  }
+  // const onSubmitHandler: SubmitHandler<CreateUserInput> = async (values: {
+  //   name: string;
+  //   email: string;
+  //   password: string;
+  // }) => {
+  //   if (!event) return;
+  //   event.preventDefault();
+  //   try {
+  //     setSubmitting(true);
+
+  //     const res = signIn("credentials", {
+  //       redirect: false,
+  //       name: values.name,
+  //       email: values.email,
+  //       password: values.password,
+  //       redirectTo: callbackUrl,
+  //     }).then((res) => {
+  //       console.log("res:" + res?.status);
+  //       if (res?.error) {
+  //         setShouldAnimateFailed(true);
+  //       } else if (res?.ok) {
+  //         setShouldAnimate(true);
+  //         setTimeout(() => {
+  //           toast({
+  //             title: "Success",
+  //             description: "You have successfully logged in",
+  //             style: {
+  //               backgroundColor: "green",
+  //               color: "white",
+  //             },
+  //             duration: 1500,
+  //           });
+  //         }, 2000);
+  //         setTimeout(() => {
+  //           router.push(callbackUrl);
+  //         }, 4000);
+  //       }
+
+  //       setSubmitting(false);
+  //     });
+  //   } catch (error: any) {
+  //     toast({
+  //       title: "Error",
+  //       description: error.message,
+  //       style: {
+  //         backgroundColor: "orange",
+  //         color: "white",
+  //       },
+  //       duration: 2000,
+  //     });
+  //     setError(error.message);
+  //     setShouldAnimateFailed(true);
+  //   }
+  // };
+
+  // function animateForm() {
+  //   formAnimationControls
+  //     .start({ opacity: 0, y: 100 })
+  //     .then(() => {
+  //       // Reset animation controls to their initial state after the animation is complete
+  //       formAnimationControls.start({});
+  //     })
+  //     .then(() => {
+  //       // Reset shouldAnimateFailed after a successful form submission
+  //       setShouldAnimateFailed(false);
+  //       setShouldAnimate(true);
+  //     });
+  // }
 
   const input_style =
     "form-control block w-full px-4 py-3 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none";
