@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import TopNavigation from "@/components/TopNavigation";
 import BottomNavigation from "@/components/BottomNavigation";
 import ProfileForm from "@/components/ProfileForm";
@@ -40,27 +40,31 @@ const UpdatePage = () => {
   return (
     <MaxWidthWrapper>
       <TopNavigation title="Modifier mon profil" isTitle={true} isLanguage={false} isGear={false} />
-      <div  className="h-40 mb-4 flex justify-center flex-col items-center relative z-30">
+      <div  className="h-32 mb-4 flex justify-center flex-col items-center relative z-30 sm:h-fit sm:mt-5 sm:mb-0">
         <div onClick={closeAvatarModifier} className="w-2/6 relative flex justify-center items-center">
-      <div className="w-20 h-20 rounded-full mb-4 overflow-hidden items-center border-2 border-orange sm:h38 sm:w-38 relative">
-        <img src={user.image_url} alt="Profile" className="object-cover w-full h-full relative" />
-      </div>
-        <div className="w-8 h-8 rounded-full overflow-hidden border-2 m-2 mr-0 border-orange flex items-center justify-center absolute top-0 right-4 sm:right-10 lg:right-28 lg:w-10 lg:h-10  bg-actionblue">
-          <Pen strokeWidth={2} color="white" size={18} />
+        <div className="w-16 h-16 rounded-full mb-4 overflow-hidden items-center border-2 border-white ring-2 ring-orange sm:h-36 sm:w-36 relative ">
+          {user.image_url ? 
+          (<div>
+            <img src={user.image_url} alt="Profile" className="object-cover w-full h-full relative" />
+          </div>) :
+          (null)}
+        </div>
+        <div className="w-5 h-5 rounded-full overflow-hidden border-2 m-2 flex items-center justify-center absolute top-0 right-7 mr-1 sm:right-10 lg:right-32 lg:w-10 lg:h-10 bg-actionblue">
+          <Pen strokeWidth={2} color="white" size={20} className="sm:inline hidden"/>
+          <Pen strokeWidth={2} color="white" size={10} className="sm:hidden inline"/>
         </div>
       </div>
       <InputFile className={`${openAvatarModifier ? "visible": "hidden"}`}></InputFile>
-      <p onClick={handleAvatarModifier} className={`color-black underline cursor-pointer ${openAvatarModifier ? "hidden": "visible"} z-100`}>Modifier mon avatar</p>
+      <p onClick={handleAvatarModifier} className={`text-gray-400 text-xs underline cursor-pointer ${openAvatarModifier ? "hidden": "visible"} z-100 sm:text-lg`}>Modifier mon avatar</p>
       </div>
-      <h2 className="font-bold my-4 hidden sm:visible">Modifier mon profil</h2>
-      <div className="flex sm:justify-center">
+      <h2 className="font-bold hidden sm:inline ml-56 sm:text-xl">Modifier mon profil</h2>
+      <div className="flex sm:justify-center justify-center sm:mt-4">
         <ProfileForm {...user} setUser={setUser} />
       </div>
-      <div className="h-40 flex items-center justify-between flex-col py-8">
-        <Button className="bg-orange mb-2">Deconnexion</Button>
+      <div className="h-36 flex items-center justify-around flex-col mt-14 z-0">
+        <Button className="bg-orange mb-2 w-4/5 sm:w-2/3">Deconnexion</Button>
         <p className="color-black underline cursor-pointer">Supprimer mon compte</p>
       </div>
-      <BottomNavigation />
     </MaxWidthWrapper>
   );
 }

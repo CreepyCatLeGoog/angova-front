@@ -1,7 +1,7 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper"
 import TopNavigation from "@/components/TopNavigation"
 import BottomNavigation from "@/components/BottomNavigation"
 import Profile from "@/components/Profile"
+import ProfileWrapper from "@/components/profileWrapper"
 
 const ProfilePage = () => {
   // this needs to be in a userContext
@@ -17,13 +17,11 @@ const ProfilePage = () => {
   
   return (
     <>
- 
-      <MaxWidthWrapper>
+      <ProfileWrapper>
         <TopNavigation title="Mon profil" isTitle={true} isLanguage={false} isGear={true} />
         <Profile {...user}/>
         <BottomNavigation />
-      </MaxWidthWrapper>
-
+      </ProfileWrapper>
     </>
   )
 }

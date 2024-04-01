@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Dropdown from './dropdown';
+import { useRouter } from 'next/navigation'
 import { ChevronLeft, Settings } from "lucide-react";
 
 interface TopNavigationProps {
@@ -12,15 +13,20 @@ interface TopNavigationProps {
 }
 
 const TopNavigation: React.FC<TopNavigationProps> = ({ title, isLanguage, isGear, isTitle }) => {
+  const router = useRouter()
+
+  const handleReturnHistory = () => {
+    router.back()
+  }
   return (
-    <div className="block bg-white">
+    <div className="block bg-white shadow">
     <nav className="h-20 sm:hidden border-2 border-b-gray-100 text-lg">
       <div className="flex h-full justify-between items-end w-full pb-3">
         {isLanguage ? (
           <Dropdown />
         ) : (
           <div className='h-16 flex items-end justify-center w-20 cursor-pointer'>
-            <ChevronLeft color="black" size={24} />
+            <ChevronLeft color="black" size={24} onClick={handleReturnHistory}/>
           </div>
         )}
         {isTitle && (
