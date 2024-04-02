@@ -2,26 +2,26 @@
     {
         "language": "FR",
         "name": "Français",
-        "flag": "/flags/squared/fr.png"
+        "flag": "/assets/flags/squared/fr.png"
     },
     {
         "language": "EN",
         "name": "Anglais",
-        "flag": "/flags/squared/en.png"
+        "flag": "/assets/flags/squared/en.png"
     },
     {
         "language": "ES",
         "name": "Espagnol",
-        "flag": "/flags/squared/es.png"
+        "flag": "/assets/flags/squared/es.png"
     },
     {
         "language": "AR",
         "name": "Arabe",
-        "flag": "/flags/squared/ar.png"
+        "flag": "/assets/flags/squared/ar.png"
     },
     {
         "language": "TR",
         "name": "Turc",
-        "flag": "/flags/squared/tr.png"
+        "flag": "/assets/flags/squared/tr.png"
     }
 ]

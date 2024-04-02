@@ -6,5 +6,5 @@ export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
   session: { strategy: "jwt" },
   ...authConfig,
   secret: process.env.AUTH_SECRET,
- 
+
 })

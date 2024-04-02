@@ -3,9 +3,9 @@ import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 
 // src/app/page.tsx
-import { auth } from "@/auth";
 import { SignOut } from "@/components/auth-component";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { auth } from "@/auth";
 
 export default async function LandingPage() {
   const session = await auth();
@@ -16,13 +16,13 @@ export default async function LandingPage() {
         <Navbar />
         <Hero />
 
-        {/* TEST PURPOSES ONLY */}
         <h1>Logged in as {user.name}</h1>
         <p>Email: {user.email}</p>
         <Avatar>
           <AvatarImage
             src={user.image ?? "https://github.com/shadcn.png"}
             alt="@shadcn"
+            data-testid="avatar"
           />
           <AvatarFallback>{user.name.substring(0, 1)}</AvatarFallback>
         </Avatar>
@@ -34,6 +34,7 @@ export default async function LandingPage() {
       <MaxWidthWrapper>
         <Navbar />
         <Hero />
+        <p>Welcome Angova</p>
       </MaxWidthWrapper>
     </div>
   );
