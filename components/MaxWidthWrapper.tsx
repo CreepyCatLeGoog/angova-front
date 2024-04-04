@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils"
+import { cn } from "../lib/utils";
 
 const MaxWidthWrapper = ({
   className,
@@ -9,7 +9,7 @@ const MaxWidthWrapper = ({
 }) => {
   return (
     <div className={cn('mx-auto max-w-screen-xl w-screen bg-gray-100 sm:bg-gray-100', className)}>{children}</div>
-  )
-}
+  ):
+};
 
-export default MaxWidthWrapper
+export default MaxWidthWrapper;

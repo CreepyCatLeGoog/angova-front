@@ -1,7 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Toaster } from "@/components/ui/toaster";
 
-export default async function LoginLayout({
+export default function ChooseLanguageLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -9,7 +8,6 @@ export default async function LoginLayout({
   return (
     <>
       <MaxWidthWrapper>{children}</MaxWidthWrapper>
-      <Toaster />
     </>
   );
 }

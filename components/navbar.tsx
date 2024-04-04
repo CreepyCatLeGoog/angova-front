@@ -10,7 +10,12 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full m-3">
         <Dropdown />
         <div className="mr-6">
-          <Image src={"/logo.png"} alt="Angova" width={124} height={124} />
+          <Image
+            src={"/assets/logo.png"}
+            alt="Angova"
+            width={124}
+            height={124}
+          />
         </div>
       </div>
     </nav>

@@ -18,7 +18,7 @@ const Dropdown = () => {
       <DropdownMenuTrigger asChild className="ml-4 w-20 sm:w-40">
         <Button variant="nav" className="bg-white">
           <Image
-            src={"/flags/squared/fr.png"}
+            src={"/assets/flags/squared/fr.png"}
             alt="France"
             width={24}
             height={24}

@@ -1,20 +1,19 @@
 "use client";
 
-import React from "react";
-import { zodResolver } from "@hookform/resolvers/zod";
-import Image from "next/image";
+import React, { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useState } from "react";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
 import { signIn } from "next-auth/react";
-import { LoginUserInput, loginUserSchema } from "@/lib/user-schema";
+import { CreateUserInput, createUserSchema } from "@/lib/user-schema";
 import { Button } from "@/components/ui/button";
 import { motion, useAnimation } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 import AnimatedEarth from "@/components/animatedEarth";
 
-export const LoginForm = () => {
+const SignUpPage = () => {
   const router = useRouter();
   const [error, setError] = useState("");
   const [submitting, setSubmitting] = useState(false);
@@ -24,8 +23,8 @@ export const LoginForm = () => {
 
   const searchParams = useSearchParams();
   const callbackUrl = searchParams?.get("callbackUrl") || "/";
-  const methods = useForm<LoginUserInput>({
-    resolver: zodResolver(loginUserSchema),
+  const methods = useForm<CreateUserInput>({
+    resolver: zodResolver(createUserSchema),
   });
 
   const {
@@ -35,7 +34,7 @@ export const LoginForm = () => {
     formState: { errors },
   } = methods;
 
-  const onSubmitHandler: SubmitHandler<LoginUserInput> = async (
+  const onSubmitHandler: SubmitHandler<CreateUserInput> = async (
     values,
     event
   ) => {
@@ -45,7 +44,7 @@ export const LoginForm = () => {
     try {
       setSubmitting(true);
 
-      const res = await fetch("http://localhost:3001/auth/login", {
+      const res = await fetch("http://localhost:3001/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -65,7 +64,7 @@ export const LoginForm = () => {
         if (data.tokens.accessToken) {
           localStorage.setItem("accessToken", data.tokens.accessToken);
         }
-        animateForm();
+        // animateForm();
         setShouldAnimateFailed(true);
         setTimeout(() => {
           router.push(callbackUrl);
@@ -97,29 +96,84 @@ export const LoginForm = () => {
     }
   };
 
-  function animateForm() {
-    formAnimationControls
-      .start({ opacity: 0, y: 100 })
-      .then(() => {
-        // Reset animation controls to their initial state after the animation is complete
-        formAnimationControls.start({});
-      })
-      .then(() => {
-        // Reset shouldAnimateFailed after a successful form submission
-        setShouldAnimateFailed(false);
-        setShouldAnimate(true);
-      });
-  }
+  // const onSubmitHandler: SubmitHandler<CreateUserInput> = async (values: {
+  //   name: string;
+  //   email: string;
+  //   password: string;
+  // }) => {
+  //   if (!event) return;
+  //   event.preventDefault();
+  //   try {
+  //     setSubmitting(true);
+
+  //     const res = signIn("credentials", {
+  //       redirect: false,
+  //       name: values.name,
+  //       email: values.email,
+  //       password: values.password,
+  //       redirectTo: callbackUrl,
+  //     }).then((res) => {
+  //       console.log("res:" + res?.status);
+  //       if (res?.error) {
+  //         setShouldAnimateFailed(true);
+  //       } else if (res?.ok) {
+  //         setShouldAnimate(true);
+  //         setTimeout(() => {
+  //           toast({
+  //             title: "Success",
+  //             description: "You have successfully logged in",
+  //             style: {
+  //               backgroundColor: "green",
+  //               color: "white",
+  //             },
+  //             duration: 1500,
+  //           });
+  //         }, 2000);
+  //         setTimeout(() => {
+  //           router.push(callbackUrl);
+  //         }, 4000);
+  //       }
+
+  //       setSubmitting(false);
+  //     });
+  //   } catch (error: any) {
+  //     toast({
+  //       title: "Error",
+  //       description: error.message,
+  //       style: {
+  //         backgroundColor: "orange",
+  //         color: "white",
+  //       },
+  //       duration: 2000,
+  //     });
+  //     setError(error.message);
+  //     setShouldAnimateFailed(true);
+  //   }
+  // };
+
+  // function animateForm() {
+  //   formAnimationControls
+  //     .start({ opacity: 0, y: 100 })
+  //     .then(() => {
+  //       // Reset animation controls to their initial state after the animation is complete
+  //       formAnimationControls.start({});
+  //     })
+  //     .then(() => {
+  //       // Reset shouldAnimateFailed after a successful form submission
+  //       setShouldAnimateFailed(false);
+  //       setShouldAnimate(true);
+  //     });
+  // }
 
   const input_style =
-    "form-control block w-full px-4 py-5 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none";
+    "form-control block w-full px-4 py-3 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none";
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full">
       <div className="w-72 sm:w-72 md:w-72 lg:w-96 xl:w-96">
         <div className="h-[5vh]"></div>
-        <LoginHeader shouldAnimate={shouldAnimate} />
-        <LoginThirdParty
+        <Header shouldAnimate={shouldAnimate} />
+        <RegisterThirdParty
           shouldAnimate={shouldAnimate}
           callbackUrl={callbackUrl}
         />
@@ -129,7 +183,7 @@ export const LoginForm = () => {
             opacity: shouldAnimate ? 0 : 1,
           }}
         >
-          <p className="text-center font-semibold mx-4 mb-0">OR</p>
+          <p className="text-center font-semibold mx-4 mb-0">OU</p>
         </div>
         <form
           onSubmit={handleSubmit(onSubmitHandler)}
@@ -140,11 +194,26 @@ export const LoginForm = () => {
           {error && (
             <p className="text-center bg-red-300 py-4 mb-6 rounded">{error}</p>
           )}
+
+          <div className="mb-2">
+            <input
+              type="text"
+              {...register("name")}
+              placeholder="Name"
+              className={`${input_style}`}
+            />
+            {errors["name"] && (
+              <span className="text-red-500 text-xs pt-1 block">
+                {errors["name"]?.message as string}
+              </span>
+            )}
+          </div>
+
           <div className="mb-2">
             <input
               type="email"
               {...register("email")}
-              placeholder="Email address"
+              placeholder="Adresse e-mail"
               className={`${input_style}`}
             />
             {errors["email"] && (
@@ -153,11 +222,12 @@ export const LoginForm = () => {
               </span>
             )}
           </div>
+
           <div className="mb-2">
             <input
               type="password"
               {...register("password")}
-              placeholder="Password"
+              placeholder="Mot de passe"
               className={`${input_style}`}
             />
             {errors["password"] && (
@@ -166,14 +236,42 @@ export const LoginForm = () => {
               </span>
             )}
           </div>
+
+          <div className="mb-2">
+            <input
+              type="password"
+              {...register("passwordConfirm")}
+              placeholder="Confirmation du mot de passe"
+              className={`${input_style}`}
+            />
+            {errors["passwordConfirm"] && (
+              <span className="text-red-500 text-xs pt-1 block">
+                {errors["passwordConfirm"]?.message as string}
+              </span>
+            )}
+          </div>
+
+          <div className="mb-2">
+            <input
+              type="date"
+              {...register("dob")}
+              placeholder="Date de naissance"
+              className={`${input_style}`}
+            />
+            {errors["passwordConfirm"] && (
+              <span className="text-red-500 text-xs pt-1 block">
+                {errors["passwordConfirm"]?.message as string}
+              </span>
+            )}
+          </div>
+
           <button
             type="submit"
             style={{ backgroundColor: `${submitting ? "#ccc" : "#F49E4C"}` }}
             className="inline-block px-7 py-4 bg-orange-500 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out w-full"
             disabled={submitting}
-            id="login-btn"
           >
-            {submitting ? "loading..." : "Sign In"}
+            {submitting ? "Chargement..." : "S'inscrire"}
           </button>
         </form>
 
@@ -184,10 +282,9 @@ export const LoginForm = () => {
             opacity: shouldAnimate ? 0 : 1,
           }}
         >
-          <p className="text-sm italic text-slate-500 text-center">
-            En vous connectant à{" "}
-            <span className="text-orange-400">An’gova</span>, <br />
-            vous acceptez nos{" "}
+          <p className="text-sm italic text-slate-500">
+            En vous inscrivant sur la plateforme{" "}
+            <span className="text-orange-400">An’gova</span>, vous acceptez nos{" "}
             <a className="text-orange-400" href="/cgu">
               {" "}
               Conditions d’utilisation{" "}
@@ -213,7 +310,7 @@ export const LoginForm = () => {
             animate={shouldAnimate ? "center" : "hidden"}
             variants={{
               center: { y: -700, scale: 0.5 },
-              hidden: { y: -130, scale: 1.1, overflow: "hidden" },
+              hidden: { y: -30, scale: 1.1, overflow: "hidden" },
             }}
             transition={{ duration: 0.3, ease: "easeInOut", delay: 0.4 }}
           >
@@ -228,7 +325,7 @@ export const LoginForm = () => {
   );
 };
 
-const LoginThirdParty = ({
+const RegisterThirdParty = ({
   shouldAnimate,
   callbackUrl,
 }: {
@@ -251,7 +348,7 @@ const LoginThirdParty = ({
         <Image
           className="p-1"
           src="assets/apple.svg"
-          alt="Apple login logo"
+          alt="Logo de connexion Apple"
           style={{ height: "2rem" }}
           width={30}
           height={30}
@@ -267,7 +364,7 @@ const LoginThirdParty = ({
         <Image
           className="p-1"
           src="assets/facebook.svg"
-          alt="Facebook login logo"
+          alt="Logo de connexion Facebook"
           style={{ height: "2rem" }}
           width={30}
           height={30}
@@ -283,7 +380,7 @@ const LoginThirdParty = ({
         <Image
           className="p-1"
           src="assets/google.svg"
-          alt="Google login logo"
+          alt="Logo de connexion Google"
           style={{ height: "2rem" }}
           width={30}
           height={30}
@@ -292,7 +389,8 @@ const LoginThirdParty = ({
     </div>
   );
 };
-const LoginHeader = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
+
+const Header = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
   const headerAnimationControls = useAnimation();
 
   // Run animation when shouldAnimate changes
@@ -309,9 +407,9 @@ const LoginHeader = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className="w-full">
-        <p className="font-bold text-2xl text-center my-5">Login</p>
+        <p className="font-bold text-2xl text-center my-5">S'inscrire</p>
         <p className="text-center">
-          To continue on <span className="text-orange-400">An’gova</span>
+          Pour continuer sur <span className="text-orange-400">An’gova</span>
         </p>
         <div className="flex justify-center">
           <Separator
@@ -329,4 +427,4 @@ const LoginHeader = ({ shouldAnimate }: { shouldAnimate: boolean }) => {
   );
 };
 
-export default LoginForm;
+export default SignUpPage;
