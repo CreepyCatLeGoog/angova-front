@@ -3,7 +3,6 @@
 import React from 'react';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import TopNavigation from "@/components/TopNavigation";
-import BottomNavigation from "@/components/BottomNavigation";
 import ProfileForm from "@/components/ProfileForm";
 import { Button  } from "@/components/ui/button";
 import { InputFile } from '@/components/ui/inputFile';
@@ -43,7 +42,7 @@ const UpdatePage = () => {
       <div  className="h-32 mb-4 flex justify-center flex-col items-center relative z-30 sm:h-fit sm:mt-5 sm:mb-0">
         <div onClick={closeAvatarModifier} className="w-2/6 relative flex justify-center items-center">
         <div className="w-16 h-16 rounded-full mb-4 overflow-hidden items-center border-2 border-white ring-2 ring-orange sm:h-36 sm:w-36 relative ">
-          {user.image_url ? 
+          {user.image_url ?
           (<div>
             <img src={user.image_url} alt="Profile" className="object-cover w-full h-full relative" />
           </div>) :

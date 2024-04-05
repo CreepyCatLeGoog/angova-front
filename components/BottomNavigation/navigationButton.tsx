@@ -19,7 +19,7 @@ const NavigationButton: React.FC<NavigationButtonProps> = ({ isSession, pathName
       {isSession ? (
         <NavigationMenuItem className="flex-1 sm:flex-none sm:flex sm:justify-center sm:items-center sm:w-full">
           <Link href="/session" legacyBehavior passHref>
-            <NavigationMenuLink id="sessions" className={"flex items-center justify-center flex-col h-20 sm:flex-row sm:justify-between sm:w-52 sm:bg-blue-500 sm:rounded-md sm:h-12 sm:px-3"}>
+            <NavigationMenuLink id="sessions" data-testid="sessions" className={"flex items-center justify-center flex-col h-20 sm:flex-row sm:justify-between sm:w-52 sm:bg-blue-500 sm:rounded-md sm:h-12 sm:px-3"}>
               <ShipWheel id="sessions" color="white" size={24} className="pointer-events-none sm:scale-125 sm:ml-2" />
               <div className="hidden w-full justify-center sm:flex sm:content-center sm:justify-center">
                 <span id="sessions" className="text-white font-extrabold mt-4 sm:text-lg sm:font-light sm:mt-0 sm:w-2/4">{value}</span>
@@ -35,7 +35,7 @@ const NavigationButton: React.FC<NavigationButtonProps> = ({ isSession, pathName
       ) : (
         <NavigationMenuItem className="flex-1 sm:flex-none sm:flex sm:justify-center sm:items-center sm:w-full" >
           <Link href="/profile" legacyBehavior passHref>
-            <NavigationMenuLink id="questions" className={"flex items-center justify-center flex-col h-20 sm:flex-row sm:justify-between sm:w-52 sm:border sm:rounded-md sm:h-12 sm:px-3"}>
+            <NavigationMenuLink id="questions" data-testid="questions" className={"flex items-center justify-center flex-col h-20 sm:flex-row sm:justify-between sm:w-52 sm:border sm:rounded-md sm:h-12 sm:px-3"}>
               {pathName === "/profile" ? (
                 <UserIcon id="questions" color="white" size={24} className="pointer-events-none sm:scale-125 sm:ml-2" />
               ) : (
