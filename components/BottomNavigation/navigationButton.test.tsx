@@ -5,7 +5,7 @@ import { NavigationMenu } from '../ui/navigation-menu';
 
 describe('NavigationButton component', () => {
   it('renders navigation for session', () => {
-    const { getByTestId, queryByTestId, queryByText } = render(
+    const { getByTestId, queryByTestId } = render(
       <NavigationMenu>
         <NavigationButton isSession={true} pathName='session' value="ok" />
       </NavigationMenu>
