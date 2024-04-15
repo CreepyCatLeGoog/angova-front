@@ -39,16 +39,16 @@ const UpdatePage = () => {
   return (
     <MaxWidthWrapper>
       <TopNavigation title="Modifier mon profil" isTitle={true} isLanguage={false} isGear={false} />
-      <div  className="h-32 mb-4 flex justify-center flex-col items-center relative z-30 sm:h-fit sm:mt-5 sm:mb-0">
+      <div  className="h-32 mb-4 flex justify-center flex-col items-center relative z-30 sm:h-fit sm:mt-5 sm:mb-0  lg:h-26">
         <div onClick={closeAvatarModifier} className="w-2/6 relative flex justify-center items-center">
-        <div className="w-16 h-16 rounded-full mb-4 overflow-hidden items-center border-2 border-white ring-2 ring-orange sm:h-36 sm:w-36 relative ">
+        <div className="w-16 h-16 rounded-full mb-4 overflow-hidden items-center border-2 border-white ring-2 ring-orange sm:h-36 sm:w-36 lg:h-20 lg:w-20 relative ">
           {user.image_url ?
           (<div>
             <img src={user.image_url} alt="Profile" className="object-cover w-full h-full relative" />
           </div>) :
           (null)}
         </div>
-        <div className="w-5 h-5 rounded-full overflow-hidden border-2 m-2 flex items-center justify-center absolute top-0 right-7 mr-1 sm:right-10 lg:right-32 lg:w-10 lg:h-10 bg-actionblue">
+        <div className="w-5 h-5 rounded-full overflow-hidden border-2 m-2 flex items-center justify-center absolute top-0 right-6 mr-1 sm:right-14 sm:w-10 sm:h-10 lg:w-8 lg:h-8 bg-actionblue lg:right-40 ">
           <Pen strokeWidth={2} color="white" size={20} className="sm:inline hidden"/>
           <Pen strokeWidth={2} color="white" size={10} className="sm:hidden inline"/>
         </div>
@@ -57,11 +57,11 @@ const UpdatePage = () => {
       <p onClick={handleAvatarModifier} className={`text-gray-400 text-xs underline cursor-pointer ${openAvatarModifier ? "hidden": "visible"} z-100 sm:text-lg`}>Modifier mon avatar</p>
       </div>
       <h2 className="font-bold hidden sm:inline ml-56 sm:text-xl">Modifier mon profil</h2>
-      <div className="flex sm:justify-center justify-center sm:mt-4">
+      <div className="flex sm:justify-center justify-center sm:mt-4 lg:h-[430px]">
         <ProfileForm {...user} setUser={setUser} />
       </div>
-      <div className="h-36 flex items-center justify-around flex-col mt-14 z-0">
-        <Button className="bg-orange mb-2 w-4/5 sm:w-2/3">Deconnexion</Button>
+      <div className="h-2/6 flex items-center justify-around flex-col mt-14 lg:h-2/6 lg:mt-20  z-0">
+        <Button className="bg-orange mb-2 w-4/5 sm:w-2/3 lg:mb-6">Deconnexion</Button>
         <p className="color-black underline cursor-pointer">Supprimer mon compte</p>
       </div>
     </MaxWidthWrapper>

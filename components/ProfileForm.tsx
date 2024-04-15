@@ -35,7 +35,7 @@ const ProfileForm: React.FC<ProfileFormProps> = ({firstName, lastName, userName,
   }
 
   return (
-    <div className="h-[480px] relative flex flex-col px-8 pt-2 justify-center  rounded-md shadow bg-white mx-8 sm:h-[550px] sm:justify-center sm:items-center sm:w-2/3">
+    <div className="h-[480px] relative flex flex-col px-8 pt-2 justify-center  rounded-md shadow bg-white mx-8 sm:h-[550px] lg:h-[450px] sm:justify-center sm:items-center sm:w-2/3">
       <InputLabel onChange={(e: React.FormEvent<HTMLInputElement>) => handleFormUser(e)} id="firstName" placeholder="first name" value={firstName} type="text"/>
       <InputLabel onChange={(e: React.FormEvent<HTMLInputElement>) => handleFormUser(e)} id="lastName" placeholder="last name" value={lastName} type="text"/>
       <InputLabel onChange={(e: React.FormEvent<HTMLInputElement>) => handleFormUser(e)} id="userName" placeholder="user name" value={userName} type="text"/>
