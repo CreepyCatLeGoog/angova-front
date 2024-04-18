@@ -1,32 +1,34 @@
+
+'use client';
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
-
-// src/app/page.tsx
-import { SignOut } from "@/components/auth-component";
+// import { SignOut } from "@/components/auth-component";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { auth } from "@/auth";
+import { useSession } from 'next-auth/react';
 
-export default async function LandingPage() {
-  const session = await auth();
-  const user = session?.user;
+export default function LandingPage() {
+  const { data } = useSession();
+  const { accessToken } = data;
+  console.log(accessToken);
+  var user = false;
   return user ? (
     <div>
       <MaxWidthWrapper>
         <Navbar />
         <Hero />
 
-        <h1>Logged in as {user.name}</h1>
-        <p>Email: {user.email}</p>
+        <h1>Logged in as ""</h1>
+        <p>Email: user.email</p>
         <Avatar>
           <AvatarImage
-            src={user.image ?? "https://github.com/shadcn.png"}
+            src={"https://github.com/shadcn.png"}
             alt="@shadcn"
             data-testid="avatar"
           />
-          <AvatarFallback>{user.name.substring(0, 1)}</AvatarFallback>
+          <AvatarFallback></AvatarFallback>
         </Avatar>
-        <SignOut />
+        {/* <SignOut /> */}
       </MaxWidthWrapper>
     </div>
   ) : (

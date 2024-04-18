@@ -7,12 +7,12 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
-import { signIn } from "next-auth/react";
 import { LoginUserInput, loginUserSchema } from "@/lib/user-schema";
 import { Button } from "@/components/ui/button";
 import { motion, useAnimation } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 import AnimatedEarth from "@/components/animatedEarth";
+import { useSession, signIn, signOut } from "next-auth/react"
 
 export const LoginForm = () => {
   const router = useRouter();
@@ -277,7 +277,7 @@ const LoginThirdParty = ({
       <Button
         className="px-7 py-2 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center mb-3"
         variant="outline"
-        onClick={() => signIn("google", { callbackUrl })}
+        onClick={() => signIn()}
         role="button"
       >
         <Image

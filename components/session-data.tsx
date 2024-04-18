@@ -1,5 +1,5 @@
 import type { Session } from "next-auth";
-import { SignIn } from "./auth-component";
+
 
 export default function SessionData({ session }: { session: Session | null }) {
   return session ? (

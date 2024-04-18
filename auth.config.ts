@@ -5,6 +5,7 @@ import CredentialsProvider from "next-auth/providers/credentials"
 import type { NextAuthConfig } from "next-auth"
 
 export default {
+  
   providers: [
     Apple({
       clientId: process.env.APPLE_CLIENT_ID,
@@ -48,3 +49,5 @@ export default {
     },
   },
 } satisfies NextAuthConfig
+
+
