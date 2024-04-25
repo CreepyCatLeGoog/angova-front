@@ -1,7 +1,6 @@
 'use client';
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Toaster } from "@/components/ui/toaster";
-import { SessionProvider } from "next-auth/react"
 export default function LoginLayout({
   
   children,
@@ -11,11 +10,8 @@ export default function LoginLayout({
 }) {
   return (
     <>
-      <SessionProvider>
-        <MaxWidthWrapper>{children}</MaxWidthWrapper>
-        <Toaster />
-      </SessionProvider>
-      
+      <MaxWidthWrapper>{children}</MaxWidthWrapper>
+      <Toaster />      
     </>
   );
 }

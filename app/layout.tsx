@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { SessionProvider } from "next-auth/react"
+import SessionWrapper from '@/components/SessionWrapper'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-hidden">
-      <body className={inter.className  + " h-auto bg-gray-100"}>
-        <div>{children}</div>
-      </body>
-    </html>
+    <SessionWrapper>
+      <html lang="en" className="overflow-hidden">
+        <body className={inter.className  + " h-auto bg-gray-100"}>
+          <div>{children}</div>
+        </body>
+      </html>
+    </SessionWrapper>
+    
   );
 }

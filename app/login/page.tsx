@@ -12,7 +12,9 @@ import { Button } from "@/components/ui/button";
 import { motion, useAnimation } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 import AnimatedEarth from "@/components/animatedEarth";
-import { useSession, signIn, signOut } from "next-auth/react"
+import {  signIn } from "next-auth/react"
+import axios from "axios";
+import { jwtDecode } from 'jwt-decode'
 
 export const LoginForm = () => {
   const router = useRouter();
@@ -34,7 +36,7 @@ export const LoginForm = () => {
     register,
     formState: { errors },
   } = methods;
-
+  
   const onSubmitHandler: SubmitHandler<LoginUserInput> = async (
     values,
     event
@@ -42,44 +44,78 @@ export const LoginForm = () => {
     if (!event) return;
     event.preventDefault();
 
+     
     try {
-      setSubmitting(true);
+      const userData = {
+   
+        email:values.email,
+        password : values.password
+      };
+      await axios.post("http://localhost:3001/auth/login", userData).then(async (res: any) => {
+        
+        const {tokens} = res.data;
+        const decode = jwtDecode( tokens.accessToken);
+        await axios.get(`http://localhost:3001/users/${decode.userId}`, {
+          headers: {
+            'Authorization': `token ${ tokens.accessToken}`
+          }
+        })
+        .then(async (res) => {
+          var data =  {
+            id: decode.userId,
+            name: res.data.username,
+            email: res.data.email,
+            roleId: res.data.userId,
+            accessToken : tokens.accessToken,
+            refreshToken: tokens.refreshToken,
+              
+          };
+          const resAuth = await signIn('credentials', {
+            redirect: false,
+            id: data.id,
+            name: data.name,
+            email: data.email,
+            roleId: data.roleId,
+            token: data.accessToken,
+            callbackUrl: `/`,
+          
+          });
 
-      const res = await fetch("http://localhost:3001/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
+          setSubmitting(true);
+
+
+          if (resAuth?.status == 200 ||resAuth?.status == 201 ) {
+            toast({
+              title: "Success",
+              description: "You have successfully logged in",
+              style: {
+                backgroundColor: "green",
+                color: "white",
+              },
+            });
+            if (data.accessToken) {
+              localStorage.setItem("accessToken", data.accessToken);
+            }
+            animateForm();
+            setShouldAnimateFailed(true);
+            setTimeout(() => {
+              router.push(callbackUrl);
+            }, 1500);
+          } 
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+
+        
+          
       });
-      const data = await res.json();
-      if (res.status == 201 || res.status == 200) {
-        toast({
-          title: "Success",
-          description: "You have successfully logged in",
-          style: {
-            backgroundColor: "green",
-            color: "white",
-          },
-        });
-        if (data.tokens.accessToken) {
-          localStorage.setItem("accessToken", data.tokens.accessToken);
-        }
-        animateForm();
-        setShouldAnimateFailed(true);
-        setTimeout(() => {
-          router.push(callbackUrl);
-        }, 1500);
-      } else {
-        toast({
-          title: "Something went wrong ..",
-          description: data.error,
-          style: {
-            backgroundColor: "red",
-            color: "white",
-          },
-        });
-      }
+     
+        
+      
+      
+     
+      
     } catch (error: any) {
       toast({
         title: "Error",
@@ -142,7 +178,7 @@ export const LoginForm = () => {
           )}
           <div className="mb-2">
             <input
-              type="email"
+              type="text"
               {...register("email")}
               placeholder="Email address"
               className={`${input_style}`}
@@ -245,7 +281,7 @@ const LoginThirdParty = ({
       <Button
         className="px-7 py-2 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center mb-3"
         variant="outline"
-        onClick={() => signIn("apple", { callbackUrl })}
+        onClick={() => signIn("apple",  { callbackUrl : "/" })}
         role="button"
       >
         <Image
@@ -261,7 +297,7 @@ const LoginThirdParty = ({
       <Button
         className="px-7 py-2 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center mb-3"
         variant="outline"
-        onClick={() => signIn("facebook", { callbackUrl })}
+        onClick={() => signIn("facebook", { callbackUrl : "/" })}
         role="button"
       >
         <Image
@@ -277,7 +313,7 @@ const LoginThirdParty = ({
       <Button
         className="px-7 py-2 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center mb-3"
         variant="outline"
-        onClick={() => signIn()}
+        onClick={() => signIn('google', { callbackUrl : "/" })}
         role="button"
       >
         <Image

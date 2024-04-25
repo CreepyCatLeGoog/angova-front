@@ -1,50 +1,87 @@
 import NextAuth from "next-auth"
-import Google from "next-auth/providers/google"
-import Facebook from "next-auth/providers/facebook"
-import Apple from "next-auth/providers/apple"
+import GoogleProvider from "next-auth/providers/google"
+import FacebookProvider from "next-auth/providers/facebook"
+import AppleProvider from "next-auth/providers/apple"
+import axios from 'axios';
+import Credentials from "next-auth/providers/credentials";
+// import jwt from 'jsonwebtoken';
 
-export const authOptions = {
-    // Configure one or more authentication providers
-    
-    providers: [
-        Apple({
-        clientId: process.env.APPLE_CLIENT_ID,
-        clientSecret: process.env.APPLE_CLIENT_SECRET,
-        }),
-        Facebook({
-        clientId: process.env.FACEBOOK_CLIENT_ID,
-        clientSecret: process.env.FACEBOOK_CLIENT_SECRET
-        }),
+type LoginResponse = {
+  tokens: {
+    accessToken: string;
+    refreshToken: string;
+  };
+};
 
-        Google({
-        clientId: process.env.GOOGLE_CLIENT_ID,
-        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        authorization: { params: { prompt: 'consent' } },
-        async profile(profile) {
-            return {
-            id: profile.id,
-            name: profile.name,
-            email: profile.email,
-            image: profile.picture,
-            };
-        }
-        }),
-    ],
-
-    callbacks: {
-        async jwt({ token, account }) {
-            // Persist the OAuth access_token to the token right after signin
-            if (account) {
-            token.accessToken = account.access_token
-            }
-            return token
-        },
-        async session({ session, token, user }) {
-            // Send properties to the client, like an access_token from a provider.
-            session.accessToken = token.accessToken
-            return session
-        }
-    }
+async function login(credentials: any) {
+  
 }
 
-export default NextAuth(authOptions)
+
+const handler = NextAuth({
+  pages: {
+    signIn: '/login',
+  },
+    providers: [
+        AppleProvider({
+          clientId: process.env.APPLE_CLIENT_ID as string,
+          clientSecret: process.env.APPLE_CLIENT_SECRET as string,
+        }),
+        FacebookProvider({
+          clientId: process.env.FACEBOOK_CLIENT_ID as string, 
+          clientSecret: process.env.FACEBOOK_CLIENT_SECRET as string
+        }),
+
+        GoogleProvider({
+            clientId: process.env.GOOGLE_CLIENT_ID as string,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+        }),
+        Credentials({
+          name: "Credentials",
+          credentials: {
+            id:  {},
+            name:  {},
+            email:  {},
+            roleId: {},
+            
+            token: {},
+            
+          },
+          async authorize(credentials) {
+              try {       
+                return {
+                  id:credentials?.id,
+                  name:credentials?.name,
+                  email:credentials?.email,
+                  role:credentials?.roleId,
+                  picture:"picture",
+                  token: credentials?.token,
+                };;
+              } catch (e) {
+                  return {};
+              }
+          },
+        }),
+       
+          
+    ],
+   
+    callbacks: {
+      async jwt({user, token}) {
+          if (user) {
+              token.user = user;
+          }
+          return token;
+      },
+      async session({session, token}: any) {
+          session.user = token.user;
+          return session;
+      },
+  },
+  debug: process.env.NODE_ENV === "development",
+  
+});
+    
+
+
+export { handler as GET, handler as POST }
